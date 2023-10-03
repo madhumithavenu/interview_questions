@@ -1,0 +1,62 @@
+1)What is JavaScript?
+JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive.
+
+2)What is the difference between Java & JavaScript?
+Java:	                                      
+1.Java is an OOP programming language.	
+2.It creates applications that run in a virtual machine or browser.	
+3.Java code needs to be compiled.
+
+JavaScript:
+1.JavaScript is an OOP scripting language.
+2.The code is run on a browser only.	
+3.JavaScript code are all in the form of text.
+
+3)What are the data types supported by JavaScript?
+The data types supported by JavaScript are:
+•Undefined
+•Null
+•Boolean
+•String
+•Symbol
+•Number
+•Object
+
+4)What are the features of JavaScript?
+*Lightweight
+*Interpreted programming language
+*Good for the applications which are network-centric
+*Complementary to Java
+*Complementary to HTML
+*Open source
+*Cross-platform
+
+5)Is JavaScript a case-sensitive language?
+Yes, JavaScript is a case sensitive language.The language keywords,variables,function names,and any other identifiers must always be typed with a consistent capitalization of letters.
+
+6)List some advantages of javaScript?
+*Server interaction is less.
+*Feedback to the visitors is immediate.
+*Interactivity is high.
+*Interfaces are richer.
+
+7)Difference between “ == “ and “ === “ operators.
+Both are comparison operators.The difference between both the operators is that “==” is used to compare values whereas, “ === “ is used to compare both values and types.
+
+8)Explain Hoisting in javascript.
+Hoisting is the default behaviour of javascript where all the variable and function declarations are moved on top. The scope can be both local and global.
+
+9)What is the purpose of ‘This’ operator in JavaScript?
+The JavaScript this keyword refers to the object it belongs to. This has different values depending on where it is used. In a method, this refers to the owner object and in a function, this refers to the global object.
+
+10)How to create an array in JavaScript?
+There are 3 ways to create an array in JavaScript.
+
+1.By array literal
+2.By creating an instance of Array
+3.By using an Array constructor
+
+Let's see a simple code to create an array using object literal.
+var emp=["Shyam","Vimal","Ratan"];
+
+
