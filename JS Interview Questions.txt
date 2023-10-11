@@ -537,3 +537,6 @@ Example: const arr1 = [1, 2, 3, 4];
 
 79) What is Relational operators?
 A) The relational operators allows us to compare two values to see whether they are equal,unequal greater than or less than.
+
+80) What is search() method?
+A) The search() method executes a search for a match between a regular expression and the current string object. 
