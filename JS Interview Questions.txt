@@ -523,5 +523,5 @@ Example:
 7.shift(): The shift method removes the first element from an array and returns that removed element. This method changes the length of the array.
 Example: 
 
-79) What is if else condition in JaaScript?
-A) if condition: we use i
+79) What is Relational operators?
+A) The relational operators allows us to compare two values to see whether they are equal,unequal greater than or less than.
