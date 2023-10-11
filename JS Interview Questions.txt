@@ -504,3 +504,20 @@ console.log(arr);  //[
   ' ', 'd', 'o', 'g'
 ]
 
+77) Explain JavaScript Template literals ?
+A) Template literals is a string in JavaScript enclosed by backticks(`) allowing the programmer to perform string interpolation.
+
+78) What are the methods used in Array?
+A) 1.Length: The length property inside an array holds the real-time length of the object. We can access the length property using (.) dot operator.
+Example:
+2.sort(): The sort method inside an array object will sort the elements inside. It will also return new sorted array reference but there is no need to catch the reference as previous reference will also work fine.
+Example:
+3. reverse(): The reverse method reverses the content inside an array and returns the references to the same array.
+Example:
+4.push(): The push method adds the specified elements to the end of an array and returns only the new length values.
+Example:
+5.pop(): The pop method removes the last element from an array and returns the element itself.
+Example:
+6.unshift(): The unshift method adds the specified element to the beginning of an array and returns the new length of the array.
+Example:
+
