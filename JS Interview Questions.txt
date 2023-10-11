@@ -472,3 +472,34 @@ A) * A name should start with letters (a-z & A-Z) or underscore(_) or $ dollar s
    * It should not start with special characters and numbers.
    * In JavaScript variables are case sensitive.
    * Reserved Keywords cannot be used as names in JavaScript. 
+
+73) What is string in JavaScript?
+A) String in JavaScript is an object that represents sequence of characters inside ' ' or " ".
+
+74) What is concat method?
+A) The concat() method concatinates the string argument to the calling string and returns the new string.
+Eg: const str1 = 'Hello';
+    const str2 = 'World';
+    console.log(str1.concat(' ',+ str2));  //Hello World
+    console.log(str2.concat(',',+ str1));  //World,Hello 
+
+75) Explain slice() method.
+A) The slice() method extracts a section of a string and returns it as new string.
+const str = "The quick brown fox jumps over the lazy dog";
+console.log(str.slice(31)); //'the lazy dog'
+console.log(str.slice(4,19)); //'quick brown fox'
+console.log(str.slice(-4)); //'dog'
+console.log(str.slice(-9,-5)); //'lazy'
+
+76) Explain split() method.
+A) The method takes a pattern input and divides the original string into an array of substring. The following returns an array as an output. The pattern here is know as "delimiter".
+const str = "The quick brown fox jumps over lazy dog";
+const arr = str.split('');
+console.log(arr);  //[
+  'T', 'h', 'e', ' ', 'q', 'u', 'i',
+  'c', 'k', ' ', 'b', 'r', 'o', 'w',
+  'n', ' ', 'f', 'o', 'x', ' ', 'j',
+  'u', 'm', 'p', 's', ' ', 'o', 'v',
+  'e', 'r', ' ', 'l', 'a', 'z', 'y',
+  ' ', 'd', 'o', 'g'
+]
