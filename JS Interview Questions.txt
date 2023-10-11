@@ -520,4 +520,8 @@ Example:
 Example:
 6.unshift(): The unshift method adds the specified element to the beginning of an array and returns the new length of the array.
 Example:
+7.shift(): The shift method removes the first element from an array and returns that removed element. This method changes the length of the array.
+Example: 
 
+79) What is if else condition in JaaScript?
+A) if condition: we use i
