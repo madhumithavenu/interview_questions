@@ -336,7 +336,26 @@ Therefore, here we import those functions and pass input to those functions to c
 
 55) What are some of the JavaScript frameworks and their uses?
 A)JavaScript has a collection of many frameworks that aim towards fulfilling the different aspects of the web application development process. Some of the prominent frameworks are:
-React - Frontend development of a web application
-Angular - Frontend development of a web application
-Node - Backend or server-side development of a web application
+React - Frontend development of a web application.
+Angular - Frontend development of a web application.
+Node - Backend or server-side development of a web application.
+
+56) What is the difference between Call and Apply? (explain in detail with examples)
+A)Call-Call uses arguments separately.
+Example:
+function sayHello()
+{
+  return "Hello " + this.name;
+}      
+var obj = {name: "Sandy"};      
+sayHello.call(obj); // Returns "Hello Sandy"
+
+Apply-Apply uses an argument as an array.
+Example:
+function saySomething(message)
+{
+  return this.name + " is " + message;
+}        
+var person4 = {name:  "John"};
+saySomething.apply(person4, ["awesome"]);
 
