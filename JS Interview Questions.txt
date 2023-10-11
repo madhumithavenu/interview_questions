@@ -389,3 +389,6 @@ The reference of the 1st variable object i.e. ‘var obj’ is passed through th
 Example: 
 var obj = { name: "Raj", surname: "Sharma" };
 var obj2 = obj;
+
+59) Self Invoking Functions
+A) Self Invoking Functions is an automatically invoked function expression followed by (), where it does not need to be requested. Nevertheless, the declaration of the function is not able to be invoked by itself.
