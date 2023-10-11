@@ -403,9 +403,13 @@ A) Yes! An anonymous function can be assigned to a variable. It can also be pass
 
 62) What are the ways to define a variable in JavaScript?
 A) The three possible ways of defining a variable in JavaScript are:
-Var – The JavaScript variables statement is used to declare a variable and, optionally, we can initialize the value of that variable. Example: var a =10; Variable declarations are processed before the execution of the code.
-Const – The idea of const functions is not allow them to modify the object on which they are called. When a function is declared as const, it can be called on any type of object.
-Let – It is a signal that the variable may be reassigned, such as a counter in a loop, or a value swap in an algorithm. It also signals that the variable will be used only in the block it’s defined in.
+(i) Var – The JavaScript variables statement is used to declare a variable and, optionally, we can initialize the value of that variable. Example: var a =10; Variable declarations are processed before the execution of the code.
+(ii) Const – The idea of const functions is not allow them to modify the object on which they are called. When a function is declared as const, it can be called on any type of object.
+(iii) Let – It is a signal that the variable may be reassigned, such as a counter in a loop, or a value swap in an algorithm. It also signals that the variable will be used only in the block it’s defined in.
 
 63) What is the difference between null & undefined?
 A) Undefined means a variable has been declared but has not yet been assigned a value. On the other hand, null is an assignment value. It can be assigned to a variable as a representation of no value. Also, undefined and null are two distinct types: undefined is a type itself (undefined) while null is an object.
+
+64) What is the difference between innerHTML & innerText?
+A) @ innerHTML – It will process an HTML tag if found in a string
+   @ innerText – It will not process an HTML tag if found in a string
