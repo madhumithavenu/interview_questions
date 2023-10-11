@@ -397,3 +397,6 @@ A) Self Invoking Functions is an automatically invoked function expression follo
 A) External Javascript allows web designers and developers to collaborate on HTML and javascript files.
 It also enables you to reuse the code.
 External javascript makes Code readability simple.
+
+61) Can you assign an anonymous function to a variable and pass it as an argument to another function?
+A) Yes! An anonymous function can be assigned to a variable. It can also be passed as an argument to another function.
