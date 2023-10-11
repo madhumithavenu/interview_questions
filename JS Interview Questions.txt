@@ -359,3 +359,18 @@ function saySomething(message)
 var person4 = {name:  "John"};
 saySomething.apply(person4, ["awesome"]);
 
+57) Implicit Type Coercion in javascript (in detail with examples)
+A) When the value of one data type is automatically converted into another data type, it is called Implicit type coercion in javascript.
+String coercion
+Example: 
+var x = 4;
+var y = "4";
+x + y // Returns "44" 
+
+Boolean coercion 
+Example:
+var a = 0;
+var b = 32;      
+if(a) { console.log(a) }   // This code will run inside the block as the value of x is 0(Falsy)         
+if(b) { console.log(b) }    // This code will run inside the block as the value of y is 32 (Truthy)
+
