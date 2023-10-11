@@ -463,3 +463,12 @@ document.writeln(10<20);//true
 document.writeln(10<5);//false     
 }     
 display();
+
+71) What is identifier?
+A) An identifier is the name given to a variable or a function or a class in a javascript program.
+
+72) What are the rules while declaring JavaScript Variable?
+A) * A name should start with letters (a-z & A-Z) or underscore(_) or $ dollar sign.
+   * It should not start with special characters and numbers.
+   * In JavaScript variables are case sensitive.
+   * Reserved Keywords cannot be used as names in JavaScript. 
