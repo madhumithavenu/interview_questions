@@ -13,50 +13,300 @@ JavaScript:
 3.JavaScript code are all in the form of text.
 
 3)What are the data types supported by JavaScript?
-The data types supported by JavaScript are:
-•Undefined
-•Null
-•Boolean
-•String
-•Symbol
-•Number
-•Object
+The data types supported by JavaScript are: Undefined , Null, Boolean, String, Symbol, Number, Object
 
-4)What are the features of JavaScript?
-*Lightweight
-*Interpreted programming language
-*Good for the applications which are network-centric
-*Complementary to Java
-*Complementary to HTML
-*Open source
-*Cross-platform
+4)List some features of JavaScript.
+ a) The primary features of JavaScript are: it is Lightweight & it is an Interpreted programming language which is Good for the applications which are network-centric. On top of this as the language uses most of the keywords in JAVA it is complementary to java language which most of the developers are familiar with. JavaScript blends well with HTML as it uses the DOM tree to intrepret HTML for us to play around with elements.
 
 5)Is JavaScript a case-sensitive language?
-Yes, JavaScript is a case sensitive language.The language keywords,variables,function names,and any other identifiers must always be typed with a consistent capitalization of letters.
+ a) Yes, JavaScript is a case sensitive language.  Here keywords, variable names, function names, and any other identifiers are to be used in the  program consistently and carefully.
 
-6)List some advantages of javaScript?
-*Server interaction is less.
-*Feedback to the visitors is immediate.
-*Interactivity is high.
-*Interfaces are richer.
+6)List some advantages of JavaScript.
+ a) Few of the advantages in JavaScript are: 
+In JS Server interaction is very less.
+The Feedback to the visitors is immediate.
+Interactivity is high as we can toggle the inputs inside browser developer tools and get an instant output.
 
 7)Difference between “ == “ and “ === “ operators.
-Both are comparison operators.The difference between both the operators is that “==” is used to compare values whereas, “ === “ is used to compare both values and types.
+ a) Both are comparison operators. The difference between both the operator is that “==” is used to compare values whereas, “ === “ is used to compare both values and types on LHS and RHS.
 
-8)Explain Hoisting in javascript.
-Hoisting is the default behaviour of javascript where all the variable and function declarations are moved on top. The scope can be both local and global.
+8)Explain Hoisting in JavaScript.
+ a) Hoisting is the default behaviour of JavaScript where all the variable and function declarations are moved on top of the function. 
+Example: 
+function m1(){
+var a;
+for(var i; i <=10; i++){
+		console.log(i);
+}
+console.log(i); //Variable access is permitted because it is hoisted	
+}
 
 9)What is the purpose of ‘This’ operator in JavaScript?
-The JavaScript this keyword refers to the object it belongs to. This has different values depending on where it is used. In a method, this refers to the owner object and in a function, this refers to the global object.
+ a) The JavaScript this keyword refers to the object it belongs to. This has different values depending on where it is used. In a method, this refers to the owner object and in a function, this refers to the global object.
 
 10)How to create an array in JavaScript?
-There are 3 ways to create an array in JavaScript.
-
-1.By array literal
-2.By creating an instance of Array
-3.By using an Array constructor
-
+ a) There are 3 ways to create an array in JavaScript.
+By using array literal. 
+By creating an instance of Array.
+By using an Array constructor.
 Let's see a simple code to create an array using object literal.
 var emp=["Shyam","Vimal","Ratan"];
+
+11)Is JavaScript a statically typed or a dynamically typed language?
+ a) JavaScript is a dynamically typed language. In a dynamically typed language, the type of a variable is checked during run-time in contrast to a statically typed language, where the type of a variable is checked during compile-time.
+For example, a variable that is assigned a number type can be converted to a string type:
+var a = 23;
+var a = "Hello World!";
+
+12)What is NaN property in JavaScript?
+ A) NaN property represents “Not-a-Number” value. The ‘typeof’ of NaN will return a Number.
+To check if a value is NaN, we use the isNaN() function,
+Note- isNaN() function converts the given value to a Number type, and then equates to NaN.
+Example:
+isNaN("Hello")  // Returns true
+isNaN(345)   // Returns false
+isNaN('1')  // Returns false, since '1' is converted to Number type which results in 0 ( a number) 
+isNaN(true) // Returns false, since true converted to Number type results in 1 ( a number)
+isNaN(false) // Returns false
+isNaN(undefined) // Returns true
+
+13)Explain Higher Order Functions in JavaScript.
+ A) Functions that operate on other functions, either by taking them as arguments or by returning them, are called higher-order functions.
+Examples of higher-order functions:
+function higherOrder(fn) {
+ fn();
+}   
+higherOrder(function() { console.log("Hello world") });
+
+14)In JavaScript what is an argument object?
+ A) The variables of JavaScript represent the arguments that are passed to a function
+
+15)What is the difference between Undeclared & Undefined Variables?
+ A) The difference between Undeclared and undefined Variables are: An  undeclared  variable has not  been declared anywhere in the code, so said variable does not exist. If you try to read an undeclared variable, JavaScript throws an error.                                                An undefined variable has been declared in the program, but no value has been assigned. This means the variable exists, but its value is yet to be defined.
+
+16)How to write HTML code dynamically using JavaScript?
+ A) The innerHTML property is used to write the HTML code using JavaScript dynamically. Example:
+document.getElementById('mylocation').innerHTML="<h2>This is heading using JavaScript</h2>";
+
+17)What are Constructors in JavaScript?
+ A) Constructors are the most powerful members of a class which will be used for object Initialization. The special ability of a constructor is, it will be invoked only once during creation of an object.
+Example: function User(name) {
+  this.name = name;
+}
+let firstUser = new User('John Doe');
+
+18)What is DOM?
+ A) The Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document.
+
+19)How Can You Return a Character From a Specified Index?
+By Using the charAt() method, we can retrieve the first char at index 0 to fetch J: as seen in the example below
+let userName = "John"; 
+console.log(userName.charAt(0)); // "J"
+
+20)What are the arrow functions in JavaScript?
+ A) Arrow functions are a short and concise way of writing functions in JavaScript. It was introduced in ES6 specification. The general syntax of an arrow function is as below:
+const helloWorld = () => {
+ console.log("hello world!"); 
+};
+
+21)What is a specification?
+A) Specfication are the programming templates introduced by the Consortium( check spelling w3C) in collaboration & discussion with various vendors to implement the templates: for the developers to follow/use in their programs.
+Eg: w3c sets the standards & gives the tag names for HTML/CSS in discussion with various browser vendors. Different browser vendors will implement these tags, attributes & values with the same name as specified by the Consortium. Developers will use these tags, attribute & values in their programming.
+
+22)How do you create an object in JavaScript?
+ A) We can create objects in JavaScript using two ways. One is Instant object creation by mentioning properties inside flower braces within a program. 
+Other one is by creating a class template & later create object of that template by using the “new” keyword. 
+Example: const student = {
+name: 'John',
+ age: 17
+}
+
+23)What are the conventions of naming a variable in JavaScript?
+ A) Following are the naming conventions for a variable in JavaScript:
+Variable names cannot be same as reserved keywords. For example, var, let, const, etc.
+Variable names cannot begin with a numeric value. They must only begin with a letter or an underscore character.
+Variable names are case-sensitive.
+
+24)What is Callback in JavaScript?
+ A) In JavaScript, functions are objects and therefore, functions can take other functions as arguments and can also be returned by other functions.
+Fig: Reference doc file
+A callback is a JavaScript function that is passed to another function as an argument or a parameter. This function is to be executed whenever the function that it is passed  gets executed.
+
+25)How do you debug a JavaScript code?
+ A) All modern web browsers like Chrome, Firefox, etc. have an inbuilt debugger that can be accessed anytime by pressing the relevant key, usually the F12 key. There are several features available to users in the debugging tools.
+We can also debug a JavaScript code inside a code editor that we use to develop a JavaScript application—for example, Visual Studio Code, etc.
+
+26)What are the ways of adding JavaScript code in an HTML file?
+ A) There are primarily two ways of embedding JavaScript code:
+We can write JavaScript code within the script tag in the same HTML file; this is suitable when we need just a few lines of scripting within a web page.
+We can import a JavaScript source file into an HTML document; this adds all scripting capabilities to a web page without cluttering the code.
+
+27)What do you understand about cookies?
+ A) A cookie is generally a small data that is sent from a website and stored on the user’s machine by a web browser that will be used to access certain features in the designed website. Cookies are used to remember information for later use and also to record the browsing activity on a website.
+
+28)How would you create a cookie?
+ A) The simplest way of creating a cookie using JavaScript is as below:
+document.cookie = "key1 = value1; key2 = value2; expires = date";
+
+29)How would you read a cookie?
+ A) Reading a cookie using JavaScript is also very simple. We can use the document.cookie string that contains the cookies that we just created using that string.
+The document.cookie string keeps a list of name-value pairs separated by semicolons, where ‘name’ is the name of the cookie, and ‘value’ is its value. We can also use the split() method to break the cookie value into keys and values.
+
+30)What are the different ways an HTML element can be accessed in a JavaScript code?
+ A) Here are the ways an HTML element can be accessed in a JavaScript code:
+getElementByClass(‘classname’): Gets all the HTML elements that have the specified classname.
+getElementById(‘idname’): Gets an HTML element by its ID name.
+getElementbyTagName(‘tagname’): Gets all the HTML elements that have the specified tagname.
+querySelector(): Takes CSS style selector and returns the first selected HTML element.
+
+31)What are Closures in JavaScript?
+ A) Closures provide a better, and concise way of writing JavaScript code for the developers and programmers. Closures are created whenever a variable that is defined outside the current scope is accessed within the current scope.
+function hello(name) {
+var message = "hello " + name;
+ return function hello() {
+ console.log(message);
+ };
+}
+//generate closure
+var helloWorld = hello("World");
+//use closure
+helloWorld();
+
+32)What is the Session storage and Local storage?
+ A) Session Storage: The data stored in session storage gets expired or deleted when a page session ends.
+Local Storage: Websites store some data in local machine to reduce loading time; this data does not get deleted at the end of a browsing session.
+
+33)The difference between exec () and test () methods (Question realted to regax)
+ A) exec(): It is an expression method in JavaScript that is used to search a string with a specific pattern. 
+Once it has been found, the pattern will be returned directly, otherwise, it returns an “empty” result.
+     test () : It is an expression method in JavaScript that is also used to search a string with a specific pattern or text. 
+Once it has been found, the pattern will return the Boolean value 'true', else it returns ‘false’.
+
+34)What are object prototypes? 
+ A) Whenever we create a function using JavaScript, JavaScript engine will automatically attach with hidden properties and functions. This hidden properties & methods come from prototype.
+
+35)What is BOM?
+ A)  BOM is the Browser Object Model where users can interact with browsers that is a window, an initial object of the browser. The window object consists of a document, history, screen, navigator, location, and other attributes. Nevertheless, the window’s function can be called directly as well as by referencing the window.
+
+36)Types of errors in JavaScript
+ A) JavaScript  types of  errors are,
+Load time errors: Errors that come up when loading a web page, like improper syntax errors, are known as Load time errors and generate the errors dynamically.
+Runtime errors: Errors that come due to misuse of the command inside the HTML language.
+Logical errors: These are the errors that occur due to the bad logic performed on a function with a different operation.
+
+37)Difference between client-side and server-side.
+ A) Client-side JavaScript
+Client-side JavaScript is made up of fundamental language and predefined objects that perform JavaScript in a browser. 
+Also, it is automatically included in the HTML pages where the browser understands the script.
+     Server-side JavaScript 
+Server-side JavaScript is quite similar to Client-side JavaScript.
+Server-side JavaScript can be executed on a server. Eg: Node JS
+The server-side JavaScript is deployed once the server processing is done.
+
+38)Spread Operator(...).
+ A) It is an operater used to copy all properties in an object into a new object. 
+Eg:
+
+39)What are generator functions?
+ A) Generator functions are declared with a special class of functions and keywords using function*. It does not execute the code, however, it returns a generator object and handles the execution.
+
+40)What is Object Destructuring? (with examples)
+ A) Object destructuring is a method to extract elements from an array or an object.
+Example 1: Array Destructuring aam zindagi 
+const arr = [1, 2, 3];
+const first = arr[0];
+const second = arr[1];
+const third = arr[2];
+Example 2: Array Destructuring metos zindagi
+const arr = [1, 2, 3];
+const [first,second,third,fourth] = arr;
+console.log(first); // Outputs 1
+console.log(second); // Outputs 2
+console.log(third); // Outputs 3
+Example 3: Object Destructuring
+const obj = { a: 1, b: 2 };
+const { a, b } = obj;
+// is equivalent to:
+// const a = obj.a;
+// const b = obj.b;
+
+41)Difference between Async/Await and Generators .
+ A) Async/Await
+Async-await functions are executed sequentially one after another in an easier way.
+Async/Await function might throw an error when the value is returned.
+     Generators
+Generator functions are executed with one output at a time by the generator’s yield by yield. 
+The ‘value: X, done: Boolean’ is the output result of the Generator function.
+
+42)How do you empty an array in JavaScript?
+ A) There are a few ways in which we can empty an array in JavaScript:
+ By assigning array length to 0:
+var arr = [1, 2, 3, 4];
+arr.length = 0;
+ By assigning an empty array:
+var arr = [1, 2, 3, 4];
+arr = [];
+ By popping the elements of the array:
+var arr = [1, 2, 3, 4];
+while (arr.length > 0) {
+  arr.pop();
+}
+ By using the splice array function:
+var arr = [1, 2, 3, 4];
+arr.splice(0, arr.length);
+
+43)What is a prompt box?
+ A) A prompt box is a box that allows the user to enter input by providing a text box. A label and box will be provided to enter the text or number.
+
+44)How can you convert the string of any base to an integer in JavaScript?
+ A) The parseInt() function is used to convert numbers between different bases. parseInt() takes the string to be converted as its first parameter. The second parameter is the base of the given string.
+Example: parseInt ("4F", 16);
+
+45)What would be the result of 3+2+”7″?
+ A) Since 3 and 2 are integers, they will be added numerically. And since 7 is a string, its concatenation will be done. So the result would be 57.
+
+46)What are all the types of Pop up boxes available in JavaScript?
+ A) Alert
+      Confirm and
+      Prompt
+
+47)What is the difference between an alert box and a confirmation box?
+ A) An alert box displays only one button, which is the OK button.
+But a Confirmation box displays two buttons, namely OK and cancel.
+
+48)What are escape characters?
+ A) Escape characters (Backslash) is used when working with special characters in our javascript program like single quotes, double quotes, apostrophes, and ampersands. Place backslash before the characters to make it accept as a valid string input..
+Example:
+document. write "I m a "good" boy."
+document. write "I m a \"good\" boy."
+
+49)What a pop()method in JavaScript is?
+ A) The pop() method is similar to the shift() method, but the difference is that the Shift method works at the array’s start. The pop() method takes the last element off of the given array and returns it. The array on which it is called is then altered.
+Example:
+var cloths = ["Shirt", "Pant", "TShirt"];
+cloths.pop();
+//Now cloth becomes Shirt,Pant
+
+50)What is break and continue statements?
+ A) Break statement exits from the current loop.
+Continue statement continues with next iteration of the loop & skips the below statements.
+
+51)What is the use of a type of operator?
+ A) ‘Typeof’ is an operator used to return a string description of the type of a variable. 
+Example:console.log(typeof 42);  // Output: "number"
+console.log(typeof 'blubber');  // Output: "string"
+console.log(typeof true);  // Output: "boolean"
+console.log(typeof undeclaredVariable);  // Output: "undefined"
+
+52)Which keywords are used to handle exceptions?
+ A) Try… Catch—finally is used to handle exceptions in the JavaScript
+Example: 
+try{
+    Code
+}catch(exp){
+    Code to throw an exception.
+}finally{
+    Code runs either it finishes successfully or after catch
+}
 
 
