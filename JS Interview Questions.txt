@@ -418,3 +418,7 @@ A) @ innerHTML – It will process an HTML tag if found in a string
 A) There are two types of comments in JavaScript.
 Single Line Comment: It is represented by // (double forward slash)
 Multi-Line Comment: Slash represents it with asterisk symbol as /* write comment here */
+
+66) What are the falsy values in JavaScript, and how can we check if a value is falsy?
+A) Those values which become false while converting to Boolean are called falsy values.
+const falsyValues = ['', 0, null, undefined, NaN, false];
