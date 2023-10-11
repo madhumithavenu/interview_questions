@@ -392,3 +392,8 @@ var obj2 = obj;
 
 59) Self Invoking Functions
 A) Self Invoking Functions is an automatically invoked function expression followed by (), where it does not need to be requested. Nevertheless, the declaration of the function is not able to be invoked by itself.
+
+60) Advantages of using External JavaScript
+A) External Javascript allows web designers and developers to collaborate on HTML and javascript files.
+It also enables you to reuse the code.
+External javascript makes Code readability simple.
