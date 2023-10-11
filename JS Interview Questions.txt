@@ -422,3 +422,11 @@ Multi-Line Comment: Slash represents it with asterisk symbol as /* write comment
 66) What are the falsy values in JavaScript, and how can we check if a value is falsy?
 A) Those values which become false while converting to Boolean are called falsy values.
 const falsyValues = ['', 0, null, undefined, NaN, false];
+
+67) What is the use of Math object in JavaScript?
+A) The JavaScript math object provides several constants and methods to perform a mathematical operation. Unlike date object, it doesn't have constructors. For example:
+function display()  
+{  
+  document.writeln(Math.random());  
+}  
+display();
