@@ -413,3 +413,8 @@ A) Undefined means a variable has been declared but has not yet been assigned a 
 64) What is the difference between innerHTML & innerText?
 A) @ innerHTML – It will process an HTML tag if found in a string
    @ innerText – It will not process an HTML tag if found in a string
+
+65) How to write a comment in JavaScript?
+A) There are two types of comments in JavaScript.
+Single Line Comment: It is represented by // (double forward slash)
+Multi-Line Comment: Slash represents it with asterisk symbol as /* write comment here */
