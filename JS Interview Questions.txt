@@ -489,7 +489,7 @@ const str = "The quick brown fox jumps over the lazy dog";
 console.log(str.slice(31)); //'the lazy dog'
 console.log(str.slice(4,19)); //'quick brown fox'
 console.log(str.slice(-4)); //'dog'
-console.log(str.slice(-9,-5)); //'lazy'
+console.log(str.slice(-9,-4)); //'lazy'
 
 76) Explain split() method.
 A) The method takes a pattern input and divides the original string into an array of substring. The following returns an array as an output. The pattern here is know as "delimiter".
@@ -503,4 +503,5 @@ console.log(arr);  //[
   'e', 'r', ' ', 'l', 'a', 'z', 'y',
   ' ', 'd', 'o', 'g'
 ]
+
 
