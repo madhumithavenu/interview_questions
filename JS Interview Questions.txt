@@ -509,19 +509,31 @@ A) Template literals is a string in JavaScript enclosed by backticks(`) allowing
 
 78) What are the methods used in Array?
 A) 1.Length: The length property inside an array holds the real-time length of the object. We can access the length property using (.) dot operator.
-Example:
+Example:let age = [33, 55,67,18];
+        console.log(age.length); //4
 2.sort(): The sort method inside an array object will sort the elements inside. It will also return new sorted array reference but there is no need to catch the reference as previous reference will also work fine.
-Example:
+Example:const months = ['March', 'Jan', 'Feb', 'Dec'];
+        console.log(months.sort()); //[ 'Dec', 'Feb', 'Jan', 'March' ]
+	const arr = [1, 30, 4, 21, 10000];
+	console.log(arr.sort()); //[ 1, 10000, 21, 30, 4 ]
 3. reverse(): The reverse method reverses the content inside an array and returns the references to the same array.
-Example:
+Example:const reversed = arr.reverse();
+	console.log('reversed', reversed); //reversed [ 4, 30, 21, 10000, 1 ]
 4.push(): The push method adds the specified elements to the end of an array and returns only the new length values.
-Example:
+Example:const animals = ['goats', 'sheep'];
+	animals.push('dog', 'cat');
+	console.log(animals); //[ 'goats', 'sheep', 'dog', 'cat' ]
 5.pop(): The pop method removes the last element from an array and returns the element itself.
-Example:
+Example:animals.pop();
+	console.log(animals); //[ 'goats', 'sheep', 'dog' ]
 6.unshift(): The unshift method adds the specified element to the beginning of an array and returns the new length of the array.
-Example:
+Example:const arr = [1, 2, 3]
+	arr.unshift(4, 5);
+	console.log(arr);  //[ 4, 5, 1, 2, 3 ]
 7.shift(): The shift method removes the first element from an array and returns that removed element. This method changes the length of the array.
-Example: 
+Example: const arr1 = [1, 2, 3, 4];
+	arr1.shift();
+	console.log(arr1); //[ 2, 3, 4 ]
 
 79) What is Relational operators?
 A) The relational operators allows us to compare two values to see whether they are equal,unequal greater than or less than.
