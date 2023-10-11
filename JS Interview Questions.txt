@@ -310,11 +310,28 @@ try{
 }
 
 53)What are some of the built-in methods in JavaScript?
-A)Date()-Returns the present date and time
-concat()-Joins two strings and returns the new string
-push()-Adds an item to an array
-pop()-Removes and also returns the last element of an array
-round()-Rounds of the value to the nearest integer and then returns it
-length()-SReturns the length of a string
+A)Date()-Returns the present date and time.
+concat()-Joins two strings and returns the new string.
+push()-Adds an item to an array.
+pop()-Removes and also returns the last element of an array.
+round()-Rounds of the value to the nearest integer and then returns it.
+length()-SReturns the length of a string.
+
+54)What are Imports and Exports in JavaScript?
+A) Imports and exports help in writing modular code for our JavaScript applications. With the help of imports and exports, we can split a JavaScript code into multiple files in a project. This greatly simplifies the application source code and encourages code readability.
+calc.js
+export const sqrt = Math.sqrt;
+export function square(x) {
+  return x * x;
+}
+export function diag(x, y) {
+  return sqrt(square(x) + square(y));
+}
+This file exports two functions that calculate the squares and diagonal of the input respectively.
+main.js
+import { square, diag } from "calc";
+console.log(square(4)); // 16
+console.log(diag(4, 3)); // 5
+Therefore, here we import those functions and pass input to those functions to calculate square and diagonal.
 
 
