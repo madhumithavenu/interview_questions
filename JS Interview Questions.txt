@@ -424,8 +424,12 @@ A) External Javascript allows web designers and developers to collaborate on HTM
 It also enables you to reuse the code.
 External javascript makes Code readability simple.
 
-** eg reqiored 61) Can you assign an anonymous function to a variable and pass it as an argument to another function?
+61) Can you assign an anonymous function to a variable and pass it as an argument to another function?
 A) Yes! An anonymous function can be assigned to a variable. It can also be passed as an argument to another function.
+Example: var greet = function () { 
+        console.log("Welcome to GeeksforGeeks!"); 
+    	};       
+    	greet();
 
 *** make the definations more simple 62) What are the ways to define a variable in JavaScript?
 A) The three possible ways of defining a variable in JavaScript are:
