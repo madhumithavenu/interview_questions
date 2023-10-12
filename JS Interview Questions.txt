@@ -623,13 +623,13 @@ A) Yes, a regular expression can be used to validate a URL. Here’s an example:
 Example:   ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-])\/?$
 This regex works as follows:
 –>  ^ asserts start of line.
-– > (https?:\/\/)? matches the protocol (http or https), followed by ://. The question mark makes it optional.
-– > ([\da-z\.-]+) matches one or more digit, lowercase letter, dot or hyphen.
-– > \. matches a literal dot.
-– > ([a-z\.]{2,6}) matches between 2 and 6 of a lowercase letter or a dot.
-– > ([\/\w \.-]*) matches zero or more of a forward slash, word character, whitespace, dot or hyphen.
-– > \/? optionally matches a trailing slash.
-– > $ asserts end of line.
+–> (https?:\/\/)? matches the protocol (http or https), followed by ://. The question mark makes it optional.
+–> ([\da-z\.-]+) matches one or more digit, lowercase letter, dot or hyphen.
+–> \. matches a literal dot.
+–> ([a-z\.]{2,6}) matches between 2 and 6 of a lowercase letter or a dot.
+–> ([\/\w \.-]*) matches zero or more of a forward slash, word character, whitespace, dot or hyphen.
+–> \/? optionally matches a trailing slash.
+–> $ asserts end of line.
 
 96) How do you handle case sensitive and insensitive matches in Regular Expressions?
 A) Regular expressions handle case sensitivity through the use of flags. 
