@@ -572,3 +572,6 @@ A) The * operator is a quantifier, which indicates that the preceding element ca
 
 85) Which special character is used to find any single character that matches a pattern?
 A) The period (.) is used to find any single character that matches a pattern.
+
+86) What does the + operator do in a regular expression?
+A) The + operator is used to indicate one or more occurrences of the preceding element.
