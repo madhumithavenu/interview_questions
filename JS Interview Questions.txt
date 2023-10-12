@@ -611,9 +611,22 @@ A) There are many ways to use regular expressions to validate data. Some common 
 A) A regular expression to validate an email address pattern can be written as follows:
 Example:   /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/
 
-94)  How can you use Regular Expressions to split a string into an array?
+94) How can you use Regular Expressions to split a string into an array?
 A) Regular Expressions (regex) can be used to split a string into an array by using the split() method in JavaScript. This method splits a String object into an array of strings by separating the string into substrates.
 Example: let str = "Hello World! How are you today?";
 	let regex = /\s+/;            // Matches one or more whitespace characters
 	let result = str.split(regex);
 	console.log(result);     // Output: ["Hello", "World!", "How", "are", "you", "today?"]
+
+95) Can you write a Regular Expression to validate a URL?
+A) Yes, a regular expression can be used to validate a URL. Here’s an example:
+Example:   ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-])\/?$
+This regex works as follows:
+–>  ^ asserts start of line.
+– > (https?:\/\/)? matches the protocol (http or https), followed by ://. The question mark makes it optional.
+– > ([\da-z\.-]+) matches one or more digit, lowercase letter, dot or hyphen.
+– > \. matches a literal dot.
+– > ([a-z\.]{2,6}) matches between 2 and 6 of a lowercase letter or a dot.
+– > ([\/\w \.-]*) matches zero or more of a forward slash, word character, whitespace, dot or hyphen.
+– > \/? optionally matches a trailing slash.
+– > $ asserts end of line.
