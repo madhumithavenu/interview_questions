@@ -603,3 +603,6 @@ Output:    E,e,e
 91) What do the {} curly braces do in a regular expression?
 A) The curly braces are used to denote a quantifier in a regular expression. This means that they specify how many times a character, group, or element can be repeated in order for the expression to match. 
 For example, the expression /a{2}/ would match any string that contains the letter ‘a’ twice in a row, such as “aba” or “aaa”.
+
+92) Can you give me some examples of how you would use regular expressions to validate data?
+A) There are many ways to use regular expressions to validate data. Some common examples include checking for a valid email address, phone number, or credit card number. You can also use regular expressions to ensure that a string contains only certain characters, or to check that a string is of a certain length.
