@@ -606,3 +606,7 @@ For example, the expression /a{2}/ would match any string that contains the lett
 
 92) Can you give me some examples of how you would use regular expressions to validate data?
 A) There are many ways to use regular expressions to validate data. Some common examples include checking for a valid email address, phone number, or credit card number. You can also use regular expressions to ensure that a string contains only certain characters, or to check that a string is of a certain length.
+
+93) How would you write a Regular Expression to validate an email address pattern?
+A) A regular expression to validate an email address pattern can be written as follows:
+Example:   /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/
