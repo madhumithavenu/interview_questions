@@ -630,3 +630,8 @@ This regex works as follows:
 – > ([\/\w \.-]*) matches zero or more of a forward slash, word character, whitespace, dot or hyphen.
 – > \/? optionally matches a trailing slash.
 – > $ asserts end of line.
+
+96) How do you handle case sensitive and insensitive matches in Regular Expressions?
+A) Regular expressions handle case sensitivity through the use of flags. 
+For case sensitive matches, no flag is needed as it’s the default behavior.  For example, /abc/ will only match “abc”.
+For case insensitive matches, the ‘i’ flag is used. This makes the regular expression ignore case. For instance, /abc/i will match “abc”, “ABC”, “AbC”, etc.
