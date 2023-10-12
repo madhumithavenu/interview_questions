@@ -663,3 +663,9 @@ A) The .then() method is used to specify what should happen when a promise is re
 
 105) Can you explain what the .catch() method does?
 The .catch() method is used to handle errors that may occur in a Promise chain. The .catch() method takes a single argument, which is a function that will be executed if an error occurs. The .catch() method is typically used after a .then() method to handle any errors that may have occurred in the .then() method.
+
+106) Why should we avoid using callback functions?
+A) There are a few reasons why callback functions should be avoided:
+1. They can be hard to read and debug
+2. They can lead to what is known as “callback hell”
+3. Promises provide a simpler and more elegant way to handle asynchronous code
