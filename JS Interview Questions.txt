@@ -641,3 +641,7 @@ A) The pipe ‘|’ symbol in a Regular Expression (regex) is used as a logical 
 
 98) What is the difference between ‘\d’, ‘\w’, and ‘\s’ in Regular Expressions?
 A) ‘\d’, ‘\w’, and ‘\s’ are metacharacters in Regular Expressions, each with a unique function. ‘\d’ matches any digit from 0-9. It’s equivalent to [0-9]. On the other hand, ‘\w’ matches any alphanumeric character including underscore (). It is synonymous with [a-zA-Z0-9]. Lastly, ‘\s’ matches any whitespace character: spaces, tabs, line breaks etc. These metacharacters simplify pattern matching by representing common groups of characters.
+
+99) What is regular expression flags ?
+A)Regular expression flags sometimes called as modifiers , they are effect the way of pattren matching.
+Different kinds of flags available: /g,/i etc.
