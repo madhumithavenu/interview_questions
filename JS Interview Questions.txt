@@ -1,3 +1,5 @@
+Call Apply Bind, Regular Expressions, Prototype-Inheretance in JS, Classical Inheretance in JS, Promises, Asyncronus JS, call back, Architeture of JS (Event loop, web-api, stack-que), Node JS, Node & MQSQL, Node & MongoDB connection, NOde & Mysql Quering 
+
 1)What is JavaScript?
 A) JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive.
 
@@ -334,13 +336,19 @@ console.log(square(4)); // 16
 console.log(diag(4, 3)); // 5
 Therefore, here we import those functions and pass input to those functions to calculate square and diagonal.
 
+keywords import & export are Java Inspired & are only applicable for Browzer based ES6 Run time envoronment. & not Node based environent. 
+For Node based we use require() & module.exports inspired from Ruby.
+
+
 55) What are some of the JavaScript frameworks and their uses?
 A)JavaScript has a collection of many frameworks that aim towards fulfilling the different aspects of the web application development process. Some of the prominent frameworks are:
 React - Frontend development of a web application.
 Angular - Frontend development of a web application.
 Node - Backend or server-side development of a web application.
+Express
+EJS
 
-56) What is the difference between Call and Apply? (explain in detail with examples)
+***rEPAIR56) What is the difference between Call and Apply? (explain in detail with examples)
 A)Call-Call uses arguments separately.
 Example:
 function sayHello()
@@ -374,10 +382,10 @@ var b = 32;
 if(a) { console.log(a) }   // This code will run inside the block as the value of x is 0(Falsy)         
 if(b) { console.log(b) }    // This code will run inside the block as the value of y is 32 (Truthy)
 
-58) Passed by value and passed by reference 
+(change)58) What is Pass by value and pass by reference 
 A) Passed By Values Are Primitive Data Types.  
 Consider the following example:
-Here, the a=432 is a primitive data type i.e. a number type that has an assigned value by the operator.  When the var b=a code gets executed, the value of ‘var a’ returns a new address for ‘var b’ by allocating a new space in the memory, so that ‘var b’ will be operated at a new location. 
+Here, the var a=432 is a primitive data type i.e. a number type that has an assigned value by the operator.  When the var b = a; code gets executed, the value of ‘var a’ returns a new address for ‘var b’ by allocating a new space in the memory, so that ‘var b’ will be operated at a new location. 
 Example:
 var a = 432;
 var b = a;
@@ -390,7 +398,7 @@ Example:
 var obj = { name: "Raj", surname: "Sharma" };
 var obj2 = obj;
 
-59) Self Invoking Functions
+***example required 59) Self Invoking Functions
 A) Self Invoking Functions is an automatically invoked function expression followed by (), where it does not need to be requested. Nevertheless, the declaration of the function is not able to be invoked by itself.
 
 60) Advantages of using External JavaScript
@@ -398,19 +406,19 @@ A) External Javascript allows web designers and developers to collaborate on HTM
 It also enables you to reuse the code.
 External javascript makes Code readability simple.
 
-61) Can you assign an anonymous function to a variable and pass it as an argument to another function?
+** eg reqiored 61) Can you assign an anonymous function to a variable and pass it as an argument to another function?
 A) Yes! An anonymous function can be assigned to a variable. It can also be passed as an argument to another function.
 
-62) What are the ways to define a variable in JavaScript?
+*** make the definations more simple 62) What are the ways to define a variable in JavaScript?
 A) The three possible ways of defining a variable in JavaScript are:
 (i) Var – The JavaScript variables statement is used to declare a variable and, optionally, we can initialize the value of that variable. Example: var a =10; Variable declarations are processed before the execution of the code.
 (ii) Const – The idea of const functions is not allow them to modify the object on which they are called. When a function is declared as const, it can be called on any type of object.
 (iii) Let – It is a signal that the variable may be reassigned, such as a counter in a loop, or a value swap in an algorithm. It also signals that the variable will be used only in the block it’s defined in.
 
 63) What is the difference between null & undefined?
-A) Undefined means a variable has been declared but has not yet been assigned a value. On the other hand, null is an assignment value. It can be assigned to a variable as a representation of no value. Also, undefined and null are two distinct types: undefined is a type itself (undefined) while null is an object.
+A) Undefined means a variable has been declared but has not yet been assigned a value. On the other hand, null is an assignment value. It can be assigned to a variable as a representation of no value. Also, undefined and null are two distinct types: undefined is a data-type by itself (undefined) while null is an object.
 
-64) What is the difference between innerHTML & innerText?
+***Expkain with an example 64) What is the difference between innerHTML & innerText?
 A) @ innerHTML – It will process an HTML tag if found in a string
    @ innerText – It will not process an HTML tag if found in a string
 
@@ -420,11 +428,11 @@ Single Line Comment: It is represented by // (double forward slash)
 Multi-Line Comment: Slash represents it with asterisk symbol as /* write comment here */
 
 66) What are the falsy values in JavaScript, and how can we check if a value is falsy?
-A) Those values which become false while converting to Boolean are called falsy values.
-const falsyValues = ['', 0, null, undefined, NaN, false];
+A) Those values which become false while converting to Boolean are called falsy values. when used inside a relational expresson turns into false
+const falsyValues = ['', 0, null, undefined, NaN, false]; 
 
 67) What is the use of Math object in JavaScript?
-A) The JavaScript math object provides several constants and methods to perform a mathematical operation. Unlike date object, it doesn't have constructors. For example:
+A) The JavaScript Math object provides several constants and methods to perform a mathematical operation. Unlike date object, it doesn't have constructors. For example:
 function display()  
 {  
   document.writeln(Math.random());  
@@ -464,7 +472,7 @@ document.writeln(10<5);//false
 }     
 display();
 
-71) What is identifier?
+71) What is an identifier?
 A) An identifier is the name given to a variable or a function or a class in a javascript program.
 
 72) What are the rules while declaring JavaScript Variable?
@@ -540,3 +548,6 @@ A) The relational operators allows us to compare two values to see whether they 
 
 80) What is search() method?
 A) The search() method executes a search for a match between a regular expression and the current string object. 
+
+81) What is a regular expression?
+A) A regular expression is a sequence of characters that forms a search pattern. It is used to find patterns in strings or sets of strings.
