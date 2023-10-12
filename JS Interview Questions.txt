@@ -660,3 +660,6 @@ A) Yes, it is possible to chain promises together. This can be done by returning
 
 104) Can you explain what the .then() method does?
 A) The .then() method is used to specify what should happen when a promise is resolved. This is usually used to chain together multiple promises, so that each promise is executed in order. The .then() method can also take two arguments: a success callback and a failure callback. The success callback will be executed if the promise is resolved, and the failure callback will be executed if the promise is rejected.
+
+105) Can you explain what the .catch() method does?
+The .catch() method is used to handle errors that may occur in a Promise chain. The .catch() method takes a single argument, which is a function that will be executed if an error occurs. The .catch() method is typically used after a .then() method to handle any errors that may have occurred in the .then() method.
