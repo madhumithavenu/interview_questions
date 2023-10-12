@@ -581,3 +581,8 @@ A) The ? operator is a quantifier that specifies how many times an element can o
 
 88) What does the . operator do in a regular expression?
 A) The . operator is a wildcard character that matches any character except for a newline character.
+
+89) What do the ^ and $ operators do in a regular expression?
+A) The ^ operator matches the beginning of a string, while the $ operator matches the end of a string. These operators are often used together to match an entire string, from start to finish.
+Example: ^a Search all string which start with "a".
+	a$ Search all string which end with "a".
