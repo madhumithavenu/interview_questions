@@ -645,3 +645,9 @@ A) ‘\d’, ‘\w’, and ‘\s’ are metacharacters in Regular Expressions, e
 99) What is regular expression flags ?
 A)Regular expression flags sometimes called as modifiers , they are effect the way of pattren matching.
 Different kinds of flags available: /g,/i etc.
+
+100) Is regular expression different in all languages?
+A) The syntax may vary slightly in other languages but has the same concept. The specific meaning of the metacharacters may also vary.
+
+101) What is a promise?
+A) A promises in JavaScript are used o handle asynchronous operations. A promise is an object that keeps track about whether a certain events happened already or not. It also determines what will happen after an event.
