@@ -610,3 +610,10 @@ A) There are many ways to use regular expressions to validate data. Some common 
 93) How would you write a Regular Expression to validate an email address pattern?
 A) A regular expression to validate an email address pattern can be written as follows:
 Example:   /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/
+
+94)  How can you use Regular Expressions to split a string into an array?
+A) Regular Expressions (regex) can be used to split a string into an array by using the split() method in JavaScript. This method splits a String object into an array of strings by separating the string into substrates.
+Example: let str = "Hello World! How are you today?";
+	let regex = /\s+/;            // Matches one or more whitespace characters
+	let result = str.split(regex);
+	console.log(result);     // Output: ["Hello", "World!", "How", "are", "you", "today?"]
