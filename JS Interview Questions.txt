@@ -431,18 +431,21 @@ Example: var greet = function () {
     	};       
     	greet();
 
-*** make the definations more simple 62) What are the ways to define a variable in JavaScript?
+62) What are the ways to define a variable in JavaScript?
 A) The three possible ways of defining a variable in JavaScript are:
-(i) Var – The JavaScript variables statement is used to declare a variable and, optionally, we can initialize the value of that variable. Example: var a =10; Variable declarations are processed before the execution of the code.
-(ii) Const – The idea of const functions is not allow them to modify the object on which they are called. When a function is declared as const, it can be called on any type of object.
-(iii) Let – It is a signal that the variable may be reassigned, such as a counter in a loop, or a value swap in an algorithm. It also signals that the variable will be used only in the block it’s defined in.
+(i) var – var is the old keyword of JavaScript which will hoist the variable at the function level. 
+Example: var a =10; Variable declarations are processed before the execution of the code.
+(ii) const – const is a keyword used to declare a variable which stores a constant value throughout the scope and it cannot be hoisted.
+(iii) let – let is a keyword used to declare a variable within  a specified scope and kills the variable after the scope ends.
 
 63) What is the difference between null & undefined?
 A) Undefined means a variable has been declared but has not yet been assigned a value. On the other hand, null is an assignment value. It can be assigned to a variable as a representation of no value. Also, undefined and null are two distinct types: undefined is a data-type by itself (undefined) while null is an object.
 
-***Expkain with an example 64) What is the difference between innerHTML & innerText?
+64) What is the difference between innerHTML & innerText?
 A) @ innerHTML – It will process an HTML tag if found in a string
+   Example: document.getElementsByTagName('body')[0].innerHTML = '<div id="gator">Alligators rule!!</div>';
    @ innerText – It will not process an HTML tag if found in a string
+   Example: document.getElementById('gator').innerText = 'OF COURSE alligators rule!';
 
 65) How to write a comment in JavaScript?
 A) There are two types of comments in JavaScript.
