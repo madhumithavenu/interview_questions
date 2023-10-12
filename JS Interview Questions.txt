@@ -566,3 +566,6 @@ Example: var str = "Hello, welcome to edureka! 1 12 123";
 	ell,el,e,e,e
 	,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,1,,,1,,,
 	12,12
+
+84) What does the * operator do in a regular expression?
+A) The * operator is a quantifier, which indicates that the preceding element can be matched zero or more times.
