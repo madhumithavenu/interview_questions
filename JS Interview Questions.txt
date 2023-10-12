@@ -635,3 +635,6 @@ This regex works as follows:
 A) Regular expressions handle case sensitivity through the use of flags. 
 For case sensitive matches, no flag is needed as it’s the default behavior.  For example, /abc/ will only match “abc”.
 For case insensitive matches, the ‘i’ flag is used. This makes the regular expression ignore case. For instance, /abc/i will match “abc”, “ABC”, “AbC”, etc.
+
+97) Can you explain how you’d use the pipe ‘|’ symbol in a Regular Expression?
+A) The pipe ‘|’ symbol in a Regular Expression (regex) is used as a logical OR operator. It matches the pattern before or after it. For instance, ‘a|b’ will match either ‘a’ or ‘b’.
