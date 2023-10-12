@@ -586,3 +586,16 @@ A) The . operator is a wildcard character that matches any character except for 
 A) The ^ operator matches the beginning of a string, while the $ operator matches the end of a string. These operators are often used together to match an entire string, from start to finish.
 Example: ^a Search all string which start with "a".
 	a$ Search all string which end with "a".
+
+90) What do the [] square brackets do in a regular expression?
+A) The [] square brackets are used to create a character class, which is a set of characters that can be matched by a single character. 
+For example, the character class [abc] will match any of the characters a, b, or c.
+Example2:  var str = "Edureka Online 123";
+	var ex1 = /[e]/gi;&nbsp; &nbsp; //[abc]
+	var ex2 = /[^e]/gi;&nbsp; &nbsp;//[^abc]
+	var ex3 = /[2]/g;&nbsp; &nbsp; &nbsp; //[0-9]
+	var ex4 = /[^2]/g;&nbsp; &nbsp; &nbsp;//[^0-9]
+Output:    E,e,e
+	d,u,r,k,a,O,n,l,i,n,1,2,3
+	2
+	E,d,u,r,e,k,a,O,n,l,i,n,e,1,3
