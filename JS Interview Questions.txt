@@ -657,3 +657,6 @@ A) A promise can be in one of three states during its lifetime: pending, fulfill
 
 103) Is it possible to chain promises together? If yes, then how?
 A) Yes, it is possible to chain promises together. This can be done by returning a promise from the then() function of a previous promise. The returned promise will then be resolved or rejected based on the resolution of the promise that it is chained to.
+
+104) Can you explain what the .then() method does?
+A) The .then() method is used to specify what should happen when a promise is resolved. This is usually used to chain together multiple promises, so that each promise is executed in order. The .then() method can also take two arguments: a success callback and a failure callback. The success callback will be executed if the promise is resolved, and the failure callback will be executed if the promise is rejected.
