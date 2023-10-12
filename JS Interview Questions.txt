@@ -599,3 +599,7 @@ Output:    E,e,e
 	d,u,r,k,a,O,n,l,i,n,1,2,3
 	2
 	E,d,u,r,e,k,a,O,n,l,i,n,e,1,3
+
+91) What do the {} curly braces do in a regular expression?
+A) The curly braces are used to denote a quantifier in a regular expression. This means that they specify how many times a character, group, or element can be repeated in order for the expression to match. 
+For example, the expression /a{2}/ would match any string that contains the letter ‘a’ twice in a row, such as “aba” or “aaa”.
