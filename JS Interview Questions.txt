@@ -207,7 +207,11 @@ The server-side JavaScript is deployed once the server processing is done.
 
 38)Spread Operator(...).
 A) It is an operater used to copy all properties in an object into a new object. 
-Eg:
+Example: function sum(x, y, z) {
+  	return x + y + z;
+	}
+	const numbers = [1, 2, 3];
+	console.log(sum(...numbers)); // Expected output: 6
 
 39)What are generator functions?
 A) Generator functions are declared with a special class of functions and keywords using function*. It does not execute the code, however, it returns a generator object and handles the execution.
@@ -348,24 +352,32 @@ Node - Backend or server-side development of a web application.
 Express
 EJS
 
-***rEPAIR56) What is the difference between Call and Apply? (explain in detail with examples)
-A)Call-Call uses arguments separately.
-Example:
-function sayHello()
-{
-  return "Hello " + this.name;
-}      
-var obj = {name: "Sandy"};      
-sayHello.call(obj); // Returns "Hello Sandy"
+56) What is the difference between Call and Apply? (explain in detail with examples)
+A)call() Method: The call() is a method in JavaScript that helps us to call a function with a given object as the 'this' value. The call() method takes all the arguments individually.
+apply() Method: The apply() method is similar to the call() method. The only difference is that the apply() method takes an array as the argument whereas they were taken individually as arguments in the case of the call() method.
+bind() Method: The bind() method is used to create a new function from another function with a given object as the this argument. It creates a copy of the function and then binds it to the object for which it was called. It does not immediately invoke the function and the new copy needs to be invoked separately.
+Example: const personOne = {
+  firstName : "Elon",
+  secondName : "Musk"
+}
 
-Apply-Apply uses an argument as an array.
-Example:
-function saySomething(message)
-{
-  return this.name + " is " + message;
-}        
-var person4 = {name:  "John"};
-saySomething.apply(person4, ["awesome"]);
+const getFullName = function(company, country) {
+  console.log(this.firstName + " " + this.secondName + ", " + company + ", " + country);
+}
+
+const personTwo = {
+  firstName : "Mark",
+  secondName : "Zuckerburg"
+}
+
+getFullName.call(personOne, "Tesla", "United States");    // outputs Elon Musk, Tesla, United States
+getFullName.call(personTwo, "Facebook", "United States");    // outputs Mark Zuckerberg, Facebook, United States
+
+getFullName.apply(personOne, ["Tesla", "United States"]);    // outputs Elon Musk, Tesla, United States
+getFullName.apply(personTwo, ["Facebook", "United States"]);    // outputs Mark Zuckerberg, Facebook, United States
+
+const getPersonOneDetails = getFullName.bind(personOne, ["Tesla", "United States"]); 
+getPersonOneDetails();    // outputs Elon Musk, Tesla, United States
 
 57) Implicit Type Coercion in javascript (in detail with examples)
 A) When the value of one data type is automatically converted into another data type, it is called Implicit type coercion in javascript.
@@ -382,24 +394,30 @@ var b = 32;
 if(a) { console.log(a) }   // This code will run inside the block as the value of x is 0(Falsy)         
 if(b) { console.log(b) }    // This code will run inside the block as the value of y is 32 (Truthy)
 
-(change)58) What is Pass by value and pass by reference 
-A) Passed By Values Are Primitive Data Types.  
-Consider the following example:
-Here, the var a=432 is a primitive data type i.e. a number type that has an assigned value by the operator.  When the var b = a; code gets executed, the value of ‘var a’ returns a new address for ‘var b’ by allocating a new space in the memory, so that ‘var b’ will be operated at a new location. 
-Example:
-var a = 432;
-var b = a;
-Passed_by_values_new
+58) What is Pass by value and pass by reference 
+A) In Pass by Value, Function is called by directly passing the value of the variable as the argument. Changing the argument inside the function doesn’t affect the variable passed from outside the function. 
+Example: function multiplication(tmp) {
+    	tmp = tmp * 50;
+    	return tmp;
+	}
+	var num = 30;
+	var result = multiplication(num);
+	console.log(num); // 30
+	console.log(result); // 1500
+In Pass by Reference, Function is called by directly passing the reference/address of the variable as the argument. Changing the argument inside the function affect the variable passed from outside the function. In Javascript objects and arrays follows pass by reference.
+Example: let obj1 = {website: "Scaler Academy"}
+	let obj2 = obj1;
+	console.log(obj1)     // {website: "Scaler Academy"}
+	console.log(obj2)     // {website: "Scaler Academy"}
+	obj1.website = "Scaler Topics"
+	console.log(obj1)     // {website: "Scaler Topics"}
+	console.log(obj2)     // {website: "Scaler Topics"}
 
-Passed by References Are Non-primitive Data Types.
-Consider the following example:
-The reference of the 1st variable object i.e. ‘var obj’ is passed through the location of another variable i.e. ‘var obj2’ with the help of an assigned operator.
-Example: 
-var obj = { name: "Raj", surname: "Sharma" };
-var obj2 = obj;
-
-***example required 59) Self Invoking Functions
+59) Self Invoking Functions
 A) Self Invoking Functions is an automatically invoked function expression followed by (), where it does not need to be requested. Nevertheless, the declaration of the function is not able to be invoked by itself.
+Example: (function () {
+  	let x = "Hello!!";  // I will invoke myself
+	})(); //output:Hello
 
 60) Advantages of using External JavaScript
 A) External Javascript allows web designers and developers to collaborate on HTML and javascript files.
