@@ -638,3 +638,6 @@ For case insensitive matches, the ‘i’ flag is used. This makes the regular e
 
 97) Can you explain how you’d use the pipe ‘|’ symbol in a Regular Expression?
 A) The pipe ‘|’ symbol in a Regular Expression (regex) is used as a logical OR operator. It matches the pattern before or after it. For instance, ‘a|b’ will match either ‘a’ or ‘b’.
+
+98) What is the difference between ‘\d’, ‘\w’, and ‘\s’ in Regular Expressions?
+A) ‘\d’, ‘\w’, and ‘\s’ are metacharacters in Regular Expressions, each with a unique function. ‘\d’ matches any digit from 0-9. It’s equivalent to [0-9]. On the other hand, ‘\w’ matches any alphanumeric character including underscore (). It is synonymous with [a-zA-Z0-9]. Lastly, ‘\s’ matches any whitespace character: spaces, tabs, line breaks etc. These metacharacters simplify pattern matching by representing common groups of characters.
