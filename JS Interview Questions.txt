@@ -755,7 +755,7 @@ A) A superclass is a class that is inherited from by other classes, while a subc
 A) Advantages include code reusability, well-structured, easier maintenance, and encapsulation. Disadvantages include tight coupling, the potential for complexity, inflexibility, unintended side effects, and difficulty managing multiple inheritances (requires mixins).
 
 115) Can you name the six flags used in regular expressions?
-A)  Regular expressions may have flags that affect the search. There are only 6 of them in JavaScript, including the i, g, m, s, u, and y regular expression flags:
+A) Regular expressions may have flags that affect the search. There are only 6 of them in JavaScript, including the i, g, m, s, u, and y regular expression flags:
 Flag Descriptions:
 With the i flag the search is set to case insensitive.
 The g flag the search is set to global and looks for all matches, without it only the first search match is returned.
