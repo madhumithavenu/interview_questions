@@ -706,7 +706,7 @@ Example: function Person() {}                            // Person is a construc
 	Object.getPrototypeOf(personA) === Person.prototype; // true
 	personA.proto === Object.getPrototypeOf(personA); // true
 
-108) What is the difference between proto and [[Prototype]]?
+108) What is the difference between proto and [[Prototype]] ?
 A) [[Prototype]] is a special hidden property in JavaScript objects, but because it cannot be directly accessed, it can be accessed through the proto access method.
 
 109) What is the difference between proto and prototype?
