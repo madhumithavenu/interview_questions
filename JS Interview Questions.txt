@@ -777,7 +777,7 @@ Example:let str = '10';
 	let result = Number(str) + num;    // str is explicitly converted to a number.
 	console.log(result);     // Output: 15
 
-119)  Can you explain the difference between a Binary, and Unary operand?
+119) Can you explain the difference between a Binary, and Unary operand?
 A)  There are two types of mathematical operators: unary and binary. Unary operators act with a single operand, and Binary operators perform actions with two operands. Unary operators are arithmetic operators that act on a single operand.
 Example of Unary Operand:
 	let x = 1;
