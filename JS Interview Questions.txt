@@ -772,7 +772,7 @@ A) In prototypal inheritance, objects inherit directly from other objects, where
 
 118) What is Explicit Conversion?
 A) Here, we're explicitly converting a string to a number using the Number() function before adding it to another number.
-Example:  let str = '10';
+Example:let str = '10';
 	let num = 5;
 	let result = Number(str) + num;    // str is explicitly converted to a number.
 	console.log(result);     // Output: 15
