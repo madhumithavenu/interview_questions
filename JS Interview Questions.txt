@@ -751,7 +751,7 @@ A) The "extends" keyword in JavaScript class inheritance creates a subclass that
 113) What is a superclass and a subclass?
 A) A superclass is a class that is inherited from by other classes, while a subclass is a class that inherits properties and methods from a superclass.
 
-114) What are the advantages and disadvantages of using class inheritance in JavaScript?
+114)What are the advantages and disadvantages of using class inheritance in JavaScript?
 A) Advantages include code reusability, well-structured, easier maintenance, and encapsulation. Disadvantages include tight coupling, the potential for complexity, inflexibility, unintended side effects, and difficulty managing multiple inheritances (requires mixins).
 
 115) Can you name the six flags used in regular expressions?
