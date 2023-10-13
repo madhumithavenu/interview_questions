@@ -903,3 +903,82 @@ Example:	const Teachers = [
 			science
 			sneha
 			Social
+
+
+
+Node
+
+1) What is Node.js? Where can you use it?
+A) Node.js is an open-source, cross-platform JavaScript runtime environment and library to run web applications outside the client’s browser. It is used to create server-side web applications.
+
+2) Why use Node.js?
+A) Node.js makes building scalable network programs easy. Some of its advantages include:
+-It is generally fast
+-It rarely blocks
+-It offers a unified programming language and data type
+-Everything is asynchronous
+
+3) What is npm?
+A) npm stands for Node Package Manager, responsible for managing all the packages and modules for Node.js.
+Node Package Manager provides two main functionalities:
+-Provides online repositories for node.js packages/modules, which are searchable on search.nodejs.org
+-Provides command-line utility to install Node.js packages and also manages Node.js versions and dependencies
+
+4) What are the modules in Node.js?
+A) Modules are like JavaScript libraries that can be used in a Node.js application to include a set of functions. To include a module in a Node.js application, use the require() function with the parentheses containing the module's name.
+
+5) Why is Node.js preferred over other backend technologies like Java and PHP?
+A) Some of the reasons why Node.js is preferred include:
+-Node.js is very fast
+-Node Package Manager has over 50,000 bundles available at the developer’s disposal
+-Perfect for data-intensive, real-time web applications, as Node.js never waits for an API to return data
+-Better synchronization of code between server and client due to same code base
+-Easy for web developers to start using Node.js in their projects as it is a JavaScript library
+
+6) Which database is more popularly used with Node.js?
+A) MongoDB is the most common database used with Node.js. It is a NoSQL, cross-platform, document-oriented database that provides high performance, high availability, and easy scalability.
+
+7) What are some of the most commonly used libraries in Node.js?
+A) There are two commonly used libraries in Node.js:
+-ExpressJS - Express is a flexible Node.js web application framework that provides a wide set of features to develop web and mobile applications.
+-Mongoose - Mongoose is also a Node.js web application framework that makes it easy to connect an application to a database.
+
+8) What is the package.json file?
+A) The package.json file is the heart of a Node.js system. This file holds the metadata for a particular project. The package.json file is found in the root directory of any Node application or module.
+This is what a package.json file looks like immediately after creating a Node.js project using the command: npm init
+You can edit the parameters when you create a Node.js project.
+node-npm
+
+9) Explain the concept of middleware in Node.js.
+A) Middleware is a function that receives the request and response objects. Most tasks that the middleware functions perform are:  
+-Execute any code
+-Update or modify the request and the response objects
+-Finish the request-response cycle
+-Invoke the next middleware in the stack
+
+10) What are the different types of HTTP requests?
+A) HTTP defines a set of request methods used to perform desired actions. The request methods include:
+-> GET: Used to retrieve the data
+-> POST: Generally used to make a change in state or reactions on the server
+-> DELETE: Used to delete the predetermined resource
+
+11) How do you install and delete a dependency?
+A) For installing dependencies we use npm install or npm i
+Example: npm install express
+	npm install mongoose
+	npm install nodemon --save-dev // Intalling for user dependency
+For deleting we use npm uninstall
+Example: npm uninstall express 
+
+12) What are some commonly used timing features of Node.js?
+A) Following is a list of some commonly used timing features of Node.js:
+->setTimeout/clearTimeout: This timing feature of Node.js is used to implement delays in the code execution.
+->setInterval/clearInterval: The setInterval or clearInterval timing feature is used to run a code block multiple times in the application.
+->setImmediate/clearImmediate: This timing feature of Node.js is used to set the execution of the code at the end of the event loop cycle.
+->nextTick: This timing feature sets the execution of code at the beginning of the next event loop cycle.
+
+13) What are buffers in Node.js?
+A) In general, a buffer is a temporary memory mainly used by the stream to hold on to some data until it is consumed. Buffers are used to represent a fixed-size chunk of memory allocated outside of the V8 JavaScript engine. It can't be resized.
+
+14) Is it possible to access DOM in Node?
+A) No, it is not possible to access DOM in Node.
