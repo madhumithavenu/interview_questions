@@ -622,7 +622,13 @@ Example: let text = "That's hot!";
 89) What do the ^ and $ operators do in a regular expression?
 A) The ^ operator matches the beginning of a string, while the $ operator matches the end of a string. These operators are often used together to match an entire string, from start to finish.
 Example: ^a Search all string which start with "a".
-	a$ Search all string which end with "a".
+	 a$ Search all string which end with "a".
+Example2: let text = "Is this his";
+          let pattern = /^Is/g;
+	  let result = text.match(pattern); //Is
+Example3: let text = "Is this his";
+	  let pattern = /is$/;
+	  let result = text.match(pattern); //is
 
 90) What do the [] square brackets do in a regular expression?
 A) The [] square brackets are used to create a character class, which is a set of characters that can be matched by a single character. 
