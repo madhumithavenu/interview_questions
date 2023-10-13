@@ -694,3 +694,95 @@ A) There are a few reasons why callback functions should be avoided:
 1. They can be hard to read and debug
 2. They can lead to what is known as “callback hell”
 3. Promises provide a simpler and more elegant way to handle asynchronous code
+
+107) What is prototype?
+A) In JavaScript, each object contains an internal hidden property [[Prototype]], which corresponds to the prototype of that object, which may be null or point to another object. However, since [[Prototype]] is an internal property that cannot be accessed directly, the browser provides the proto access method, which can be referenced in the following code.
+But we need to pay attention that the proto method is not in the ECMAScript specification. In fact, when developing, we will use Object.getPrototypeOf to get the prototype of the object.
+Example: function Person() {}                            // Person is a constructor function
+	const personA = new Person();             // Create a personA object through the Person constructor function
+	console.log(personA.proto); // output: {constructor: ƒ}             // Through the proto method, view the prototype of personA
+
+	personA.proto === Person.prototype; // output: true       // personA object can be accessed to its prototype through the proto method
+	Object.getPrototypeOf(personA) === Person.prototype; // true
+	personA.proto === Object.getPrototypeOf(personA); // true
+
+108) What is the difference between proto and [[Prototype]]?
+A) [[Prototype]] is a special hidden property in JavaScript objects, but because it cannot be directly accessed, it can be accessed through the proto access method.
+
+109) What is the difference between proto and prototype?
+A) proto and prototype are different properties. proto is a hidden property of each object, and each object can access its prototype through proto. And prototype is a property that exists in all constructor functions, and the prototype of the constructor function is actually the same as the __proto, which is called the prototype object.
+Example:    function Person() {}           // Person is a constructor function
+	   const personA = new Person();     // Create a personA object through the Person constructor function
+	   personA.proto === Person.prototype;    // true
+
+110) What is the prototype chain?
+A) Prototype is a special hidden property in JavaScript objects, and each object can access its prototype through proto. The prototype itself is an object, so it also has its own prototype. When we try to access an attribute of an object, if the object does not have the required attribute, it will look for it in its prototype. If the prototype still does not find it, it will continue to look up one level until it is found, or until it reaches null. This continuous path is called the prototype chain, and the end of the chain is null.
+Example:     personA.proto.proto.proto === null;
+
+111) What is class inheritance in JavaScript?
+A) Class inheritance in JavaScript allows a subclass to inherit properties and methods from a parent class, enabling code reuse and reducing redundancy.
+Example:class Animal {
+ 	 constructor(name) {
+	    this.name = name;
+	  }
+	  speak() {
+	    console.log(`${this.name} makes a sound.`);
+	  }
+	}
+	class Dog extends Animal {
+	  constructor(name, breed) {
+	    super(name);
+	    this.breed = breed;
+	  }
+	  speak() {
+	    console.log(`${this.name} barks!`);
+	  }
+	  fetch() {
+	    console.log(`${this.name} fetches the ball.`);
+	  }
+	}
+	const myDog = new Dog("Buddy", "Golden Retriever");
+	myDog.speak(); // Output: "Buddy barks!"
+	myDog.fetch(); // Output: "Buddy fetches the ball."
+
+112) How does the ‘extends’ keyword work in JavaScript class inheritance?
+A) The "extends" keyword in JavaScript class inheritance creates a subclass that inherits properties and methods from a parent class, and can also define new properties and methods.
+
+113) What is a superclass and a subclass?
+A) A superclass is a class that is inherited from by other classes, while a subclass is a class that inherits properties and methods from a superclass.
+
+114) What are the advantages and disadvantages of using class inheritance in JavaScript?
+A) Advantages include code reusability, well-structured, easier maintenance, and encapsulation. Disadvantages include tight coupling, the potential for complexity, inflexibility, unintended side effects, and difficulty managing multiple inheritances (requires mixins).
+
+115) Can you name the six flags used in regular expressions?
+A)  Regular expressions may have flags that affect the search. There are only 6 of them in JavaScript, including the i, g, m, s, u, and y regular expression flags:
+Flag Descriptions:
+With the i flag the search is set to case insensitive.
+The g flag the search is set to global and looks for all matches, without it only the first search match is returned.
+The m flag represents a query in multiline mode.
+The s flag enables dot all mode allows a dot to match the newline character.
+The u enables full Unicode support, the flag enables correct processing of surrogate pairs.
+Sticky flag y sets the stick mode that allows search for the exact position of the text.
+
+116) What makes JavaScript unique?
+A)  JavaScript is unique because it fully integrates with HTML and CSS, and all major browsers support it. JavaScript is the only browser technology that combines, all three of these features. That distinguishes JavaScript, and explains why it is the most widely used technology for designing browser interfaces.
+
+117) What is the difference between prototypal and classical inheritance?
+A) In prototypal inheritance, objects inherit directly from other objects, whereas in classical inheritance, objects inherit from classes. JavaScript uses prototypal inheritance.
+
+118) What is Explicit Conversion?
+Here, we're explicitly converting a string to a number using the Number() function before adding it to another number.
+Example:  let str = '10';
+	let num = 5;
+	let result = Number(str) + num;    // str is explicitly converted to a number.
+	console.log(result);     // Output: 15
+
+119)  Can you explain the difference between a Binary, and Unary operand?
+A)  There are two types of mathematical operators: unary and binary. Unary operators act with a single operand, and Binary operators perform actions with two operands. Unary operators are arithmetic operators that act on a single operand.
+Example of Unary Operand:
+	let x = 1;
+	x = -x;
+	console.log(x); // -1, unary negation was applied
+Example of Binary Operands:let x = 1,
+	  y = 3;
+	console.log(y - x); // 2, binary minus subtracts values
