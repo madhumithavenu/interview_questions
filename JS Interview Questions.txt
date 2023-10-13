@@ -698,11 +698,10 @@ A) There are a few reasons why callback functions should be avoided:
 107) What is prototype?
 A) In JavaScript, each object contains an internal hidden property [[Prototype]], which corresponds to the prototype of that object, which may be null or point to another object. However, since [[Prototype]] is an internal property that cannot be accessed directly, the browser provides the proto access method, which can be referenced in the following code.
 But we need to pay attention that the proto method is not in the ECMAScript specification. In fact, when developing, we will use Object.getPrototypeOf to get the prototype of the object.
-Example: function Person() {}                            // Person is a constructor function
+Example:function Person() {}                            // Person is a constructor function
 	const personA = new Person();             // Create a personA object through the Person constructor function
-	console.log(personA.proto); // output: {constructor: ƒ}             // Through the proto method, view the prototype of personA
-
-	personA.proto === Person.prototype; // output: true       // personA object can be accessed to its prototype through the proto method
+	console.log(personA.proto); //output:{constructor:ƒ}//Through the proto method, view the prototype of personA
+	personA.proto === Person.prototype; //output: true// personA object can be accessed to its prototype through 								the proto method
 	Object.getPrototypeOf(personA) === Person.prototype; // true
 	personA.proto === Object.getPrototypeOf(personA); // true
 
