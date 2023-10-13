@@ -978,7 +978,7 @@ A) Following is a list of some commonly used timing features of Node.js :
 ->nextTick: This timing feature sets the execution of code at the beginning of the next event loop cycle.
 
 13) What are buffers in Node.js?
-A) In general, a buffer is a temporary memory mainly used by the stream to hold on to some data until it is consumed. Buffers are used to represent a fixed-size chunk of memory allocated outside of the V8 JavaScript engine. It can't be resized.
+A) In general, a buffer is a temporary memory mainly used by the stream to hold on to some data until it is consumed. Buffers are used to represent a fixed-size chunk of memory allocated outside of the V8 JavaScript engine. It can't be resized .
 
 14) Is it possible to access DOM in Node?
 A) No, it is not possible to access DOM in Node.
