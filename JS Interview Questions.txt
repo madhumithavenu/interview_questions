@@ -786,7 +786,7 @@ Example of Binary Operands:let x = 1,
 	  y = 3;
 	console.log(y - x); // 2, binary minus subtracts values
 
-120)  what are loops used for in JavaScript?
+120)  What are loops used for in JavaScript?
 A) Loops in JavaScript are used to execute a block of code repeatedly until a certain condition is met or a specified number of iterations have been completed.
 
 121)  Can you explain how a while loop works?
