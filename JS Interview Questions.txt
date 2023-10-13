@@ -962,7 +962,7 @@ A) HTTP defines a set of request methods used to perform desired actions. The re
 -> POST: Generally used to make a change in state or reactions on the server.
 -> DELETE: Used to delete the predetermined resource.
 
-11) How do you install and delete a dependency?
+11) How do you install and delete a dependency ?
 A) For installing dependencies we use npm install or npm i
 Example: npm install express
 	npm install mongoose
