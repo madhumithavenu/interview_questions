@@ -916,7 +916,7 @@ A) Node.js makes building scalable network programs easy. Some of its advantages
 -It is generally fast.
 -It rarely blocks.
 -It offers a unified programming language and data type.
--Everything is asynchronous
+-Everything is asynchronous.
 
 3) What is npm?
 A) npm stands for Node Package Manager, responsible for managing all the packages and modules for Node.js.
