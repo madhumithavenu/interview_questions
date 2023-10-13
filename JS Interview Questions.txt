@@ -765,7 +765,7 @@ The u enables full Unicode support, the flag enables correct processing of surro
 Sticky flag y sets the stick mode that allows search for the exact position of the text.
 
 116) What makes JavaScript unique?
-A)  JavaScript is unique because it fully integrates with HTML and CSS, and all major browsers support it. JavaScript is the only browser technology that combines, all three of these features. That distinguishes JavaScript, and explains why it is the most widely used technology for designing browser interfaces.
+A) JavaScript is unique because it fully integrates with HTML and CSS, and all major browsers support it. JavaScript is the only browser technology that combines, all three of these features. That distinguishes JavaScript, and explains why it is the most widely used technology for designing browser interfaces.
 
 117) What is the difference between prototypal and classical inheritance?
 A) In prototypal inheritance, objects inherit directly from other objects, whereas in classical inheritance, objects inherit from classes. JavaScript uses prototypal inheritance.
