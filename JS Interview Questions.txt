@@ -828,3 +828,56 @@ Example: let x = 'value2';
 
 126) What is the purpose of the break statement in a switch statement?
 A) The `break` statement in a JavaScript `switch` statement is used to prevent the code from running into the next `case` once a match is found and its code has been executed.
+
+127) What are the different types of for loops used in js to iterate arrays and objects?
+A)=> Using the forEach() method: The forEach() method is used to execute code for each element in the array by looping through each of them.
+Example:	function loopArray() {
+	    let arr = ['Item 1', 'Item 2', 'Item 3',
+	        'Item 4', 'Item 5']; 
+	    arr.forEach(element => {
+	       console.log(element);
+	    });
+	}
+	loopArray(); //output: Item 1
+			Item 2
+			Item 3
+			Item 4
+			Item 5
+=> Using the for…of statement: The for…of statement can be used to loop through iterable objects and perform the required functions. Iterable objects include arrays, strings, and other array-like objects.
+Example:	function loopArray() {
+	    let arr = ['Item 1', 'Item 2', 'Item 3',
+	        'Item 4', 'Item 5'];
+	    for (element of arr) {
+	       console.log(element);
+	    }
+	}
+	loopArray(); //Output: Item 1
+			Item 2
+			Item 3
+			Item 4
+			Item 5
+
+=> Using for…in loop: The properties of the object can be iterated over using a for..in loop. The value of each key of the object can be found by using the key as the index of the object.
+Example:	const Teachers = [
+	    {
+	        name: 'saritha',
+	        subject: 'Maths'
+	    },
+	    {
+	        name: 'ahim',
+	        subject: 'science'
+	    },
+	    {
+	        name: 'sneha',
+	        subject: 'Social'
+	    }] 
+	Teachers.forEach(teacher => {
+	    for (let value in teacher) {
+	        console.log(`${teacher[value]}`)
+	    }
+	}) //Output:  saritha
+			Maths
+			ahim
+			science
+			sneha
+			Social
