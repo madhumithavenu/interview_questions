@@ -915,7 +915,7 @@ A) Node.js is an open-source, cross-platform JavaScript runtime environment and 
 A) Node.js makes building scalable network programs easy. Some of its advantages include:
 -It is generally fast.
 -It rarely blocks.
--It offers a unified programming language and data type
+-It offers a unified programming language and data type.
 -Everything is asynchronous
 
 3) What is npm?
