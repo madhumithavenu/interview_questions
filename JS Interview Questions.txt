@@ -971,7 +971,7 @@ For deleting we use npm uninstall
 Example: npm uninstall express 
 
 12) What are some commonly used timing features of Node.js?
-A) Following is a list of some commonly used timing features of Node.js:
+A) Following is a list of some commonly used timing features of Node.js :
 ->setTimeout/clearTimeout: This timing feature of Node.js is used to implement delays in the code execution.
 ->setInterval/clearInterval: The setInterval or clearInterval timing feature is used to run a code block multiple times in the application.
 ->setImmediate/clearImmediate: This timing feature of Node.js is used to set the execution of the code at the end of the event loop cycle.
