@@ -711,9 +711,9 @@ A) [[Prototype]] is a special hidden property in JavaScript objects, but because
 
 109) What is the difference between proto and prototype?
 A) proto and prototype are different properties. proto is a hidden property of each object, and each object can access its prototype through proto. And prototype is a property that exists in all constructor functions, and the prototype of the constructor function is actually the same as the __proto, which is called the prototype object.
-Example:    function Person() {}           // Person is a constructor function
-	   const personA = new Person();     // Create a personA object through the Person constructor function
-	   personA.proto === Person.prototype;    // true
+Example:  function Person() {}           // Person is a constructor function
+	  const personA = new Person();     // Create a personA object through the Person constructor function
+	  personA.proto === Person.prototype;    // true
 
 110) What is the prototype chain?
 A) Prototype is a special hidden property in JavaScript objects, and each object can access its prototype through proto. The prototype itself is an object, so it also has its own prototype. When we try to access an attribute of an object, if the object does not have the required attribute, it will look for it in its prototype. If the prototype still does not find it, it will continue to look up one level until it is found, or until it reaches null. This continuous path is called the prototype chain, and the end of the chain is null.
