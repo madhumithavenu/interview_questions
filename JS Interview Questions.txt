@@ -615,6 +615,9 @@ Example: let text = "1, 100 or 1000?";
 
 88) What does the . operator do in a regular expression?
 A) The . operator is a wildcard character that matches any character except for a newline character.
+Example: let text = "That's hot!";
+	let pattern = /h.t/g;
+	let result = text.match(pattern); //hat,hot
 
 89) What do the ^ and $ operators do in a regular expression?
 A) The ^ operator matches the beginning of a string, while the $ operator matches the end of a string. These operators are often used together to match an entire string, from start to finish.
