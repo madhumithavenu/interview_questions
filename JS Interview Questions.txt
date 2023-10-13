@@ -947,7 +947,7 @@ A) There are two commonly used libraries in Node.js:
 A) The package.json file is the heart of a Node.js system. This file holds the metadata for a particular project. The package.json file is found in the root directory of any Node application or module.
 This is what a package.json file looks like immediately after creating a Node.js project using the command: npm init
 You can edit the parameters when you create a Node.js project.
-node-npm
+node-npm.
 
 9) Explain the concept of middleware in Node.js.
 A) Middleware is a function that receives the request and response objects. Most tasks that the middleware functions perform are:  
