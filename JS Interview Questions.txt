@@ -811,7 +811,7 @@ Example:  for (let i = 0; i < 3; i++) console.log(i)
 124) What is the difference between the break statement and the continue directive?
 A) In JavaScript, The break statement terminates the entire loop, while the continue directive skips the current iteration and proceeds to the next iteration in the loop.
 
-125) What is a switch statement in JavaScript?
+125)  What is a switch statement in JavaScript?
 A) A switch statement in JavaScript is a control flow statement that evaluates an expression and executes a specific block of code based on the matched case.
 Example: let x = 'value2';
 	switch(x) {
