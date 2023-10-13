@@ -929,7 +929,7 @@ A) Modules are like JavaScript libraries that can be used in a Node.js applicati
 
 5) Why is Node.js preferred over other backend technologies like Java and PHP?
 A) Some of the reasons why Node.js is preferred include:
--Node.js is very fast
+-Node.js is very fast.
 -Node Package Manager has over 50,000 bundles available at the developer’s disposal
 -Perfect for data-intensive, real-time web applications, as Node.js never waits for an API to return data.
 -Better synchronization of code between server and client due to same code base
