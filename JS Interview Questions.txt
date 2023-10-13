@@ -603,6 +603,9 @@ A) The period (.) is used to find any single character that matches a pattern.
 
 86) What does the + operator do in a regular expression?
 A) The + operator is used to indicate one or more occurrences of the preceding element.
+Example: let text = "Hellooo World!"; 
+	let pattern = /o+/g;
+	let result = text.match(pattern); //ooo,o
 
 87) What does the ? operator do in a regular expression?
 A) The ? operator is a quantifier that specifies how many times an element can occur in a given pattern. For example, the regular expression a? specifies that an “a” can occur zero or one time in a given pattern.
