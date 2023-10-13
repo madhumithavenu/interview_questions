@@ -958,9 +958,9 @@ A) Middleware is a function that receives the request and response objects. Most
 
 10) What are the different types of HTTP requests?
 A) HTTP defines a set of request methods used to perform desired actions. The request methods include:
--> GET: Used to retrieve the data
--> POST: Generally used to make a change in state or reactions on the server
--> DELETE: Used to delete the predetermined resource
+-> GET: Used to retrieve the data.
+-> POST: Generally used to make a change in state or reactions on the server.
+-> DELETE: Used to delete the predetermined resource.
 
 11) How do you install and delete a dependency?
 A) For installing dependencies we use npm install or npm i
