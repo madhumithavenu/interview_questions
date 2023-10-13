@@ -678,7 +678,7 @@ A) The syntax may vary slightly in other languages but has the same concept. The
 A) A promises in JavaScript are used o handle asynchronous operations. A promise is an object that keeps track about whether a certain events happened already or not. It also determines what will happen after an event.
 
 102) What are the different states that a promise can be in during its lifetime?
-A) A promise can be in one of three states during its lifetime : pending, fulfilled, or rejected. A promise starts in the pending state, and then either transitions to the fulfilled state if the promise is successfully completed, or the rejected state if the promise is not completed.
+A) A promise can be in one of three states during its lifetime: pending, fulfilled, or rejected. A promise starts in the pending state, and then either transitions to the fulfilled state if the promise is successfully completed, or the rejected state if the promise is not completed.
 
 103) Is it possible to chain promises together? If yes, then how ?
 A) Yes, it is possible to chain promises together. This can be done by returning a promise from the then() function of a previous promise. The returned promise will then be resolved or rejected based on the resolution of the promise that it is chained to.
