@@ -576,6 +576,9 @@ A) The search() method executes a search for a match between a regular expressio
 
 81) What is a regular expression?
 A) A regular expression is a sequence of characters that forms a search pattern. It is used to find patterns in strings or sets of strings.
+Example: let text = "Visit W3Schools";
+	 let pattern = /w3schools/i;
+	 let result = text.match(pattern); //W3Schools
 
 82) What’s the difference between greedy and nongreedy matching?
 A) In regular expression matching, greedy matching means that the regular expression engine will try to match as much of the string as possible. Non-greedy matching means that the engine will try to match as little of the string as possible.
