@@ -247,7 +247,7 @@ With this update command, I am changing the last name of the employee.
 38) Write a Query to display the number of employees working in each region? 
 A) SELECT region, COUNT(gender) FROM employee GROUP BY region;
 
-39. Write SQL query to fetch employee names having a salary greater than or equal to 20000 and less than or equal 10000.
+39) Write SQL query to fetch employee names having a salary greater than or equal to 20000 and less than or equal 10000.
 A) By using BETWEEN in the where clause, we can retrieve the Employee Ids of employees with salary >= 20000 and <=10000.
 Query: SELECT FullName FROM EmployeeDetails WHERE EmpId IN (SELECT EmpId FROM EmployeeSalary WHERE Salary BETWEEN 5000 AND 10000)
 
