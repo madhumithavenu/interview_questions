@@ -237,7 +237,7 @@ This will be the command to create a database in sql:
 A) To view tables in SQL, all you need to do is give this command:
 	Show tables;
 
-37. What is the update command in SQL?
+37) What is the update command in SQL?
 A) The update command comes under the DML(Data Manipulation Langauge) part of sql and is used to update the existing data in the table.
 Query: UPDATE employees
 	SET last_name=‘Cohen’
