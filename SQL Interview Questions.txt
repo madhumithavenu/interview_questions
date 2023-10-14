@@ -84,7 +84,7 @@ A) The following are some frequent SQL clauses used in conjunction with a SELECT
 -> GROUP BY clause: GROUP BY clause in SQL is used to group entries with identical data and may be used with aggregation methods to obtain summarised database results.
 -> HAVING clause in SQL is used to filter records in combination with the GROUP BY clause. It is different from WHERE, since the WHERE clause cannot filter aggregated records.
 
-12. What is Cursor? How to use a Cursor?
+12) What is Cursor? How to use a Cursor?
 A) After any variable declaration, DECLARE a cursor. A SELECT Statement must always be coupled with the cursor definition.
 To start the result set, move the cursor over it. Before obtaining rows from the result set, the OPEN statement must be executed.
 To retrieve and go to the next row in the result set, use the FETCH command.
