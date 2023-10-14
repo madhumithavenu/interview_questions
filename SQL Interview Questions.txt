@@ -133,7 +133,7 @@ Example:   ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword';
 22) What do you mean by % and _ in the LIKE statement?
 A) % corresponds to 0 or more characters, _ is exactly one character in the LIKE statement.
 
-23. How does DISTINCT work in MySQL?
+23) How does DISTINCT work in MySQL?
 A) DISTINCT is used to avoid the problem of duplicity while fetching the results of a particular query. DISTINCT is used to make sure the results do not contain repeated values. DISTINCT can be used with the SELECT clause. Here is the syntax for it:
 Example: SELECT DISTINCT something FROM tablename;
 
