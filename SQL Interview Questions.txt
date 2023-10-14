@@ -168,7 +168,7 @@ Query: SELECT *
 	FROM students
 	WHERE first_name LIKE 'K%'
 
-28. What is the difference between BETWEEN and IN operators in SQL? 
+28) What is the difference between BETWEEN and IN operators in SQL? 
  A) -> BETWEEN: The BETWEEN operator is used to fetch rows based on a range of values. 
 Query: SELECT * FROM Students 
 	WHERE ROLL_NO BETWEEN 20 AND 30;
