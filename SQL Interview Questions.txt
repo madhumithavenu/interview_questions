@@ -268,7 +268,7 @@ Query:   ALTER TABLE employees ADD COLUMN contact INT(10);
 A) The SELECT DISTINCT is used to get distinct data from tables using a query. The below SQL query selects only the DISTINCT values from the “Country” column in the “Customers” table:
 Query:     SELECT DISTINCT Country FROM Customers;
 
-44. What is the stored procedure in SQL Server?
+44) What is the stored procedure in SQL Server?
 A) A Stored Procedure is nothing but a frequently used SQL query. Queries such as a SELECT query, which would often be used to retrieve a set of information many times within a database, can be saved as a Stored Procedure. The Stored Procedure, when called, executes the SQL query saved within the Stored Procedure.
 Syntax to create a Stored Proc:
 	CREATE PROCEDURE PROCEDURE_NAME
