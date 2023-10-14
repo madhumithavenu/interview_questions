@@ -1,0 +1,141 @@
+1) What is Database?
+A) A database is an organized collection of data, stored and retrieved digitally from a remote or local computer system. Databases can be vast and complex, and such databases are developed using fixed design and modeling approaches.
+
+2. What is DBMS?
+A) DBMS stands for Database Management System. DBMS is a system software responsible for the creation, retrieval, updation, and management of the database. It ensures that our data is consistent, organized, and is easily accessible by serving as an interface between the database and its end-users or application software.
+
+3. What is RDBMS? How is it different from DBMS?
+A) RDBMS stands for Relational Database Management System. The key difference here, compared to DBMS, is that RDBMS stores data in the form of a collection of tables, and relations can be defined between the common fields of these tables. Most modern database management systems like MySQL, Microsoft SQL Server, Oracle, IBM DB2, and Amazon Redshift are based on RDBMS.
+
+4. What is SQL?
+A) SQL stands for Structured Query Language. It is the standard language for relational database management systems. It is especially useful in handling organized data comprised of entities (variables) and relations between different entities of the data.
+
+5. What is a Primary Key?
+A) The PRIMARY KEY constraint uniquely identifies each row in a table. It must contain UNIQUE values and has an implicit NOT NULL constraint.
+A table in SQL is strictly restricted to have one and only one primary key, which is comprised of single or multiple fields (columns).
+Example:
+CREATE TABLE Students (   /* Create table with a single field as primary key */
+   ID INT NOT NULL
+   Name VARCHAR(255)
+   PRIMARY KEY (ID)
+);
+
+6. What is a UNIQUE constraint?
+A) A UNIQUE constraint ensures that all values in a column are different. This provides uniqueness for the column(s) and helps identify each row uniquely. Unlike primary key, there can be multiple unique constraints defined per table. The code syntax for UNIQUE is quite similar to that of PRIMARY KEY and can be used interchangeably.
+Example: 
+CREATE TABLE Students (   /* Create table with a single field as unique */
+   ID INT NOT NULL UNIQUE
+   Name VARCHAR(255)
+);
+
+7. What is a Foreign Key?
+A) A FOREIGN KEY comprises of single or collection of fields in a table that essentially refers to the PRIMARY KEY in another table. Foreign key constraint ensures referential integrity in the relation between two tables.
+The table with the foreign key constraint is labeled as the child table, and the table containing the candidate key is labeled as the referenced or parent table.
+Example: 
+CREATE TABLE Students (   /* Create table with foreign key - Way 1 */
+   ID INT NOT NULL
+   Name VARCHAR(255)
+   LibraryID INT
+   PRIMARY KEY (ID)
+   FOREIGN KEY (Library_ID) REFERENCES Library(LibraryID)
+);
+
+8. What is a Join? List its different types.
+A) The SQL Join clause is used to combine records (rows) from two or more tables in a SQL database based on a related column between the two.
+There are four different types of JOINs in SQL:
+=> (INNER) JOIN: Retrieves records that have matching values in both tables involved in the join. This is the widely used join for queries.
+Example: ->SELECT *
+	FROM Table_A
+	JOIN Table_B;
+	->SELECT *
+	FROM Table_A
+	INNER JOIN Table_B;
+=> LEFT (OUTER) JOIN: Retrieves all the records/rows from the left and the matched records/rows from the right table.
+Example:SELECT *
+	FROM Table_A A
+	LEFT JOIN Table_B B
+	ON A.col = B.col;
+=> RIGHT (OUTER) JOIN: Retrieves all the records/rows from the right and the matched records/rows from the left table.
+Example: SELECT *
+	FROM Table_A A
+	RIGHT JOIN Table_B B
+	ON A.col = B.col;
+=> FULL (OUTER) JOIN: Retrieves all the records where there is a match in either the left or right table.
+Example: SELECT *
+	FROM Table_A A
+	FULL JOIN Table_B B
+	ON A.col = B.col;
+
+9. What is a Cross-Join?
+A) Cross join can be defined as a cartesian product of the two tables included in the join. The table after join contains the same number of rows as in the cross-product of the number of rows in the two tables. If a WHERE clause is used in cross join then the query will work like an INNER JOIN.
+Example: SELECT stu.name, sub.subject 
+	FROM students AS stu
+	CROSS JOIN subjects AS sub;
+
+10. What are the different subsets of SQL?
+A) -> Data Definition Language (DDL) – It allows you to perform various operations on the database such as CREATE, ALTER, and DELETE objects.
+-> Data Manipulation Language(DML) – It allows you to access and manipulate data. It helps you to insert, update, delete and retrieve data from the database.
+-> Data Control Language(DCL) – It allows you to control access to the database. Example – Grant, Revoke access permissions.
+
+11. What are some common clauses used with SELECT query in SQL?
+A) The following are some frequent SQL clauses used in conjunction with a SELECT query:
+-> WHERE clause: In SQL, the WHERE clause is used to filter records that are required depending on certain criteria.
+-> ORDER BY clause: The ORDER BY clause in SQL is used to sort data in ascending (ASC) or descending (DESC) order depending on specified field(s) (DESC).
+-> GROUP BY clause: GROUP BY clause in SQL is used to group entries with identical data and may be used with aggregation methods to obtain summarised database results.
+-> HAVING clause in SQL is used to filter records in combination with the GROUP BY clause. It is different from WHERE, since the WHERE clause cannot filter aggregated records.
+
+12. What is Cursor? How to use a Cursor?
+A) After any variable declaration, DECLARE a cursor. A SELECT Statement must always be coupled with the cursor definition.
+To start the result set, move the cursor over it. Before obtaining rows from the result set, the OPEN statement must be executed.
+To retrieve and go to the next row in the result set, use the FETCH command.
+To disable the cursor, use the CLOSE command.
+Finally, use the DEALLOCATE command to remove the cursor definition and free up the resources connected with it.
+
+13. List the different types of relationships in SQL.
+A) There are different types of relations in the database:
+-> One-to-One – This is a connection between two tables in which each record in one table corresponds to the maximum of one record in the other.
+-> One-to-Many and Many-to-One – This is the most frequent connection, in which a record in one table is linked to several records in another.
+-> Many-to-Many – This is used when defining a relationship that requires several instances on each sides.
+
+14. What is the difference between the database and the table?
+A) There is a major difference between a database and a table. The differences are as follows:
+Tables are a way to represent the division of data in a database while the database is a collection of tables and data.
+Tables are used to group the data in relation to each other and create a dataset. This dataset will be used in the database. The data stored in the table in any form is a part of the database, but the reverse is not true.
+A database is a collection of organized data and features used to access them, whereas the table is a collection of rows and columns used to store the data.
+
+15. What is a View?
+A) A view in SQL is a virtual table based on the result-set of an SQL statement. A view contains rows and columns, just like a real table. The fields in a view are fields from one or more real tables in the database.
+
+16. What is the difference between DROP and TRUNCATE statements?
+A) If a table is dropped, all things associated with the tables are dropped as well. This includes - the relationships defined on the table with other tables, the integrity checks and constraints, access privileges and other grants that the table has. To create and use the table again in its original form, all these relations, checks, constraints, privileges and relationships need to be redefined. However, if a table is truncated, none of the above problems exist and the table retains its original structure.
+
+17. What is the difference between DELETE and TRUNCATE statements?
+A) The TRUNCATE command is used to delete all the rows from the table and free the space containing the table.
+The DELETE command deletes only the rows from the table based on the condition given in the where clause or deletes all the rows from the table if no condition is specified. But it does not free the space containing the table.
+
+18. What is a clause?
+A) A condition imposed on a SQL query to filter the data to obtain the desired result. Some examples are WHERE, LIMIT, HAVING, LIKE, AND, OR, ORDER BY, etc.
+
+19. What is the difference between CHAR and VARCHAR?
+A) CHAR and VARCHAR have differed in storage and retrieval.
+CHAR column length is fixed, while VARCHAR length is variable.
+The maximum no. of character CHAR data types can hold is 255 characters, while VARCHAR can hold up to 4000 characters.
+CHAR is 50% faster than VARCHAR.
+CHAR uses static memory allocation, while VARCHAR uses dynamic memory allocation
+
+20. What is the difference between NOW() and CURRENT_DATE()?
+A) NOW() command is used to show current year, month, date with hours, minutes, and seconds while CURRENT_DATE() shows the current year with month and date only.
+
+21. How to change the MySQL password?
+A) We can change the MySQL root password using the below statement in the new notepad file and save it with an appropriate name:
+Example:   ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword';
+
+22. What do you mean by % and _ in the LIKE statement?
+A) % corresponds to 0 or more characters, _ is exactly one character in the LIKE statement.
+
+23. How does DISTINCT work in MySQL?
+A) DISTINCT is used to avoid the problem of duplicity while fetching the results of a particular query. DISTINCT is used to make sure the results do not contain repeated values. DISTINCT can be used with the SELECT clause. Here is the syntax for it:
+Example: SELECT DISTINCT something FROM tablename;
+
+24. What is NULL value? How is it different from zero or a blank space?
+A) A NULL value indicates the absence of data for a certain cell of a table. Instead, zero is a valid numeric value, and an empty string is a legal string of zero length.
