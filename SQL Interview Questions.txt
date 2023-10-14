@@ -210,7 +210,7 @@ Query: CREATE TABLE employee (
 	gender varchar(25)
 );
 
-32. How to delete a table in SQL?
+32) How to delete a table in SQL?
 A) There are two ways to delete a table from SQL: DROP and TRUNCATE. The DROP TABLE command is used to completely delete the table from the database. This is the command:
 	DROP TABLE table_name;
 
