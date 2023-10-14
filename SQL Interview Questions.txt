@@ -106,7 +106,7 @@ A database is a collection of organized data and features used to access them, w
 15) What is a View?
 A) A view in SQL is a virtual table based on the result-set of an SQL statement. A view contains rows and columns, just like a real table. The fields in a view are fields from one or more real tables in the database.
 
-16. What is the difference between DROP and TRUNCATE statements?
+16) What is the difference between DROP and TRUNCATE statements?
 A) If a table is dropped, all things associated with the tables are dropped as well. This includes - the relationships defined on the table with other tables, the integrity checks and constraints, access privileges and other grants that the table has. To create and use the table again in its original form, all these relations, checks, constraints, privileges and relationships need to be redefined. However, if a table is truncated, none of the above problems exist and the table retains its original structure.
 
 17. What is the difference between DELETE and TRUNCATE statements?
