@@ -260,7 +260,7 @@ Query:      ALTER TABLE employees
 A) We can implement multiple conditions using AND, OR operators:
 Query:  SELECT * FROM employees WHERE first_name = ‘Steven’ AND salary <=10000;
 
-42. How to add a new column in SQL?
+42) How to add a new column in SQL?
 A) We can add a new column in SQL with the help of alter command:
 Query:   ALTER TABLE employees ADD COLUMN contact INT(10);
 
