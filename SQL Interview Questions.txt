@@ -116,7 +116,7 @@ The DELETE command deletes only the rows from the table based on the condition g
 18) What is a clause?
 A) A condition imposed on a SQL query to filter the data to obtain the desired result. Some examples are WHERE, LIMIT, HAVING, LIKE, AND, OR, ORDER BY, etc.
 
-19. What is the difference between CHAR and VARCHAR?
+19) What is the difference between CHAR and VARCHAR?
 A) CHAR and VARCHAR have differed in storage and retrieval.
 CHAR column length is fixed, while VARCHAR length is variable.
 The maximum no. of character CHAR data types can hold is 255 characters, while VARCHAR can hold up to 4000 characters.
