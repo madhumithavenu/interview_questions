@@ -10,7 +10,7 @@ A) RDBMS stands for Relational Database Management System. The key difference he
 4) What is SQL?
 A) SQL stands for Structured Query Language. It is the standard language for relational database management systems. It is especially useful in handling organized data comprised of entities (variables) and relations between different entities of the data.
 
-5. What is a Primary Key?
+5) What is a Primary Key?
 A) The PRIMARY KEY constraint uniquely identifies each row in a table. It must contain UNIQUE values and has an implicit NOT NULL constraint.
 A table in SQL is strictly restricted to have one and only one primary key, which is comprised of single or multiple fields (columns).
 Example:
