@@ -196,7 +196,7 @@ The ACID property is an acronym for Atomicity, Consistency, Isolation, and Durab
 - Isolation: This property guarantees that the concurrent property of execution in the transaction unit must be operated independently. It also ensures that statements are transparent to each other. The main goal of providing isolation is to control concurrency in a database.
 - Durability: This property guarantees that once a transaction has been committed, it persists permanently even if the system crashes, power loss, or failed.
 
-31. How to create a table in SQL?
+31) How to create a table in SQL?
 A) The command to create a table in SQL is extremely simple:
 CREATE TABLE table_name (
 	column1 datatype,
