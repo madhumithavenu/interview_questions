@@ -123,7 +123,7 @@ The maximum no. of character CHAR data types can hold is 255 characters, while V
 CHAR is 50% faster than VARCHAR.
 CHAR uses static memory allocation, while VARCHAR uses dynamic memory allocation
 
-20. What is the difference between NOW() and CURRENT_DATE()?
+20) What is the difference between NOW() and CURRENT_DATE()?
 A) NOW() command is used to show current year, month, date with hours, minutes, and seconds while CURRENT_DATE() shows the current year with month and date only.
 
 21. How to change the MySQL password?
