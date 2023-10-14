@@ -256,7 +256,7 @@ A) To delete a column in SQL we will be using DROP COLUMN method:
 Query:      ALTER TABLE employees
 	DROP COLUMN age;
 
-41. How to implement multiple conditions using the WHERE clause?
+41) How to implement multiple conditions using the WHERE clause?
 A) We can implement multiple conditions using AND, OR operators:
 Query:  SELECT * FROM employees WHERE first_name = ‘Steven’ AND salary <=10000;
 
