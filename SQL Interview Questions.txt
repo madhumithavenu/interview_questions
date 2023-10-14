@@ -77,7 +77,7 @@ A) -> Data Definition Language (DDL) – It allows you to perform various operat
 -> Data Manipulation Language(DML) – It allows you to access and manipulate data. It helps you to insert, update, delete and retrieve data from the database.
 -> Data Control Language(DCL) – It allows you to control access to the database. Example – Grant, Revoke access permissions.
 
-11. What are some common clauses used with SELECT query in SQL?
+11) What are some common clauses used with SELECT query in SQL?
 A) The following are some frequent SQL clauses used in conjunction with a SELECT query:
 -> WHERE clause: In SQL, the WHERE clause is used to filter records that are required depending on certain criteria.
 -> ORDER BY clause: The ORDER BY clause in SQL is used to sort data in ascending (ASC) or descending (DESC) order depending on specified field(s) (DESC).
