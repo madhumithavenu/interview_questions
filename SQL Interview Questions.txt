@@ -97,7 +97,7 @@ A) There are different types of relations in the database:
 -> One-to-Many and Many-to-One – This is the most frequent connection, in which a record in one table is linked to several records in another.
 -> Many-to-Many – This is used when defining a relationship that requires several instances on each sides.
 
-14. What is the difference between the database and the table?
+14) What is the difference between the database and the table?
 A) There is a major difference between a database and a table. The differences are as follows:
 Tables are a way to represent the division of data in a database while the database is a collection of tables and data.
 Tables are used to group the data in relation to each other and create a dataset. This dataset will be used in the database. The data stored in the table in any form is a part of the database, but the reverse is not true.
