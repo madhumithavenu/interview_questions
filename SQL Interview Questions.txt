@@ -188,7 +188,7 @@ The unique key is also a unique identifier for records when the primary key is n
 We can store NULL value in the unique key column, but only one NULL is allowed.
 We can modify the unique key column values.
 
-30. What is the ACID property in a database?
+30) What is the ACID property in a database?
 A) The ACID properties are meant for the transaction that goes through a different group of tasks. A transaction is a single logical order of data. It provides properties to maintain consistency before and after the transaction in a database. It also ensures that the data transactions are processed reliably in a database system.
 The ACID property is an acronym for Atomicity, Consistency, Isolation, and Durability.
 - Atomicity: It ensures that all statements or operations within the transaction unit must be executed successfully. If one part of the transaction fails, the entire transaction fails, and the database state is left unchanged. Its main features are COMMIT, ROLLBACK, and AUTO-COMMIT.
