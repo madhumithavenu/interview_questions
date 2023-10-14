@@ -1023,8 +1023,7 @@ let connection = mysql.createConnection({
     password: 'root123',
     database: 'app'
 });
-Code language: JavaScript (javascript)
-In this example, we created a connection to todoapp database in the local database server.
+In this example, we created a connection to app database in the local database server.
 Third, call the connect() method on the connection object to connect to the MySQL database server:
 connection.connect(function(err) {
   if (err) {
@@ -1032,17 +1031,15 @@ connection.connect(function(err) {
   }
   console.log('Connected to the MySQL server.');
 });
-Code language: JavaScript (javascript)
 The connect() method accepts a callback function that has the err argument which provides the detailed error if any error occurs.
 Let’s test connect.js program.
-> node connect.js
+=> node connect.js
 Connected to the MySQL server
 Code language: JavaScript (javascript)
 If you see the message “connected to the MySQL server”, then congratulations, you have been successfully connected to the MySQL database server from the node.js application.
 Suppose the todoapps database does not exist in the database server and you try to connect to it, you will get an error message:
-> node connect.js
-error: ER_BAD_DB_ERROR: Unknown database 'todoapps'
-Code language: JavaScript (javascript)
+=> node connect.js
+error: ER_BAD_DB_ERROR: Unknown database 'apps'
 Notice that every method which you invoke on the connection object is queued and executed in sequence.
 Example:  const db = mysql.createConnection({
     host: process.env.DATABASE_HOST,
