@@ -139,3 +139,148 @@ Example: SELECT DISTINCT something FROM tablename;
 
 24) What is NULL value? How is it different from zero or a blank space?
 A) A NULL value indicates the absence of data for a certain cell of a table. Instead, zero is a valid numeric value, and an empty string is a legal string of zero length.
+
+25) What is the SELECT statement?
+A) A SELECT command gets zero or more rows from one or more database tables or views. The most frequent data manipulation language (DML) command is SELECT in most applications. SELECT queries define a result set, but not how to calculate it, because SQL is a declarative programming language.
+Query: SELECT * FROM myDB.students;
+
+26. What are some common clauses used with SELECT query in SQL?
+A) Some common SQL clauses used in conjuction with a SELECT query are as follows:
+-> WHERE clause in SQL is used to filter records that are necessary, based on specific conditions.
+-> ORDER BY clause in SQL is used to sort the records based on some field(s) in ascending (ASC) or descending order (DESC).
+Query: SELECT *
+	FROM myDB.students
+	WHERE graduation_year = 2019
+	ORDER BY studentID DESC;
+-> GROUP BY clause in SQL is used to group records with identical data and can be used in conjunction with some aggregation functions to produce summarized results from the database.
+-> HAVING clause in SQL is used to filter records in combination with the GROUP BY clause. It is different from WHERE, since the WHERE clause cannot filter aggregated records.
+Query: SELECT COUNT(studentId), country
+	FROM myDB.students
+	WHERE country != "INDIA"
+	GROUP BY country
+	HAVING COUNT(studentID) > 5;
+
+27. What is Pattern Matching in SQL?
+A) SQL pattern matching provides for pattern search in data if you have no clue as to what that word should be. This kind of SQL query uses wildcards to match a string pattern, rather than writing the exact word. The LIKE operator is used in conjunction with SQL Wildcards to fetch the required information.
+Using the % wildcard to perform a simple search
+The % wildcard matches zero or more characters of any type and can be used to define wildcards both before and after the pattern. Search a student in your database with first name beginning with the letter K:
+Query: SELECT *
+	FROM students
+	WHERE first_name LIKE 'K%'
+
+28. What is the difference between BETWEEN and IN operators in SQL? 
+ A) -> BETWEEN: The BETWEEN operator is used to fetch rows based on a range of values. 
+Query: SELECT * FROM Students 
+	WHERE ROLL_NO BETWEEN 20 AND 30;
+This query will select all those rows from the table. Students where the value of the field ROLL_NO lies between 20 and 30. 
+-> IN : The IN operator is used to check for values contained in specific sets. 
+Query: SELECT * FROM Students 
+	WHERE ROLL_NO IN (20,21,23);
+This query will select all those rows from the table Students where the value of the field ROLL_NO is either 20 or 21 or 23.
+
+29. What is the difference between a primary key and a unique key?
+A) -> Primary Key	
+The primary key act as a unique identifier for each record in the table.	
+We cannot store NULL values in the primary key column.
+We cannot change or delete the primary key column values.
+-> Unique Key
+The unique key is also a unique identifier for records when the primary key is not present in the table.
+We can store NULL value in the unique key column, but only one NULL is allowed.
+We can modify the unique key column values.
+
+30. What is the ACID property in a database?
+A) The ACID properties are meant for the transaction that goes through a different group of tasks. A transaction is a single logical order of data. It provides properties to maintain consistency before and after the transaction in a database. It also ensures that the data transactions are processed reliably in a database system.
+The ACID property is an acronym for Atomicity, Consistency, Isolation, and Durability.
+- Atomicity: It ensures that all statements or operations within the transaction unit must be executed successfully. If one part of the transaction fails, the entire transaction fails, and the database state is left unchanged. Its main features are COMMIT, ROLLBACK, and AUTO-COMMIT.
+- Consistency: This property ensures that the data must meet all validation rules. In simple words, we can say that the database changes state only when a transaction will be committed successfully. It also protects data from crashes.
+- Isolation: This property guarantees that the concurrent property of execution in the transaction unit must be operated independently. It also ensures that statements are transparent to each other. The main goal of providing isolation is to control concurrency in a database.
+- Durability: This property guarantees that once a transaction has been committed, it persists permanently even if the system crashes, power loss, or failed.
+
+31. How to create a table in SQL?
+A) The command to create a table in SQL is extremely simple:
+CREATE TABLE table_name (
+	column1 datatype,
+	column2 datatype,
+	column3 datatype,
+   ....
+);
+Query: CREATE TABLE employee (
+	name varchar(25),
+	age int,
+	gender varchar(25)
+);
+
+32. How to delete a table in SQL?
+A) There are two ways to delete a table from SQL: DROP and TRUNCATE. The DROP TABLE command is used to completely delete the table from the database. This is the command:
+	DROP TABLE table_name;
+
+33.  How to change a table name in SQL?
+A) This is the command to change a table name in SQL:
+	ALTER TABLE table_name
+	RENAME TO new_table_name;
+Query: ALTER TABLE employee
+ 	RENAME TO employee_information;
+
+34. How to delete a row in SQL?
+We will be using the DELETE query to delete existing rows from the table:
+	DELETE FROM table_name
+	WHERE [condition];
+Query: DELETE FROM employee
+	WHERE [age=25];
+
+35. How to create a database in SQL?
+A) A database is a repository in SQL, which can comprise multiple tables.
+This will be the command to create a database in sql:
+	CREATE DATABASE database_name.
+
+36. How do I view tables in SQL?
+A) To view tables in SQL, all you need to do is give this command:
+	Show tables;
+
+37. What is the update command in SQL?
+A) The update command comes under the DML(Data Manipulation Langauge) part of sql and is used to update the existing data in the table.
+Query: UPDATE employees
+	SET last_name=‘Cohen’
+	WHERE employee_id=101;
+With this update command, I am changing the last name of the employee.
+
+38. Write a Query to display the number of employees working in each region? 
+A) SELECT region, COUNT(gender) FROM employee GROUP BY region;
+
+39. Write SQL query to fetch employee names having a salary greater than or equal to 20000 and less than or equal 10000.
+A) By using BETWEEN in the where clause, we can retrieve the Employee Ids of employees with salary >= 20000 and <=10000.
+Query: SELECT FullName FROM EmployeeDetails WHERE EmpId IN (SELECT EmpId FROM EmployeeSalary WHERE Salary BETWEEN 5000 AND 10000)
+
+40. How to delete a column in SQL?
+A) To delete a column in SQL we will be using DROP COLUMN method:
+Query:      ALTER TABLE employees
+	DROP COLUMN age;
+
+41. How to implement multiple conditions using the WHERE clause?
+A) We can implement multiple conditions using AND, OR operators:
+Query:  SELECT * FROM employees WHERE first_name = ‘Steven’ AND salary <=10000;
+
+42. How to add a new column in SQL?
+A) We can add a new column in SQL with the help of alter command:
+Query:   ALTER TABLE employees ADD COLUMN contact INT(10);
+
+43. How do we avoid getting duplicate entries in a query?
+A) The SELECT DISTINCT is used to get distinct data from tables using a query. The below SQL query selects only the DISTINCT values from the “Country” column in the “Customers” table:
+Query:     SELECT DISTINCT Country FROM Customers;
+
+44. What is the stored procedure in SQL Server?
+A) A Stored Procedure is nothing but a frequently used SQL query. Queries such as a SELECT query, which would often be used to retrieve a set of information many times within a database, can be saved as a Stored Procedure. The Stored Procedure, when called, executes the SQL query saved within the Stored Procedure.
+Syntax to create a Stored Proc:
+	CREATE PROCEDURE PROCEDURE_NAME
+	AS
+	SQL_QUERY (GIVE YOUR OFTEN USED QUERY HERE)
+	GO;
+
+45. What are the different types of SQL operators?
+A) Operators are the special keywords or special characters reserved for performing particular operations. They are also used in SQL queries. We can primarily use these operators within the WHERE clause of SQL commands. It's a part of the command to filters data based on the specified condition. The SQL operators can be categorized into the following types:
+-> Arithmetic operators: These operators are used to perform mathematical operations on numerical data. The categories of this operators are addition (+), subtraction (-), multiplication (*), division (/), remainder/modulus (%), etc.
+-> Logical operators: These operators evaluate the expressions and return their results in True or False. This operator includes ALL, AND, ANY, ISNULL, EXISTS, BETWEEN, IN, LIKE, NOT, OR, UNIQUE.
+-> Comparison operators: These operators are used to perform comparisons of two values and check whether they are the same or not. It includes equal to (=), not equal to (!= or <>), less than (<), greater than (>), less than or equal to (<=), greater than or equal to (>=), not less than (!<), not greater than (!>), etc.
+-> Bitwise operators: It is used to do bit manipulations between two expressions of integer type. It first performs conversion of integers into binary bits and then applied operators such as AND (& symbol), OR (|, ^), NOT (~), etc.
+-> Compound operators: These operators perform operations on a variable before setting the variable's result to the operation's result. It includes Add equals (+=), subtract equals (-=), multiply equals (*=), divide equals (/=), modulo equals (%=), etc.
+-> String operators: These operators are primarily used to perform concatenation and pattern matching of strings. It includes + (String concatenation), += (String concatenation assignment), % (Wildcard), [] (Character(s) matches), [^] (Character(s) not to match), _ (Wildcard match one character), etc.
