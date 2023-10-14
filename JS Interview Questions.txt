@@ -1001,3 +1001,52 @@ Example: Suppose we want to store information from a contact form of a website.
 		          }; 
 Then we have to create a model using that schema which is then used to store data in a document as objects.
                         =>const Contact = mongoose.model("Contact", contactSchema);
+
+16) How to connect NodeJS to MySQL?
+A) First, create a folder for storing the node.js app e.g., node-mysql and use the npm init command to create the package.json file:
+=>npm init
+Second, install node.js for the MySQL package by using the following command:
+=>npm install mysql
+Third, create the connect.js inside of the node-mysql folder for storing the code that connects to the MySQL database server.
+We should create the database in your MySQL database server by running the following CREATE DATABASE statement:
+CREATE DATABASE app;
+Code language: SQL (Structured Query Language) (sql)
+Once the database is created, you are ready to connect to it from the Node.js application.
+Connecting to MySQL database server from node.js
+First, import the mysql module by using the following statement:
+let mysql = require('mysql');
+Code language: JavaScript (javascript)
+Second, create a connection to the MySQL database by calling the createConnection() method and providing detailed information on MySQL server such as host, user, password, and database as follows:
+let connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'root123',
+    database: 'app'
+});
+Code language: JavaScript (javascript)
+In this example, we created a connection to todoapp database in the local database server.
+Third, call the connect() method on the connection object to connect to the MySQL database server:
+connection.connect(function(err) {
+  if (err) {
+    return console.error('error: ' + err.message);
+  }
+  console.log('Connected to the MySQL server.');
+});
+Code language: JavaScript (javascript)
+The connect() method accepts a callback function that has the err argument which provides the detailed error if any error occurs.
+Let’s test connect.js program.
+> node connect.js
+Connected to the MySQL server
+Code language: JavaScript (javascript)
+If you see the message “connected to the MySQL server”, then congratulations, you have been successfully connected to the MySQL database server from the node.js application.
+Suppose the todoapps database does not exist in the database server and you try to connect to it, you will get an error message:
+> node connect.js
+error: ER_BAD_DB_ERROR: Unknown database 'todoapps'
+Code language: JavaScript (javascript)
+Notice that every method which you invoke on the connection object is queued and executed in sequence.
+Example:  const db = mysql.createConnection({
+    host: process.env.DATABASE_HOST,
+    user: process.env.DATABASE_USER,
+    password: process.env.DATABASE_PASSWORD,
+    database: process.env.DATABASE
+})
