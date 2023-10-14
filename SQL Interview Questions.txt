@@ -264,7 +264,7 @@ Query:  SELECT * FROM employees WHERE first_name = ‘Steven’ AND salary <=100
 A) We can add a new column in SQL with the help of alter command:
 Query:   ALTER TABLE employees ADD COLUMN contact INT(10);
 
-43. How do we avoid getting duplicate entries in a query?
+43) How do we avoid getting duplicate entries in a query?
 A) The SELECT DISTINCT is used to get distinct data from tables using a query. The below SQL query selects only the DISTINCT values from the “Country” column in the “Customers” table:
 Query:     SELECT DISTINCT Country FROM Customers;
 
