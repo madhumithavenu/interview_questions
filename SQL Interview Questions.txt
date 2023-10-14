@@ -137,5 +137,5 @@ A) % corresponds to 0 or more characters, _ is exactly one character in the LIKE
 A) DISTINCT is used to avoid the problem of duplicity while fetching the results of a particular query. DISTINCT is used to make sure the results do not contain repeated values. DISTINCT can be used with the SELECT clause. Here is the syntax for it:
 Example: SELECT DISTINCT something FROM tablename;
 
-24. What is NULL value? How is it different from zero or a blank space?
+24) What is NULL value? How is it different from zero or a blank space?
 A) A NULL value indicates the absence of data for a certain cell of a table. Instead, zero is a valid numeric value, and an empty string is a legal string of zero length.
