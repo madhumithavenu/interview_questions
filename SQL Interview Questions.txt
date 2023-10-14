@@ -113,7 +113,7 @@ A) If a table is dropped, all things associated with the tables are dropped as w
 A) The TRUNCATE command is used to delete all the rows from the table and free the space containing the table.
 The DELETE command deletes only the rows from the table based on the condition given in the where clause or deletes all the rows from the table if no condition is specified. But it does not free the space containing the table.
 
-18. What is a clause?
+18) What is a clause?
 A) A condition imposed on a SQL query to filter the data to obtain the desired result. Some examples are WHERE, LIMIT, HAVING, LIKE, AND, OR, ORDER BY, etc.
 
 19. What is the difference between CHAR and VARCHAR?
