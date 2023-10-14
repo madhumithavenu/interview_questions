@@ -221,7 +221,7 @@ A) This is the command to change a table name in SQL:
 Query: ALTER TABLE employee
  	RENAME TO employee_information;
 
-34. How to delete a row in SQL?
+34) How to delete a row in SQL?
 We will be using the DELETE query to delete existing rows from the table:
 	DELETE FROM table_name
 	WHERE [condition];
