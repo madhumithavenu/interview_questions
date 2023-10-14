@@ -1047,3 +1047,22 @@ Example:  const db = mysql.createConnection({
     password: process.env.DATABASE_PASSWORD,
     database: process.env.DATABASE
 })
+
+17) How to execute mysql query in nodejs?
+A) The steps for querying data in the MySQL database from a node.js application are as follows:
+Establish a connection to the MySQL database server.
+*Execute a SELECT statement and process the result set.
+*Close the database connection.
+*Executing a simple query
+
+The following select.js program selects all data from the todos table of the app database:
+let mysql = require('mysql');
+let config = require('./config.js');
+let connection = mysql.createConnection(config);
+let sql = `SELECT * FROM todos`;
+connection.query(sql, (error, results, fields) => {
+  if (error) {
+    return console.error(error.message);
+  }
+  console.log(results);
+});
