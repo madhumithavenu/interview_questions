@@ -251,7 +251,7 @@ A) SELECT region, COUNT(gender) FROM employee GROUP BY region;
 A) By using BETWEEN in the where clause, we can retrieve the Employee Ids of employees with salary >= 20000 and <=10000.
 Query: SELECT FullName FROM EmployeeDetails WHERE EmpId IN (SELECT EmpId FROM EmployeeSalary WHERE Salary BETWEEN 5000 AND 10000)
 
-40. How to delete a column in SQL?
+40) How to delete a column in SQL?
 A) To delete a column in SQL we will be using DROP COLUMN method:
 Query:      ALTER TABLE employees
 	DROP COLUMN age;
