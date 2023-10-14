@@ -7,7 +7,7 @@ A) DBMS stands for Database Management System. DBMS is a system software respons
 3) What is RDBMS? How is it different from DBMS?
 A) RDBMS stands for Relational Database Management System. The key difference here, compared to DBMS, is that RDBMS stores data in the form of a collection of tables, and relations can be defined between the common fields of these tables. Most modern database management systems like MySQL, Microsoft SQL Server, Oracle, IBM DB2, and Amazon Redshift are based on RDBMS.
 
-4. What is SQL?
+4) What is SQL?
 A) SQL stands for Structured Query Language. It is the standard language for relational database management systems. It is especially useful in handling organized data comprised of entities (variables) and relations between different entities of the data.
 
 5. What is a Primary Key?
