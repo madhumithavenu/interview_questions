@@ -130,7 +130,7 @@ A) NOW() command is used to show current year, month, date with hours, minutes, 
 A) We can change the MySQL root password using the below statement in the new notepad file and save it with an appropriate name:
 Example:   ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword';
 
-22. What do you mean by % and _ in the LIKE statement?
+22) What do you mean by % and _ in the LIKE statement?
 A) % corresponds to 0 or more characters, _ is exactly one character in the LIKE statement.
 
 23. How does DISTINCT work in MySQL?
