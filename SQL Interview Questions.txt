@@ -72,7 +72,7 @@ Example: SELECT stu.name, sub.subject
 	FROM students AS stu
 	CROSS JOIN subjects AS sub;
 
-10. What are the different subsets of SQL?
+10) What are the different subsets of SQL?
 A) -> Data Definition Language (DDL) – It allows you to perform various operations on the database such as CREATE, ALTER, and DELETE objects.
 -> Data Manipulation Language(DML) – It allows you to access and manipulate data. It helps you to insert, update, delete and retrieve data from the database.
 -> Data Control Language(DCL) – It allows you to control access to the database. Example – Grant, Revoke access permissions.
