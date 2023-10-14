@@ -40,7 +40,7 @@ CREATE TABLE Students (   /* Create table with foreign key - Way 1 */
    FOREIGN KEY (Library_ID) REFERENCES Library(LibraryID)
 );
 
-8. What is a Join? List its different types.
+8) What is a Join? List its different types.
 A) The SQL Join clause is used to combine records (rows) from two or more tables in a SQL database based on a related column between the two.
 There are four different types of JOINs in SQL:
 => (INNER) JOIN: Retrieves records that have matching values in both tables involved in the join. This is the widely used join for queries.
