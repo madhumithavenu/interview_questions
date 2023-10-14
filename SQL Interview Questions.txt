@@ -276,7 +276,7 @@ Syntax to create a Stored Proc:
 	SQL_QUERY (GIVE YOUR OFTEN USED QUERY HERE)
 	GO;
 
-45. What are the different types of SQL operators?
+45) What are the different types of SQL operators?
 A) Operators are the special keywords or special characters reserved for performing particular operations. They are also used in SQL queries. We can primarily use these operators within the WHERE clause of SQL commands. It's a part of the command to filters data based on the specified condition. The SQL operators can be categorized into the following types:
 -> Arithmetic operators: These operators are used to perform mathematical operations on numerical data. The categories of this operators are addition (+), subtraction (-), multiplication (*), division (/), remainder/modulus (%), etc.
 -> Logical operators: These operators evaluate the expressions and return their results in True or False. This operator includes ALL, AND, ANY, ISNULL, EXISTS, BETWEEN, IN, LIKE, NOT, OR, UNIQUE.
