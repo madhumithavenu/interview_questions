@@ -91,7 +91,7 @@ To retrieve and go to the next row in the result set, use the FETCH command.
 To disable the cursor, use the CLOSE command.
 Finally, use the DEALLOCATE command to remove the cursor definition and free up the resources connected with it.
 
-13. List the different types of relationships in SQL.
+13) List the different types of relationships in SQL.
 A) There are different types of relations in the database:
 -> One-to-One – This is a connection between two tables in which each record in one table corresponds to the maximum of one record in the other.
 -> One-to-Many and Many-to-One – This is the most frequent connection, in which a record in one table is linked to several records in another.
