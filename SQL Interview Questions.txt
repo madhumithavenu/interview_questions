@@ -430,3 +430,74 @@ Query:      SELECT * FROM EmployeeDetails
 Also, we can extract the year part from the joining date (using YEAR in MySQL)-
 Query:      SELECT * FROM EmployeeDetails 
 	WHERE YEAR(DateOfJoining) = '2020';
+
+66) Write an SQL query to remove duplicates from a table without using a temporary table.
+A) Here, we can use delete with alias and inner join. We will check for the equality of all the matching records and then remove the row with a higher EmpId.
+Query:      DELETE E1 FROM EmployeeDetails E1
+	INNER JOIN EmployeeDetails E2 
+	WHERE E1.EmpId > E2.EmpId 
+	AND E1.FullName = E2.FullName 
+	AND E1.ManagerId = E2.ManagerId
+	AND E1.DateOfJoining = E2.DateOfJoining
+	AND E1.City = E2.City;
+
+67. Write an SQL query to fetch only odd rows from the table.
+A) In case we have an auto-increment field e.g. EmpId then we can simply use the below query-
+Query:	SELECT * FROM EmployeeDetails 
+	WHERE MOD (EmpId, 2) <> 0;
+In case we don’t have such a field then we can use the below queries.
+Using Row_number in SQL server and checking that the remainder when divided by 2 is 1-
+Query:      SELECT E.EmpId, E.Project, E.Salary
+	FROM (
+	    SELECT *, Row_Number() OVER(ORDER BY EmpId) AS RowNumber
+	    FROM EmployeeSalary
+	) E
+	WHERE E.RowNumber % 2 = 1;
+Using a user-defined variable in MySQL-
+Query: SELECT *
+	FROM (
+	      SELECT *, @rowNumber := @rowNumber+ 1 rn
+	      FROM EmployeeSalary
+	      JOIN (SELECT @rowNumber:= 0) r
+	     ) t 
+	WHERE rn % 2 = 1;
+
+68. Write an SQL query to fetch only even rows from the table.
+A) In case we have an auto-increment field e.g. EmpId then we can simply use the below query-
+Query:	SELECT * FROM EmployeeDetails 
+	WHERE MOD (EmpId, 2) = 0;
+In case we don’t have such a field then we can use the below queries.
+Using Row_number in SQL server and checking that the remainder, when divided by 2, is 1-
+Query:	SELECT E.EmpId, E.Project, E.Salary
+	FROM (
+	    SELECT *, Row_Number() OVER(ORDER BY EmpId) AS RowNumber
+	    FROM EmployeeSalary
+	) E
+	WHERE E.RowNumber % 2 = 0;
+Using a user-defined variable in MySQL-
+Query:	SELECT *
+	FROM (
+	      SELECT *, @rowNumber := @rowNumber+ 1 rn
+	      FROM EmployeeSalary
+	      JOIN (SELECT @rowNumber:= 0) r
+	     ) t 
+	WHERE rn % 2 = 0;
+
+69. Write an SQL query to create a new table with data and structure copied from another table.
+A) Query:  CREATE TABLE NewTable 
+	 SELECT * FROM EmployeeSalary;
+
+
+70. Write an SQL query to find the nth highest salary from a table.
+A) Using Top keyword (SQL Server)-
+Query:   SELECT TOP 1 Salary
+	FROM (
+	      SELECT DISTINCT TOP N Salary
+	      FROM Employee
+	      ORDER BY Salary DESC
+	      )
+	ORDER BY Salary ASC;
+Using limit clause(MySQL)-
+Query: 	SELECT Salary
+	FROM Employee
+	ORDER BY Salary DESC LIMIT N-1,1;
