@@ -488,7 +488,7 @@ A) Query:  CREATE TABLE NewTable
 	 SELECT * FROM EmployeeSalary;
 
 
-70. Write an SQL query to find the nth highest salary from a table.
+70) Write an SQL query to find the nth highest salary from a table.
 A) Using Top keyword (SQL Server)-
 Query:   SELECT TOP 1 Salary
 	FROM (
