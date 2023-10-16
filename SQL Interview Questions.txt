@@ -462,7 +462,7 @@ Query: SELECT *
 	     ) t 
 	WHERE rn % 2 = 1;
 
-68. Write an SQL query to fetch only even rows from the table.
+68) Write an SQL query to fetch only even rows from the table.
 A) In case we have an auto-increment field e.g. EmpId then we can simply use the below query-
 Query:	SELECT * FROM EmployeeDetails 
 	WHERE MOD (EmpId, 2) = 0;
