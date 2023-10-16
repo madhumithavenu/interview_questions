@@ -294,7 +294,7 @@ A) Operators are the special keywords or special characters reserved for perform
 -> Compound operators: These operators perform operations on a variable before setting the variable's result to the operation's result. It includes Add equals (+=), subtract equals (-=), multiply equals (*=), divide equals (/=), modulo equals (%=), etc.
 -> String operators: These operators are primarily used to perform concatenation and pattern matching of strings. It includes + (String concatenation), += (String concatenation assignment), % (Wildcard), [] (Character(s) matches), [^] (Character(s) not to match), _ (Wildcard match one character), etc.
 
-46. What are Aggregate functions?
+46) What are Aggregate functions?
 A) An aggregate function performs operations on a collection of values to return a single scalar value. Aggregate functions are often used with the GROUP BY and HAVING clauses of the SELECT statement. Following are the widely used SQL aggregate functions:
 -> AVG() - Calculates the mean of a collection of values.
 -> COUNT() - Counts the total number of records in a specific table or view.
@@ -307,3 +307,15 @@ Note: All aggregate functions described above ignore NULL values except for the 
 
 47. Write a query to get the current date.
 A) Query:  SELECT GETDATE();
+
+48. Write a query to create a new table which consists of data and structure copied from the other table.
+A) Using the SELECT INTO command:
+Query:   SELECT * INTO NewTable FROM EmployeeTable WHERE 1 = 0;
+Using the CREATE command in MySQL:
+Query:  CREATE TABLE NewTable AS SELECT * FROM EmployeeInfo;
+
+49.  Write a query to fetch top N records.
+A) By using the TOP command in SQL Server:
+Query:  SELECT TOP N * FROM EmployeePosition ORDER BY Salary DESC;
+By using the LIMIT command in MySQL:
+Query:  SELECT * FROM EmpPosition ORDER BY Salary DESC LIMIT N;
