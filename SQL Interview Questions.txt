@@ -405,7 +405,7 @@ Query:      SELECT EmployeeSalary.*
 	ManagerSalary USING (EmpId)
 	WHERE ManagerSalary.EmpId IS NULL;
 
-62.  Write an SQL query to fetch the employee’s full names and replace the space with ‘-’.
+62) Write an SQL query to fetch the employee’s full names and replace the space with ‘-’.
 A) Using the ‘Replace’ function-
 Query:      SELECT REPLACE(FullName, ' ', '-') 
 	FROM EmployeeDetails;
