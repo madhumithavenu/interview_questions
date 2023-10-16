@@ -340,3 +340,7 @@ EmpId	FullName  	ManagerId	DateOfJoining	City
 51) Write an SQL query to fetch the different projects available from the EmployeeSalary table.
 A) Query: SELECT DISTINCT(Project)
 	FROM EmployeeSalary;
+52) Write an SQL query to fetch the EmpId and FullName of all the employees working under the Manager with id – ‘986’.
+A) Query: SELECT  EmpId, FullName
+	FROM EmployeeDetails
+	WHERE ManagerId = 986;
