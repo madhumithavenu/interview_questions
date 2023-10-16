@@ -392,7 +392,7 @@ Query:      SELECT *
 	WHERE EmpId IN 
 	(SELECT EmpId from ManagerSalary);
 
-61.  Write an SQL query to fetch records that are present in one table but not in another table.
+61) Write an SQL query to fetch records that are present in one table but not in another table.
 A) SQL Server – Using MINUS- operator-
 Query:      SELECT * FROM EmployeeSalary
 	MINUS
