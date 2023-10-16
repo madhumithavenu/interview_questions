@@ -381,7 +381,7 @@ A) Query: SELECT EmpId FROM EmployeeDetails
 	UNION 
 	SELECT EmpId FROM EmployeeSalary;
 
-60.  Write an SQL query to fetch common records between two tables.
+60) Write an SQL query to fetch common records between two tables.
 A) SQL Server – Using INTERSECT operator-
 Query:      SELECT * FROM EmployeeSalary
 	INTERSECT
