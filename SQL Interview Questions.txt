@@ -422,7 +422,7 @@ Query:      SELECT FullName
 	(SELECT EmpId FROM EmployeeSalary 
 	WHERE Salary BETWEEN 5000 AND 10000);
 
-65.  Write an SQL query to fetch all the Employee details from the EmployeeDetails table who joined in the Year 2020.
+65) Write an SQL query to fetch all the Employee details from the EmployeeDetails table who joined in the Year 2020.
 A) Using BETWEEN for the date range ’01-01-2020′ AND ’31-12-2020′-
 Query:      SELECT * FROM EmployeeDetails
 	WHERE DateOfJoining BETWEEN '2020/01/01'
