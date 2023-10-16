@@ -483,7 +483,7 @@ Query:	SELECT *
 	     ) t 
 	WHERE rn % 2 = 0;
 
-69. Write an SQL query to create a new table with data and structure copied from another table.
+69) Write an SQL query to create a new table with data and structure copied from another table.
 A) Query:  CREATE TABLE NewTable 
 	 SELECT * FROM EmployeeSalary;
 
