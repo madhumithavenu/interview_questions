@@ -360,3 +360,73 @@ A) Query:  SELECT Max(Salary),
 A) Query: SELECT EmpId, Salary
 	FROM EmployeeSalary
 	WHERE Salary BETWEEN 9000 AND 15000;
+
+56) Write an SQL query to fetch those employees who live in Toronto and work under the manager with ManagerId – 321.
+A) Query : SELECT EmpId, City, ManagerId
+	 FROM EmployeeDetails
+	 WHERE City='Toronto' AND ManagerId='321';
+
+57.  Write an SQL query to fetch all the employees who either live in California or work under a manager with ManagerId – 321.
+A) Query:  SELECT EmpId, City, ManagerId
+	 FROM EmployeeDetails
+	 WHERE City='California' OR ManagerId='321';
+
+58.  Write an SQL query to fetch the employees whose name begins with any two characters, followed by a text “hn” and ends with any sequence of characters.
+A) Query: SELECT FullName
+	FROM EmployeeDetails
+	WHERE FullName LIKE ‘__hn%’;
+
+59.   Write an SQL query to fetch all the EmpIds which are present in either of the tables – ‘EmployeeDetails’ and ‘EmployeeSalary’.
+A) Query: SELECT EmpId FROM EmployeeDetails
+	UNION 
+	SELECT EmpId FROM EmployeeSalary;
+
+60.  Write an SQL query to fetch common records between two tables.
+A) SQL Server – Using INTERSECT operator-
+Query:      SELECT * FROM EmployeeSalary
+	INTERSECT
+	SELECT * FROM ManagerSalary;
+MySQL – Since MySQL doesn’t have INTERSECT operator so we can use the subquery-
+Query:      SELECT *
+	FROM EmployeeSalary
+	WHERE EmpId IN 
+	(SELECT EmpId from ManagerSalary);
+
+61.  Write an SQL query to fetch records that are present in one table but not in another table.
+A) SQL Server – Using MINUS- operator-
+Query:      SELECT * FROM EmployeeSalary
+	MINUS
+	SELECT * FROM ManagerSalary;
+
+MySQL – Since MySQL doesn’t have a MINUS operator so we can use LEFT join-
+Query:      SELECT EmployeeSalary.*
+	FROM EmployeeSalary
+	LEFT JOIN
+	ManagerSalary USING (EmpId)
+	WHERE ManagerSalary.EmpId IS NULL;
+
+62.  Write an SQL query to fetch the employee’s full names and replace the space with ‘-’.
+A) Using the ‘Replace’ function-
+Query:      SELECT REPLACE(FullName, ' ', '-') 
+	FROM EmployeeDetails;
+
+63. Write an SQL query to uppercase the name of the employee and lowercase the city values.
+A) Query:  SELECT UPPER(FullName), LOWER(City) 
+	 FROM EmployeeDetails;
+
+64. Write an SQL query to fetch employee names having a salary greater than or equal to 5000 and less than or equal to 10000.
+A) Here, we will use BETWEEN in the ‘where’ clause to return the EmpId of the employees with salary satisfying the required criteria and then use it as a subquery to find the fullName of the employee from the EmployeeDetails table.
+Query:      SELECT FullName 
+	FROM EmployeeDetails 
+	WHERE EmpId IN 
+	(SELECT EmpId FROM EmployeeSalary 
+	WHERE Salary BETWEEN 5000 AND 10000);
+
+65.  Write an SQL query to fetch all the Employee details from the EmployeeDetails table who joined in the Year 2020.
+A) Using BETWEEN for the date range ’01-01-2020′ AND ’31-12-2020′-
+Query:      SELECT * FROM EmployeeDetails
+	WHERE DateOfJoining BETWEEN '2020/01/01'
+	AND '2020/12/31';
+Also, we can extract the year part from the joining date (using YEAR in MySQL)-
+Query:      SELECT * FROM EmployeeDetails 
+	WHERE YEAR(DateOfJoining) = '2020';
