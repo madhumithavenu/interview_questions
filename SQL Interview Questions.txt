@@ -295,7 +295,7 @@ A) Operators are the special keywords or special characters reserved for perform
 -> String operators: These operators are primarily used to perform concatenation and pattern matching of strings. It includes + (String concatenation), += (String concatenation assignment), % (Wildcard), [] (Character(s) matches), [^] (Character(s) not to match), _ (Wildcard match one character), etc.
 
 46. What are Aggregate functions?
-An aggregate function performs operations on a collection of values to return a single scalar value. Aggregate functions are often used with the GROUP BY and HAVING clauses of the SELECT statement. Following are the widely used SQL aggregate functions:
+A) An aggregate function performs operations on a collection of values to return a single scalar value. Aggregate functions are often used with the GROUP BY and HAVING clauses of the SELECT statement. Following are the widely used SQL aggregate functions:
 -> AVG() - Calculates the mean of a collection of values.
 -> COUNT() - Counts the total number of records in a specific table or view.
 -> MIN() - Calculates the minimum of a collection of values.
@@ -304,3 +304,6 @@ An aggregate function performs operations on a collection of values to return a 
 -> FIRST() - Fetches the first element in a collection of values.
 -> LAST() - Fetches the last element in a collection of values.
 Note: All aggregate functions described above ignore NULL values except for the COUNT function.
+
+47. Write a query to get the current date.
+A) Query:  SELECT GETDATE();
