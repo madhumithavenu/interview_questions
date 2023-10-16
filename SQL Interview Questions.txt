@@ -344,3 +344,8 @@ A) Query: SELECT DISTINCT(Project)
 A) Query: SELECT  EmpId, FullName
 	FROM EmployeeDetails
 	WHERE ManagerId = 986;
+
+53) Write an SQL query to fetch the count of employees working in project ‘P1’.
+A)  Query:  SELECT COUNT(*) 
+	  FROM EmployeeSalary 
+	  WHERE Project = 'P1';
