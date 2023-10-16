@@ -441,7 +441,7 @@ Query:      DELETE E1 FROM EmployeeDetails E1
 	AND E1.DateOfJoining = E2.DateOfJoining
 	AND E1.City = E2.City;
 
-67. Write an SQL query to fetch only odd rows from the table.
+67) Write an SQL query to fetch only odd rows from the table.
 A) In case we have an auto-increment field e.g. EmpId then we can simply use the below query-
 Query:	SELECT * FROM EmployeeDetails 
 	WHERE MOD (EmpId, 2) <> 0;
