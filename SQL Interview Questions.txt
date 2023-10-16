@@ -366,7 +366,7 @@ A) Query : SELECT EmpId, City, ManagerId
 	 FROM EmployeeDetails
 	 WHERE City='Toronto' AND ManagerId='321';
 
-57.  Write an SQL query to fetch all the employees who either live in California or work under a manager with ManagerId – 321.
+57) Write an SQL query to fetch all the employees who either live in California or work under a manager with ManagerId – 321.
 A) Query:  SELECT EmpId, City, ManagerId
 	 FROM EmployeeDetails
 	 WHERE City='California' OR ManagerId='321';
