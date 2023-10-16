@@ -305,16 +305,16 @@ A) An aggregate function performs operations on a collection of values to return
 -> LAST() - Fetches the last element in a collection of values.
 Note: All aggregate functions described above ignore NULL values except for the COUNT function.
 
-47. Write a query to get the current date.
+47) Write a query to get the current date.
 A) Query:  SELECT GETDATE();
 
-48. Write a query to create a new table which consists of data and structure copied from the other table.
+48) Write a query to create a new table which consists of data and structure copied from the other table.
 A) Using the SELECT INTO command:
 Query:   SELECT * INTO NewTable FROM EmployeeTable WHERE 1 = 0;
 Using the CREATE command in MySQL:
 Query:  CREATE TABLE NewTable AS SELECT * FROM EmployeeInfo;
 
-49.  Write a query to fetch top N records.
+49) Write a query to fetch top N records.
 A) By using the TOP command in SQL Server:
 Query:  SELECT TOP N * FROM EmployeePosition ORDER BY Salary DESC;
 By using the LIMIT command in MySQL:
