@@ -371,7 +371,7 @@ A) Query:  SELECT EmpId, City, ManagerId
 	 FROM EmployeeDetails
 	 WHERE City='California' OR ManagerId='321';
 
-58.  Write an SQL query to fetch the employees whose name begins with any two characters, followed by a text “hn” and ends with any sequence of characters.
+58) Write an SQL query to fetch the employees whose name begins with any two characters, followed by a text “hn” and ends with any sequence of characters.
 A) Query: SELECT FullName
 	FROM EmployeeDetails
 	WHERE FullName LIKE ‘__hn%’;
