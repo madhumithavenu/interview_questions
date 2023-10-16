@@ -330,6 +330,13 @@ INDEX - Indexes a field providing faster retrieval of records.
 PRIMARY KEY - Uniquely identifies each record in a table.
 FOREIGN KEY - Ensures referential integrity for a record in another table.
 
+
+===>Table – EmployeeDetails
+EmpId	FullName  	ManagerId	DateOfJoining	City
+121	John Snow	321	   	01/31/2019	Toronto
+321	Walter White	986		01/30/2020	California
+421	Kuldeep Rana	876		27/11/2021	New Delhi
+
 51) Write an SQL query to fetch the different projects available from the EmployeeSalary table.
 A) Query: SELECT DISTINCT(Project)
 	FROM EmployeeSalary;
