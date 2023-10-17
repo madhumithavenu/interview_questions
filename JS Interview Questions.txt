@@ -1104,5 +1104,5 @@ A) Static methods are methods that are called on the model itself, while instanc
 9) What are some ways to validate Mongoose schemas?
 A) There are several ways to validate Mongoose schemas. One way is to use the built-in validators that Mongoose provides, such as the “required” validator. Another way is to use custom validation functions. Finally, you can also use a third-party validation library like Validator.js.
 
-10. What are middleware functions in Mongoose?
-Middleware functions in Mongoose are functions that are run before or after certain operations are executed. For example, you could use a middleware function to run some code before a document is saved to the database. This would allow you to do things like validate the data or perform some other operation on it before it is actually stored.
+10) What are middleware functions in Mongoose?
+A) Middleware functions in Mongoose are functions that are run before or after certain operations are executed. For example, you could use a middleware function to run some code before a document is saved to the database. This would allow you to do things like validate the data or perform some other operation on it before it is actually stored.
