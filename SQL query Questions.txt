@@ -78,12 +78,14 @@ WHERE [age=25];
 9) How to create a database in SQL?
 CREATE DATABASE database_name.
 
-10)How do I view tables in SQL?
-	Show tables;
-11)Write a query for the update command in SQL?
+10) How do I view tables in SQL?
+Show tables;
+
+11) Write a query for the update command in SQL?
  UPDATE employees
 	SET last_name=‘Cohen’
 	WHERE employee_id=101;
+
 12)Write a query to get the current date.
   SELECT GETDATE();
 
