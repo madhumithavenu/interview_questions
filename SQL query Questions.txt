@@ -112,7 +112,7 @@ EMPLOYEE_ID  INCENTIVE_DATE   INCENTIVE_AMOUNT
 1) Get all employee details from the employee table.
 SELECT * FROM EMPLOYEE;
 
-2)	Get First_name, Last Name from employee table.
+2) Get First_name, Last Name from employee table.
 SELECT FIRST_NAME, LAST_NAME 
 FROM EMPLOYEE;
 
