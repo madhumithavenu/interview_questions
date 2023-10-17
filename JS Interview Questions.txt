@@ -1053,7 +1053,7 @@ A) The steps for querying data in the MySQL database from a node.js application 
 Establish a connection to the MySQL database server.
 *Execute a SELECT statement and process the result set.
 *Close the database connection.
-*Executing a simple query
+*Executing a simple query.
 
 The following select.js program selects all data from the todos table of the app database:
 let mysql = require('mysql');
