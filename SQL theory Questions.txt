@@ -72,6 +72,7 @@ Non-Clustered Index: Non Clustered Index does not alter the way it was stored bu
 18) What is Grant and Revoke in SQL?
 A) GRANT: It gives a privilege to user.
 REVOKE: It takes back privileges granted from user.
+
 19) What are different Oracle database objects?
 A) TABLES, VIEWS, INDEXES, SYNONYMS, SEQUENCES, TABLESPACES etc
 20) Explain about Check?
