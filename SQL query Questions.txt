@@ -1,15 +1,18 @@
 SQL Query Questions
+
 1) Create a table with a single field as primary key.
 CREATE TABLE Students (   
 	   ID INT NOT NULL
 	   Name VARCHAR(255)
 	   PRIMARY KEY (ID)
 	);
+
 2) Create a table with a single field as Unique.
 CREATE TABLE Students (  
 	   ID INT NOT NULL UNIQUE
 	   Name VARCHAR(255)
 	);
+
 3) Create a table with a single field as Foreign key.
 CREATE TABLE Students (  
 	   ID INT NOT NULL
@@ -18,6 +21,7 @@ CREATE TABLE Students (
 	   PRIMARY KEY (ID)
 	   FOREIGN KEY (Library_ID) REFERENCES Library(LibraryID)
 	);
+
 4) What are the different types of joins?
 There are four different types of JOINs in SQL:
 => (INNER) JOIN: Retrieves records that have matching values in both tables involved in the join. This is the widely used join for queries.
@@ -42,20 +46,23 @@ Example: SELECT *
 	FROM Table_A A
 	FULL JOIN Table_B B
 ON A.col = B.col;
-5)How to create a table in SQL?
-CREATE TABLE table_name (
+
+5) How to create a table in SQL?
+CREATE TABLE table_name (
 	column1 datatype,
 	column2 datatype,
 	column3 datatype,
    ....
 );
-CREATE TABLE employee (
+CREATE TABLE employee (
 	name varchar(25),
 	age int,
 	gender varchar(25)
 );
-6)How to delete a table in SQL?
+
+6) How to delete a table in SQL?
 DROP TABLE table_name;
+
 7)How to change a table name in SQL?
 ALTER TABLE table_name
 	RENAME TO new_table_name;
