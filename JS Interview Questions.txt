@@ -1144,7 +1144,7 @@ A) var bodyParser = require('body-parser')
         extended: true  
      }));  
 
-6) How can you deal with error handling in Express.js? Explain with an example.
+6) How can you deal with error handling in Express.js? Explain with an examples.
 A) Error handling is much easier in the Express versions over Express 4.0. Use the following steps to do the error handling:
 Create an Express.js application. There is no built-in middleware like error handler in express 4.0, so you have to either install a middleware or create a custom one.
 Create a middleware as following:
