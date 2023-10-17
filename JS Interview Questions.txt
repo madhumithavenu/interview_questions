@@ -1187,7 +1187,7 @@ Middleware functions are used to perform the following tasks:
 -> It can call the next middleware function in the stack.
 
 9) What are the different types of Middleware?
-AType of Middleware are:
+A) Type of Middleware are:
 -> Application-level Middleware
 -> Router-level Middleware
 -> Error-handling Middleware
