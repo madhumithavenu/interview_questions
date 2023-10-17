@@ -23,6 +23,7 @@ Atomicity: A transaction consists of many steps, when all the steps in a transac
 Consistency: The database will move from one consistent state to another, if the transaction succeeds and remain in the original state, if the transaction fails.
 Isolation: Every transaction should operate as if it is the only transaction in the system.
 Durability: Once a transaction has completed successfully the updated rows/records must be available for all other transactions on a permanent basis.
+
 8) Can we store pictures in the database and if so, how it can be done?
 A) Yes, we can store pictures in the database by Long Raw Data type. This data-type is used to    store binary data for 2 gigabytes of length. But the table can have only on Long Raw data type.
 9) What is the data type of DUAL table?
