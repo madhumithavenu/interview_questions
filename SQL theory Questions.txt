@@ -152,6 +152,7 @@ A) %ISOPEN: Checks if the cursor is open or not
 %ROWCOUNT: The number of rows that are updated, deleted or fetched.
 %FOUND: Checks if the cursor has fetched any row. It is true if rows are fetched
 %NOT FOUND: Checks if the cursor has fetched any row. It is true if rows are not fetched.
+
 35) What is the purpose of the condition operators BETWEEN and IN?
 A) The BETWEEN operator displays rows based on a range of values. The IN condition operator checks for values contained in a specific set of values.
 36) How do you search for a value in a database table when you don’t have the exact value to search for?
