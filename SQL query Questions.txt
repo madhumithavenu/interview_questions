@@ -179,7 +179,7 @@ SELECT MAX (SAL) FROM EMP;
 16) SQL query to find the lowest salary.
 SELECT MIN (SAL) FROM EMP;
 
-17)	How to find the current date of system?
+17) How to find the current date of system?
 SELECT CURRENT_DATE
 FROM dual;
 
