@@ -116,8 +116,9 @@ In primary key index will be created, so during updation of table index need to 
 24) What is the difference between procedure and function?
 A) Function must return a value and Procedure need not.
 Function can be used in SQL with some restrictions; Procedure cannot be called directly from SQL.
+
 25) What is data warehouse?
-A data warehouse is a relational database that is designed for query and analysis rather than for transaction processing. It is a central repository of data from multiple sources of information. Those data are consolidated, transformed and made available for the mining and online processing.
+A) A data warehouse is a relational database that is designed for query and analysis rather than for transaction processing. It is a central repository of data from multiple sources of information. Those data are consolidated, transformed and made available for the mining and online processing.
 26) What are two ways that you can indicate a comment in a SQL command?
  A) You can indicate a comment in a SQL command by using /* and */ or by using --.
 27) Which type of table relationship associates more than one record in a given table with more than one record in another table?
