@@ -114,7 +114,7 @@ Disadvantages:
 In primary key index will be created, so during updation of table index need to be adjusted accordingly. This process makes the updation slower.
 
 24) What is the difference between procedure and function?
-Function must return a value and Procedure need not.
+A) Function must return a value and Procedure need not.
 Function can be used in SQL with some restrictions; Procedure cannot be called directly from SQL.
 25) What is data warehouse?
 A data warehouse is a relational database that is designed for query and analysis rather than for transaction processing. It is a central repository of data from multiple sources of information. Those data are consolidated, transformed and made available for the mining and online processing.
