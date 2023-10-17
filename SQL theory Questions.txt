@@ -199,6 +199,7 @@ A) UNION and UNION ALL used to combine (set operation) two or more query results
 
 44) When and how oracle database creates a schema?
 A) Oracle database automatically creates a schema when you create a user.
+
 45) What is the main component of an oracle server?
 A) RDBMS.
 46) What is the difference between relation and relationship?
