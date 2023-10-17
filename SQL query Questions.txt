@@ -86,7 +86,7 @@ Show tables;
 	SET last_name=‘Cohen’
 	WHERE employee_id=101;
 
-12)Write a query to get the current date.
+12) Write a query to get the current date.
   SELECT GETDATE();
 
 EMPLOYEE TABLE
