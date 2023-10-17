@@ -231,6 +231,7 @@ A) There is a major difference between a database and a table. The differences a
 Tables are a way to represent the division of data in a database while the database is a collection of tables and data.
 Tables are used to group the data in relation to each other and create a dataset. This dataset will be used in the database. The data stored in the table in any form is a part of the database, but the reverse is not true.
 A database is a collection of organized data and features used to access them, whereas the table is a collection of rows and columns used to store the data.
+
 53) What is a View?
 A) A view in SQL is a virtual table based on the result-set of an SQL statement. A view contains rows and columns, just like a real table. The fields in a view are fields from one or more real tables in the database.
 54) What is the difference between CHAR and VARCHAR?
