@@ -137,7 +137,7 @@ SELECT MAX (SALARY)
 FROM EMPLOYEE
 WHERE SALARY NOT IN (SELECT MAX (SALARY) FROM EMPLOYEE); 
 
-8)	 SQL Query to find nth highest salary of Employee.
+8) SQL Query to find nth highest salary of Employee.
 SELECT *FROM EMPLOYEE Emp1 
 WHERE (N-1) = 
 (SELECT COUNT (DISTINCT (Emp2.Salary)) 
