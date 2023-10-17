@@ -144,7 +144,7 @@ WHERE (N-1) =
 FROM Employee Emp2 
 WHERE Emp2.Salary > Emp1.Salary);
 
-9)	Get First_name and Last Name as single column from employee table separated by a '_'.
+9) Get First_name and Last Name as single column from employee table separated by a '_'.
 SELECT FIRST_NAME||’_’||LAST_NAME FROM EMPLOYEE;
 
 10)	 Get department wise minimum salaries from employee table order by salary ascending?
