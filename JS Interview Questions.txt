@@ -1076,7 +1076,7 @@ A) Mongoose is a MongoDB object modeling tool designed to work in an asynchronou
 A) In order to connect to a MongoDB using Mongoose, you will need to first install the Mongoose npm package. Once you have done that, you can use the Mongoose.connect() function to connect to your MongoDB database.
 
 3) Can you give me an example of how you would define a schema in Mongoose?
-A schema in Mongoose is simply a representation of the structure of your data. For example, if you were creating a schema for a blog post, it might look something like this:
+A) A schema in Mongoose is simply a representation of the structure of your data. For example, if you were creating a schema for a blog post, it might look something like this:
 
 “`
 var blogSchema = new mongoose.Schema({
