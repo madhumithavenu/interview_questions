@@ -69,11 +69,12 @@ ALTER TABLE table_name
 ALTER TABLE employee
  	RENAME TO employee_information;
 
-8)How to delete a row in SQL?
-DELETE FROM table_name
+8) How to delete a row in SQL?
+DELETE FROM table_name
 WHERE [condition];
-DELETE FROM employee
+DELETE FROM employee
 WHERE [age=25];
+
 9)How to create a database in SQL?
 CREATE DATABASE database_name.
 
