@@ -13,6 +13,7 @@ A) A Foreign key present in our table, refers to a primary key of the different 
 5) What is composite key?
 A) A composite key is type of candidate key which represents a set of columns whose values uniquely identified every row in a table.
 Example: If STUDENT_ID and STUDENT_NAME in a table are combined to uniquely identify a row which called as composite key.
+
 6) What is database transaction?
 A) Database transaction takes database from one consistent state to another, at the end of the transactions; this system must be in the prior state if the transaction fails else the status of the system should reflect the successful completion of transaction.
 7) What are properties of transaction?
