@@ -172,16 +172,20 @@ A) The cross join produces the cross product or Cartesian product of two tables.
 
 39) What happens if you omit the WHERE clause in a delete statement?
 A) All the rows in the table are deleted.
+
 40) What is the difference between DELETE and TRUNCATE statement in SQL?
-DELETE	TRUNCATE
-DELETE is a DML command.	TRUNCATE is a DDL command.
-    We can use WHERE clause in 
-DELETE  command.	We cannot use WHERE clause with TRUNCATE
-DELETE statement is used to delete a row from a table.	TRUNCATE statement is used to remove all the rows from a table.
-DELETE is slower than TRUNCATE statement.	TRUNCATE statement is faster than 
-DELETE statement.
-You can rollback data after using
-DELETE statement.	It is not possible to rollback after using TRUNCATE statement.
+DELETE	
+DELETE is a DML command.	    
+We can use WHERE clause in DELETE  command.	
+DELETE statement is used to delete a row from a table.	
+DELETE is slower than TRUNCATE statement.	
+You can rollback data after using DELETE statement.	
+TRUNCATE
+TRUNCATE is a DDL command.
+We cannot use WHERE clause with TRUNCATE
+TRUNCATE statement is used to remove all the rows from a table.
+TRUNCATE statement is faster than  DELETE statement.
+It is not possible to rollback after using TRUNCATE statement.
 
 41) What port does SQL server run on?
 A) 1433 is the standard port for SQL server.
