@@ -75,7 +75,7 @@ WHERE [condition];
 DELETE FROM employee
 WHERE [age=25];
 
-9)How to create a database in SQL?
+9) How to create a database in SQL?
 CREATE DATABASE database_name.
 
 10)How do I view tables in SQL?
