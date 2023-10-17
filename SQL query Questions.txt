@@ -192,7 +192,7 @@ FROM EMPLOYEE EMP
 LEFT JOIN INCENTIVE INCN
 ON EMP.EMPLOYEE_ID=INCN.EMPLOYEE_ID;
 
-20)	Select first name, incentive amount from employee and incentives table for all employees even if they didn't get incentives and set incentive amount as 0 for those employees who didn't get incentives.
+20) Select first name, incentive amount from employee and incentives table for all employees even if they didn't get incentives and set incentive amount as 0 for those employees who didn't get incentives.
 SELECT FIRST_NAME, NVL (INCENTIVE_AMOUNT, 0)
 FROM EMPLOYEE EMP
 LEFT JOIN INCENTIVE INCN 
