@@ -152,7 +152,7 @@ SELECT DEPARTMENT, MIN (SALARY) MINSALARY FROM EMPLOYEE
 GROUP BY DEPARTMENT
 ORDER BY MINSALARY ASC;
 
-11)	Select first name, incentive amount from employee and incentives table for those employees who have incentives.
+11) Select first name, incentive amount from employee and incentives table for those employees who have incentives.
 SELECT EMP.FIRST_NAME, INCN.INCENTIVE_AMOUNT 
 FROM EMPLOYEE EMP
 INNER JOIN INCENTIVE INCN  
