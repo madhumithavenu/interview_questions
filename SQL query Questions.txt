@@ -158,7 +158,7 @@ FROM EMPLOYEE EMP
 INNER JOIN INCENTIVE INCN  
 ON EMP.EMPLOYEE_ID=INCN.EMPLOYEE_ID;
 
-12)	 Select first name, incentive amount from employee and incentives table for those employees who have incentives and incentive amount greater than 3000.
+12) Select first name, incentive amount from employee and incentives table for those employees who have incentives and incentive amount greater than 3000.
 SELECT EMP.FIRST_NAME, INCN.INCENTIVE_AMOUNT 
 FROM EMPLOYEE EMP
 INNER JOIN INCENTIVE INCN  
