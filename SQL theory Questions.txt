@@ -158,6 +158,7 @@ A) The BETWEEN operator displays rows based on a range of values. The IN conditi
 
 36) How do you search for a value in a database table when you don’t have the exact value to search for?
 A) In such cases, the LIKE condition operator is used to select rows that match a character pattern. This is also called ‘wildcard’ search. 
+
 37) What are the specific uses of SQL functions?
 A) SQL functions have the following uses −
 Performing calculations on data
