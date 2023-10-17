@@ -136,6 +136,7 @@ A) Materialized views are objects that are reduced sets of information that have
 
 30) What is a Table-space? 
 A) A database is divided into Logical Storage Unit called table-space. A table-space is used to grouped related logical structures together.
+
 31) What is Cartesian product?
  A) If two or more tables are joining without join condition will result into Cartesian products.
 32) What operators deal with NULL?
