@@ -214,6 +214,7 @@ A) RDBMS stands for Relational Database Management System. The key difference he
 
 49) What is SQL?
 A) SQL stands for Structured Query Language. It is the standard language for relational database management systems. It is especially useful in handling organized data comprised of entities (variables) and relations between different entities of the data.
+
 50) What are the different subsets of SQL?
 A) Data Definition Language (DDL) – It allows you to perform various operations on the database such as CREATE, ALTER, and DELETE objects.
 Data Manipulation Language(DML) – It allows you to access and manipulate data. It helps you to insert, update, delete and retrieve data from the database.
