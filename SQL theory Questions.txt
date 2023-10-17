@@ -107,7 +107,7 @@ Key in a table.	We can have more than one
 foreign key in a table.
 
 22) What are the advantages and disadvantages of Primary Key?
-Advantages of primary key:
+A) Advantages of primary key:
 It is a unique key on which all the other candidate keys are functionally dependent.
 A primary key field speeds up queries, searches and sort requests.
 When you add new records, it will not allow you to enter NULL values; it ensures that there are only valid records in the table. 
@@ -115,6 +115,7 @@ When you add new records to a table that has a primary key, Access checks for du
 By default, Access displays your data in the order of the primary key..
 Disadvantages:
 There can be more than one key on which all the other attributes are dependent on.
+
 23) What are the advantages and disadvantages of Foreign Key?
 Advantage:
 1)   It allows referencing another table using the primary key for the other table.
