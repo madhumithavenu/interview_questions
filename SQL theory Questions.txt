@@ -249,10 +249,13 @@ A) NOW() command is used to show current year, month, date with hours, minutes, 
 
 57) What do you mean by % and _ in the LIKE statement?
 A) % corresponds to 0 or more characters, _ is exactly one character in the LIKE statement.
+
 58) How does DISTINCT work in MySQL?
-A) DISTINCT is used to avoid the problem of duplicity while fetching the results of a particular query. DISTINCT is used to make sure the results do not contain repeated values. DISTINCT can be used with the SELECT clause. Here is the syntax for it:
+A) DISTINCT is used to avoid the problem of duplicity while fetching the results of a particular query. DISTINCT is used to make sure the results do not contain repeated values. DISTINCT can be used with the SELECT clause.
+
 59) What is NULL value? How is it different from zero or a blank space?
- A) A NULL value indicates the absence of data for a certain cell of a table. Instead, zero is a valid numeric value, and an empty string is a legal string of zero length.
+A) A NULL value indicates the absence of data for a certain cell of a table. Instead, zero is a valid numeric value, and an empty string is a legal string of zero length.
+
 60) What is the SELECT statement?
 A) A SELECT command gets zero or more rows from one or more database tables or views. The most frequent data manipulation language (DML) command is SELECT in most applications. SELECT queries define a result set, but not how to calculate it, because SQL is a declarative programming language.
 61) What are the different types of SQL operators?
