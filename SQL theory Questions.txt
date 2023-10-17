@@ -6,6 +6,7 @@ A) Any valuable information which needs to be stored by the user for later use c
 
 3) What is primary key?
 A) A Primary key is a special designation assigned to a column, which helps us to uniquely identify and map all records present inside out Database.
+
 4) What is Foreign Key?
 A) A Foreign key present in our table, refers to a primary key of the different table, which helps us to link the table.
 5) What is composite key?
