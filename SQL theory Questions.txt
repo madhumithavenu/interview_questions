@@ -46,6 +46,7 @@ A) Sub Query is also called as Nested Query or Inner Query which is used to get 
 There are two different types of sub queries:
 Correlated sub query: A Correlated sub query cannot be as independent query but can reference column in a table listed in the form list of the outer query.
 Non-Correlated sub query: This can be evaluated as if it were an independent query. Results of the sub query are submitted to the main query or parent query.
+
 13) What does rollback do?
 A) Rollback retracts any of the changes resulting from the SQL statements in the transaction.
 14) What is a synonym?
