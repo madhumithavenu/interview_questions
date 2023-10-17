@@ -1106,3 +1106,6 @@ A) There are several ways to validate Mongoose schemas. One way is to use the bu
 
 10) What are middleware functions in Mongoose?
 A) Middleware functions in Mongoose are functions that are run before or after certain operations are executed. For example, you could use a middleware function to run some code before a document is saved to the database. This would allow you to do things like validate the data or perform some other operation on it before it is actually stored.
+
+15) What’s the difference between findOne() and findById()?
+A) The findOne() function will return the first document that matches the query. The findById() function will return the document with the specified id.
