@@ -40,6 +40,7 @@ Indexes – Performance tuning method for processing the records
 Synonyms – Alias name for tables
 Sequences – Multiple users generate unique numbers
 Table spaces – Logical storage unit in Oracle.
+
 12) What is a sub query and what are the different types of sub queries?
 A) Sub Query is also called as Nested Query or Inner Query which is used to get data from multiple tables. A sub query is added in the where clause of the main query.
 There are two different types of sub queries:
