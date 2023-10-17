@@ -278,4 +278,3 @@ A) An aggregate function performs operations on a collection of values to return
 -> FIRST() - Fetches the first element in a collection of values.
 -> LAST() - Fetches the last element in a collection of values.
 Note: All aggregate functions described above ignore NULL values except for the COUNT function.
-
