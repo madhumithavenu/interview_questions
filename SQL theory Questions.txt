@@ -77,34 +77,24 @@ REVOKE: It takes back privileges granted from user.
 A) TABLES, VIEWS, INDEXES, SYNONYMS, SEQUENCES, TABLESPACES etc
 
 20) Explain about Check?
- A) Check is used to give a condition in the column, so that the condition must satisfy for each row in the table.
+A) Check is used to give a condition in the column, so that the condition must satisfy for each row in the table.
 A check constraint can NOT be defined on a SQL View.
 The check constraint defined on a table must refer to only columns in that table. It cannot refer to columns in other tables.
 A check constraint can NOT include a Sub-query.
 A check constraint can be declared in either a CREATE TABLE statement or in an ALTER TABLE statement.
 
 21) What are the differences between primary key and foreign key?
-Primary Key	Foreign Key
-Primary key uniquely identify a
- record in the table.	Foreign key is a field in the table
- thatis primary key in another
- table.
-Primary Key can't accept null
-values.	Foreign key is a field in the table 
-that is primary key in another
- table.
-Primary Key can't accept null
-values.	Foreign key can accept multiple
- null values
-By default, Primary key is
-clustered index and data in the database table is physically
-organized in the sequence of
-clustered index.	Foreign key do not automatically
-create an index, clustered or non-clustered. You can manually
-create an index on foreign key.
-We can have only one Primary 
-Key in a table.	We can have more than one 
-foreign key in a table.
+A) Primary Key	                                      
+Primary key uniquely identify a record in the table.	                  
+Primary Key can't accept null values.	
+By default, Primary key is clustered index and data in the database table is physically organized in the sequence of
+clustered index.	
+We can have only one Primary Key in a table.
+Foreign Key
+Foreign key is a field in the table that is primary key in another table.
+Foreign key can accept multiple null values
+Foreign key do not automatically create an index, clustered or non-clustered. You can manually create an index on foreign key.	
+We can have more than one  foreign key in a table.
 
 22) What are the advantages and disadvantages of Primary Key?
 A) Advantages of primary key:
@@ -122,6 +112,7 @@ A) Advantage:
 2) Foreign key ensures data integrity.
 Disadvantages:
 In primary key index will be created, so during updation of table index need to be adjusted accordingly. This process makes the updation slower.
+
 24) What is the difference between procedure and function?
 Function must return a value and Procedure need not.
 Function can be used in SQL with some restrictions; Procedure cannot be called directly from SQL.
