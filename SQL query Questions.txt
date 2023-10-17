@@ -10,7 +10,7 @@ CREATE TABLE Students (
 	   ID INT NOT NULL UNIQUE
 	   Name VARCHAR(255)
 	);
-3)Create a table with a single field as Foreign key.
+3) Create a table with a single field as Foreign key.
 CREATE TABLE Students (  
 	   ID INT NOT NULL
 	   Name VARCHAR(255)
