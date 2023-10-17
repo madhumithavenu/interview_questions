@@ -116,7 +116,7 @@ SELECT * FROM EMPLOYEE;
 SELECT FIRST_NAME, LAST_NAME 
 FROM EMPLOYEE;
 
-3)	Get First_name from employee table using alias name “Employee Name”.
+3) Get First_name from employee table using alias name “Employee Name”.
 SELECT FIRST_NAME as EMPLOYEE_NAME
 FROM EMPLOYEE;
 
