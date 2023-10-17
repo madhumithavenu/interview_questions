@@ -132,7 +132,7 @@ FROM EMPLOYEE;
 SELECT DISTINCT DEPARTMENT
 FROM EMPLOYEES; 
 
-7)	 SQL Query to find second highest salary of Employee.
+7) SQL Query to find second highest salary of Employee.
 SELECT MAX (SALARY)
 FROM EMPLOYEE
 WHERE SALARY NOT IN (SELECT MAX (SALARY) FROM EMPLOYEE); 
