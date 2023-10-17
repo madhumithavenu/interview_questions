@@ -1092,8 +1092,8 @@ A) The Schema object contains information about the structure of the data in the
 5) How can we use mongoose models to create, read, update, and delete documents from our database?
 A) We can use mongoose models to create, read, update, and delete documents from our database by using the model functions create(), find(), update(), and deleteOne().
 
-6. How do we specify validation rules for data fields when defining our schema?
-We can specify validation rules for data fields by adding validation keywords to the field definition in our schema. For example, we could add the “required” keyword to a field to make sure that it is always populated with a value.
+6) How do we specify validation rules for data fields when defining our schema?
+A) We can specify validation rules for data fields by adding validation keywords to the field definition in our schema. For example, we could add the “required” keyword to a field to make sure that it is always populated with a value.
 
 7. In what situations is it best to use a Mongoose virtual field over a normal one?
 A Mongoose virtual field is best used when you want to define a field that is not actually stored in the MongoDB database, but that you want to be able to access and manipulate as if it were a normal field. This can be useful for computed fields, or for fields that you want to be able to populate from an outside source.
