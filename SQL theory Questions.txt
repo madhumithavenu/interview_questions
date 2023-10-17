@@ -216,9 +216,10 @@ A) RDBMS stands for Relational Database Management System. The key difference he
 A) SQL stands for Structured Query Language. It is the standard language for relational database management systems. It is especially useful in handling organized data comprised of entities (variables) and relations between different entities of the data.
 
 50) What are the different subsets of SQL?
-A) Data Definition Language (DDL) – It allows you to perform various operations on the database such as CREATE, ALTER, and DELETE objects.
-Data Manipulation Language(DML) – It allows you to access and manipulate data. It helps you to insert, update, delete and retrieve data from the database.
-Data Control Language(DCL) – It allows you to control access to the database. Example – Grant, Revoke access permissions.
+A) Data Definition Language (DDL) – It allows you to perform various operations on the database such as CREATE, ALTER, and DELETE objects.
+Data Manipulation Language(DML) – It allows you to access and manipulate data. It helps you to insert, update, delete and retrieve data from the database.
+Data Control Language(DCL) – It allows you to control access to the database. Example – Grant, Revoke access permissions.
+
 51) List the different types of relationships in SQL.
 A) There are different types of relations in the database:
 One-to-One – This is a connection between two tables in which each record in one table corresponds to the maximum of one record in the other.
