@@ -89,27 +89,28 @@ Show tables;
 12) Write a query to get the current date.
   SELECT GETDATE();
 
-EMPLOYEE TABLE
-EMPLOYEE_ID	FIRST_NAME	LAST_NAME	SALARY	JOINING_DATE	DEPARTMENT
-1	Gopi	Krishna	1000000	01-JAN-16 12.00.00 AM	Banking
-2	Mukundha 	Muraari	800000	01-JAN-16 12.00.00 AM	Insurance
-3	Naveen	Kumar	700000	01-FEB-16 12.00.00 AM	Banking
-4			600000	01-FEB-16 12.00.00 AM	Insurance
-5	Jerry	Pinto	650000	01-FEB-16 12.00.00 AM	Insurance
-6	Philip	Mathew	750000	01-JAN-16 12.00.00 AM	Services
-7	TestName1	123	650000	01-JAN-16 12.00.00 AM	Services
-8	TestName2	Lname%	600000	01-FEB-16 12.00.00 AM	Insurance
+
+***********EMPLOYEE TABLE**********
+EMPLOYEE_ID FIRST_NAME	LAST_NAME   SALARY	JOINING_DATE	        DEPARTMENT
+1	    Gopi	Krishna	    1000000	01-JAN-16 12.00.00 AM	Banking
+2	    Mukundha 	Muraari	    800000	01-JAN-16 12.00.00 AM	Insurance
+3	    Naveen	Kumar	    700000	01-FEB-16 12.00.00 AM	Banking
+4			            600000	01-FEB-16 12.00.00 AM	Insurance
+5	    Jerry	Pinto	    650000	01-FEB-16 12.00.00 AM	Insurance
+6	    Philip	Mathew	    750000	01-JAN-16 12.00.00 AM	Services
+7	    TestName1	123	    650000	01-JAN-16 12.00.00 AM	Services
+8	    TestName2	Lname%	    600000	01-FEB-16 12.00.00 AM	Insurance
 
 
-INCENTIVE TABLE
-EMPLOYEE_ID	INCENTIVE_DATE	INCENTIVE_AMOUNT
-1	01-FEB-16	5000
-2	01-FEB-16	3000
-3	01-FEB-16	4000
-1	01-JAN-16	4500
-2	01-JAN-16	3500
+############INCENTIVE TABLE###########
+EMPLOYEE_ID  INCENTIVE_DATE   INCENTIVE_AMOUNT
+1	     01-FEB-16	         5000
+2	     01-FEB-16	         3000
+3	     01-FEB-16	         4000
+1	     01-JAN-16	         4500
+2	     01-JAN-16	         3500
 
-1)	Get all employee details from the employee table.
+1) Get all employee details from the employee table.
 SELECT * FROM EMPLOYEE;
 2)	Get First_name, Last Name from employee table.
 SELECT FIRST_NAME, LAST_NAME 
