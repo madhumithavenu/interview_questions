@@ -1109,3 +1109,6 @@ A) Middleware functions in Mongoose are functions that are run before or after c
 
 15) What’s the difference between findOne() and findById()?
 A) The findOne() function will return the first document that matches the query. The findById() function will return the document with the specified id.
+
+16) What is the purpose of $where in Mongoose queries?
+A) The $where operator in Mongoose queries allows you to execute arbitrary JavaScript expressions to query for documents. This can be useful if you need to query for documents based on complex criteria that can’t be easily expressed using the other Mongoose query operators. However, you should be aware that using $where can be very slow, since it has to execute the JavaScript expression for every document in the collection.
