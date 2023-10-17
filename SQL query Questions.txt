@@ -5,7 +5,7 @@ CREATE TABLE Students (
 	   Name VARCHAR(255)
 	   PRIMARY KEY (ID)
 	);
-2)Create a table with a single field as Unique.
+2) Create a table with a single field as Unique.
 CREATE TABLE Students (  
 	   ID INT NOT NULL UNIQUE
 	   Name VARCHAR(255)
