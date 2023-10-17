@@ -1174,7 +1174,7 @@ Use the middleware as following:
 	 })  
 	}  
 
-7) Write the code to start serving static files in Express.js.
+7) Write the code to start serving static files in Express.js?
 A) app.use(express.static('public'))  
      app.use('/static', express.static(path.join(__dirname, 'public')))  
 
