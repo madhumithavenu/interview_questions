@@ -243,6 +243,7 @@ CHAR uses static memory allocation, while VARCHAR uses dynamic memory allocation
 
 55) What is a clause?
 A) A condition imposed on a SQL query to filter the data to obtain the desired result. Some examples are WHERE, LIMIT, HAVING, LIKE, AND, OR, ORDER BY, etc.
+
 56) What is the difference between NOW() and CURRENT_DATE()?
 A) NOW() command is used to show current year, month, date with hours, minutes, and seconds while CURRENT_DATE() shows the current year with month and date only.
 57) What do you mean by % and _ in the LIKE statement?
