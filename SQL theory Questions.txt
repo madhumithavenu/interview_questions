@@ -75,6 +75,7 @@ REVOKE: It takes back privileges granted from user.
 
 19) What are different Oracle database objects?
 A) TABLES, VIEWS, INDEXES, SYNONYMS, SEQUENCES, TABLESPACES etc
+
 20) Explain about Check?
  A) Check is used to give a condition in the column, so that the condition must satisfy for each row in the table.
 A check constraint can NOT be defined on a SQL View.
