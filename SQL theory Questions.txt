@@ -3,6 +3,7 @@ A) Database is a software present inside our computer which helps the user to st
 
 2) What is Data?
 A) Any valuable information which needs to be stored by the user for later use can be termed as Data.
+
 3) What is primary key?
 A) A Primary key is a special designation assigned to a column, which helps us to uniquely identify and map all records present inside out Database.
 4) What is Foreign Key?
