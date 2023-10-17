@@ -186,7 +186,7 @@ FROM dual;
 18) How to find current date and time of system?
 SELECT systimestamp FROM dual;
 
-19)	Select first name, incentive amount from employee and incentives table for all employees even if they didn't get incentives
+19) Select first name, incentive amount from employee and incentives table for all employees even if they didn't get incentives
 SELECT FIRST_NAME, INCENTIVE_AMOUNT
 FROM EMPLOYEE EMP
 LEFT JOIN INCENTIVE INCN
