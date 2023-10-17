@@ -170,7 +170,7 @@ SELECT * FROM
 (SELECT * FROM EMPLOYEE ORDER BY SALARY DESC) 
 WHERE ROWNUM <3;
 
-14)	Write the syntax to find current date and time in format “YYYY-MM-DD” using function.
+14) Write the syntax to find current date and time in format “YYYY-MM-DD” using function.
 SELECT TO_CHAR (SYSDATE, 'YYYY-MM-DD HH24: MI: SS’) "Current_Date"   FROM DUAL;
 
 15)	SQL query to find the highest salary.
