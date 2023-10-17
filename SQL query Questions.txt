@@ -124,7 +124,7 @@ FROM EMPLOYEE;
 SELECT UPPER (FIRST_NAME)
 FROM EMPLOYEE;
 
-5)	Get First_name from employee table in lower case.
+5) Get First_name from employee table in lower case.
 SELECT LOWER (FIRST_NAME)
 FROM EMPLOYEE;
 
