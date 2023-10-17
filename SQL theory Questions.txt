@@ -119,8 +119,9 @@ Function can be used in SQL with some restrictions; Procedure cannot be called d
 
 25) What is data warehouse?
 A) A data warehouse is a relational database that is designed for query and analysis rather than for transaction processing. It is a central repository of data from multiple sources of information. Those data are consolidated, transformed and made available for the mining and online processing.
+
 26) What are two ways that you can indicate a comment in a SQL command?
- A) You can indicate a comment in a SQL command by using /* and */ or by using --.
+A) You can indicate a comment in a SQL command by using /* and */ or by using --.
 27) Which type of table relationship associates more than one record in a given table with more than one record in another table?
 A many–to–many relationship associates more than one record in a table with more than one record in another table.
 28) What is the main difference between oracle, sql and sql server?	
