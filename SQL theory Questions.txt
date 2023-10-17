@@ -130,6 +130,7 @@ A) A many–to–many relationship associates more than one record in a table wi
 A) Oracle is based on RDBMS (Relational Database Management System).
 SQL is Structured Query Language is a standard command set used to communicate with the relational database management system.
 SQL Server is another tool for RDBMS provided by Microsoft.
+
 29) Explain materialized views and how they are used.
 A) Materialized views are objects that are reduced sets of information that have been summarized, grouped, or aggregated from base tables. They are typically used in data warehouse or decision support systems.
 30) What is a Table-space? 
