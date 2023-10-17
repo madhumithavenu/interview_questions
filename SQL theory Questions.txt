@@ -189,6 +189,7 @@ It is not possible to rollback after using TRUNCATE statement.
 
 41) What port does SQL server run on?
 A) 1433 is the standard port for SQL server.
+
 42) What is "normalization"? "Denormalization"? Why do you sometimes want to denormalize?
 A) Normalizing data means eliminating redundant information from a table and organizing the data so that future changes to the table are easier.
 Denormalization means allowing redundancy in a table. The main benefit of denormalization is improved performance with simplified data retrieval and manipulation. This is done by reduction in the number of joins needed for data processing.
