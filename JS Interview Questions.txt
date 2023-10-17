@@ -1120,9 +1120,9 @@ A) Express.js, or simply Express, is a free, open-source, lightweight, and fast 
 A) Express.js or Express is a JavaScript backend framework. It is mainly designed to develop complete web applications (single-page, multi-page, and hybrid web applications) and APIs. Express is the backend component of the MEAN stack where M stands for MongoDB, which handles database; E stands for Express, which handles backend; A stands for AngularJS, which is for the front-end, and N stands for Node.
 
 3) Why do we use Express.js?
-A Express.js is an automatically prebuilt Node.js framework that facilitates us to create server-side web applications faster and smarter. The main reason for choosing Express is its simplicity, minimalism, flexibility, and scalability characteristics.
+A) A Express.js is an automatically prebuilt Node.js framework that facilitates us to create server-side web applications faster and smarter. The main reason for choosing Express is its simplicity, minimalism, flexibility, and scalability characteristics.
 
-4) How does an Express code look like?
+4) How does an Express code look like ?
 A) The express.js program is saved with ".js" extension.
 See the example:var express = require('express');    
 	var app = express();    
