@@ -117,9 +117,9 @@ Disadvantages:
 There can be more than one key on which all the other attributes are dependent on.
 
 23) What are the advantages and disadvantages of Foreign Key?
-Advantage:
-1)   It allows referencing another table using the primary key for the other table.
-2)   Foreign key ensures data integrity.
+A) Advantage:
+1) It allows referencing another table using the primary key for the other table.
+2) Foreign key ensures data integrity.
 Disadvantages:
 In primary key index will be created, so during updation of table index need to be adjusted accordingly. This process makes the updation slower.
 24) What is the difference between procedure and function?
