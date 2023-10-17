@@ -32,6 +32,7 @@ A) The DUAL table is a one-column table present in oracle database.  The table h
 
 10) What is an oracle schema?
 A) A user account and its associated data including tables, views, indexes, clusters, sequences, procedures, functions, triggers, packages and database links is known as Oracle schema. Systems, SCOTT etc are default schemas. We can create a new Schema/User. But we can't drop default database schemas.
+
 11) What are the different Oracle Database objects?
 A) Tables – set of elements organized in vertical and horizontal
 Views – Virtual table derived from one or more tables
