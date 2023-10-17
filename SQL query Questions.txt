@@ -120,7 +120,7 @@ FROM EMPLOYEE;
 SELECT FIRST_NAME as EMPLOYEE_NAME
 FROM EMPLOYEE;
 
-4)	Get First_name from employee table in upper case.
+4) Get First_name from employee table in upper case.
 SELECT UPPER (FIRST_NAME)
 FROM EMPLOYEE;
 
