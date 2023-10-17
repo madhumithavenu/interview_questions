@@ -49,6 +49,7 @@ Non-Correlated sub query: This can be evaluated as if it were an independent que
 
 13) What does rollback do?
 A) Rollback retracts any of the changes resulting from the SQL statements in the transaction.
+
 14) What is a synonym?
 A) Synonym is an alias for a table, view, sequence or program unit. 
 15) What are the differences between drop, truncate and delete?
