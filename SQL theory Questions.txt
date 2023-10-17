@@ -202,8 +202,10 @@ A) Oracle database automatically creates a schema when you create a user.
 
 45) What is the main component of an oracle server?
 A) RDBMS.
+
 46) What is the difference between relation and relationship?
 A) A relation is another name for a table, whereas a relationship is a way to correlates, or join, two or more tables.
+
 47) When does a transaction finish?
 A) When it is committed or when it is rolled back.
 48) What is RDBMS? How is it different from DBMS?
