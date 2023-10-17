@@ -60,6 +60,7 @@ Delete: It is used to remove rows from the table and WHERE clause can be used fo
 
 16) What is a trigger?
 A) A database trigger is a code or programs that automatically execute with response to some event (before insert, after insert, on update, on delete of a row) on a table or view in a database.
+
 17) What are all the different types of indexes?
 A) There are three types of indexes:
 UNIQUE INDEX: This indexing does not allow the field to have duplicate values if the column is unique indexed. Unique index can be applied automatically when primary key is defined.
