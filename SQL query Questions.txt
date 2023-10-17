@@ -1,0 +1,193 @@
+SQL Query Questions
+1) Create a table with a single field as primary key.
+CREATE TABLE Students (   
+	   ID INT NOT NULL
+	   Name VARCHAR(255)
+	   PRIMARY KEY (ID)
+	);
+2)Create a table with a single field as Unique.
+CREATE TABLE Students (  
+	   ID INT NOT NULL UNIQUE
+	   Name VARCHAR(255)
+	);
+3)Create a table with a single field as Foreign key.
+CREATE TABLE Students (  
+	   ID INT NOT NULL
+	   Name VARCHAR(255)
+	   LibraryID INT
+	   PRIMARY KEY (ID)
+	   FOREIGN KEY (Library_ID) REFERENCES Library(LibraryID)
+	);
+4)What are the different types of joins?
+There are four different types of JOINs in SQL:
+=> (INNER) JOIN: Retrieves records that have matching values in both tables involved in the join. This is the widely used join for queries.
+Example: ->SELECT *
+	FROM Table_A
+	JOIN Table_B;
+	->SELECT *
+	FROM Table_A
+	INNER JOIN Table_B;
+=> LEFT (OUTER) JOIN: Retrieves all the records/rows from the left and the matched records/rows from the right table.
+Example:SELECT *
+	FROM Table_A A
+	LEFT JOIN Table_B B
+	ON A.col = B.col;
+=> RIGHT (OUTER) JOIN: Retrieves all the records/rows from the right and the matched records/rows from the left table.
+Example: SELECT *
+	FROM Table_A A
+	RIGHT JOIN Table_B B
+	ON A.col = B.col;
+=> FULL (OUTER) JOIN: Retrieves all the records where there is a match in either the left or right table.
+Example: SELECT *
+	FROM Table_A A
+	FULL JOIN Table_B B
+ON A.col = B.col;
+5)How to create a table in SQL?
+CREATE TABLE table_name (
+	column1 datatype,
+	column2 datatype,
+	column3 datatype,
+   ....
+);
+CREATE TABLE employee (
+	name varchar(25),
+	age int,
+	gender varchar(25)
+);
+6)How to delete a table in SQL?
+DROP TABLE table_name;
+7)How to change a table name in SQL?
+ALTER TABLE table_name
+	RENAME TO new_table_name;
+ALTER TABLE employee
+ 	RENAME TO employee_information;
+8)How to delete a row in SQL?
+DELETE FROM table_name
+WHERE [condition];
+DELETE FROM employee
+WHERE [age=25];
+9)How to create a database in SQL?
+CREATE DATABASE database_name.
+
+10)How do I view tables in SQL?
+	Show tables;
+11)Write a query for the update command in SQL?
+ UPDATE employees
+	SET last_name=‘Cohen’
+	WHERE employee_id=101;
+12)Write a query to get the current date.
+  SELECT GETDATE();
+
+EMPLOYEE TABLE
+EMPLOYEE_ID	FIRST_NAME	LAST_NAME	SALARY	JOINING_DATE	DEPARTMENT
+1	Gopi	Krishna	1000000	01-JAN-16 12.00.00 AM	Banking
+2	Mukundha 	Muraari	800000	01-JAN-16 12.00.00 AM	Insurance
+3	Naveen	Kumar	700000	01-FEB-16 12.00.00 AM	Banking
+4			600000	01-FEB-16 12.00.00 AM	Insurance
+5	Jerry	Pinto	650000	01-FEB-16 12.00.00 AM	Insurance
+6	Philip	Mathew	750000	01-JAN-16 12.00.00 AM	Services
+7	TestName1	123	650000	01-JAN-16 12.00.00 AM	Services
+8	TestName2	Lname%	600000	01-FEB-16 12.00.00 AM	Insurance
+
+
+INCENTIVE TABLE
+EMPLOYEE_ID	INCENTIVE_DATE	INCENTIVE_AMOUNT
+1	01-FEB-16	5000
+2	01-FEB-16	3000
+3	01-FEB-16	4000
+1	01-JAN-16	4500
+2	01-JAN-16	3500
+
+1)	Get all employee details from the employee table.
+SELECT * FROM EMPLOYEE;
+2)	Get First_name, Last Name from employee table.
+SELECT FIRST_NAME, LAST_NAME 
+FROM EMPLOYEE;
+
+3)	Get First_name from employee table using alias name “Employee Name”.
+SELECT FIRST_NAME as EMPLOYEE_NAME
+FROM EMPLOYEE;
+
+4)	Get First_name from employee table in upper case.
+SELECT UPPER (FIRST_NAME)
+FROM EMPLOYEE;
+
+5)	Get First_name from employee table in lower case.
+SELECT LOWER (FIRST_NAME)
+FROM EMPLOYEE;
+
+6)	Get unique DEPARTMENT from employee table.
+SELECT DISTINCT DEPARTMENT
+FROM EMPLOYEES; 
+
+7)	 SQL Query to find second highest salary of Employee.
+SELECT MAX (SALARY)
+FROM EMPLOYEE
+WHERE SALARY NOT IN (SELECT MAX (SALARY) FROM EMPLOYEE); 
+
+8)	 SQL Query to find nth highest salary of Employee.
+SELECT *FROM EMPLOYEE Emp1 
+WHERE (N-1) = 
+(SELECT COUNT (DISTINCT (Emp2.Salary)) 
+FROM Employee Emp2 
+WHERE Emp2.Salary > Emp1.Salary);
+
+9)	Get First_name and Last Name as single column from employee table separated by a '_'.
+SELECT FIRST_NAME||’_’||LAST_NAME FROM EMPLOYEE;
+
+10)	 Get department wise minimum salaries from employee table order by salary ascending?
+SELECT DEPARTMENT, MIN (SALARY) MINSALARY FROM EMPLOYEE
+GROUP BY DEPARTMENT
+ORDER BY MINSALARY ASC;
+
+11)	Select first name, incentive amount from employee and incentives table for those employees who have incentives.
+SELECT EMP.FIRST_NAME, INCN.INCENTIVE_AMOUNT 
+FROM EMPLOYEE EMP
+INNER JOIN INCENTIVE INCN  
+ON EMP.EMPLOYEE_ID=INCN.EMPLOYEE_ID;
+
+12)	 Select first name, incentive amount from employee and incentives table for those employees who have incentives and incentive amount greater than 3000.
+SELECT EMP.FIRST_NAME, INCN.INCENTIVE_AMOUNT 
+FROM EMPLOYEE EMP
+INNER JOIN INCENTIVE INCN  
+ON EMP.EMPLOYEE_ID=INCN.EMPLOYEE_ID;
+AND INCENTIVE_AMOUNT >3000;
+
+13)	Select TOP 2 salaries from employee table.
+SELECT * FROM 
+(SELECT * FROM EMPLOYEE ORDER BY SALARY DESC) 
+WHERE ROWNUM <3;
+
+14)	Write the syntax to find current date and time in format “YYYY-MM-DD” using function.
+SELECT TO_CHAR (SYSDATE, 'YYYY-MM-DD HH24: MI: SS’) "Current_Date"   FROM DUAL;
+
+15)	SQL query to find the highest salary.
+SELECT MAX (SAL) FROM EMP;
+
+16)	SQL query to find the lowest salary.
+SELECT MIN (SAL) FROM EMP;
+
+17)	How to find the current date of system?
+SELECT CURRENT_DATE
+FROM dual;
+
+18)	How to find current date and time of system?
+SELECT systimestamp FROM dual;
+
+19)	Select first name, incentive amount from employee and incentives table for all employees even if they didn't get incentives
+SELECT FIRST_NAME, INCENTIVE_AMOUNT
+FROM EMPLOYEE EMP
+LEFT JOIN INCENTIVE INCN
+ON EMP.EMPLOYEE_ID=INCN.EMPLOYEE_ID;
+
+20)	Select first name, incentive amount from employee and incentives table for all employees even if they didn't get incentives and set incentive amount as 0 for those employees who didn't get incentives.
+SELECT FIRST_NAME, NVL (INCENTIVE_AMOUNT, 0)
+FROM EMPLOYEE EMP
+LEFT JOIN INCENTIVE INCN 
+ON EMP.EMPLOYEE_ID=INCN.EMPLOYEE_ID;
+
+
+
+
+
+
