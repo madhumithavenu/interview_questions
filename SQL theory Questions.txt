@@ -16,6 +16,7 @@ Example: If STUDENT_ID and STUDENT_NAME in a table are combined to uniquely iden
 
 6) What is database transaction?
 A) Database transaction takes database from one consistent state to another, at the end of the transactions; this system must be in the prior state if the transaction fails else the status of the system should reflect the successful completion of transaction.
+
 7) What are properties of transaction?
 A) Properties of transaction can be summarized as ACID properties:
 Atomicity: A transaction consists of many steps, when all the steps in a transaction get completed; it will get reflected in database or if any step fails all the transactions are rolled back.
