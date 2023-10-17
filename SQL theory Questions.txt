@@ -68,6 +68,7 @@ CREATE UNIQUE INDEX index_name ON table_name;
 Clustered Index: This index sort and store the data rows in the table on view based on their key values. Each table can have only one clustered index.
 CREATE CLUSTERED INDEX index_name ON table_name;
 Non-Clustered Index: Non Clustered Index does not alter the way it was stored but creates a completely separate object within the table. As a result insert & update command will be faster.
+
 18) What is Grant and Revoke in SQL?
 A) GRANT: It gives a privilege to user.
 REVOKE: It takes back privileges granted from user.
