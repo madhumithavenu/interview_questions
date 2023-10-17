@@ -1089,8 +1089,8 @@ comments: [{ type: mongoose.Schema.Types.ObjectId, ref: ‘Comment’ }]
 4) How do the Schema and Model objects work together?
 A) The Schema object contains information about the structure of the data in the collection, while the Model object contains functions that allow you to interact with the data in the collection.
 
-5. How can we use mongoose models to create, read, update, and delete documents from our database?
-We can use mongoose models to create, read, update, and delete documents from our database by using the model functions create(), find(), update(), and deleteOne().
+5) How can we use mongoose models to create, read, update, and delete documents from our database?
+A) We can use mongoose models to create, read, update, and delete documents from our database by using the model functions create(), find(), update(), and deleteOne().
 
 6. How do we specify validation rules for data fields when defining our schema?
 We can specify validation rules for data fields by adding validation keywords to the field definition in our schema. For example, we could add the “required” keyword to a field to make sure that it is always populated with a value.
