@@ -52,6 +52,7 @@ A) Rollback retracts any of the changes resulting from the SQL statements in the
 
 14) What is a synonym?
 A) Synonym is an alias for a table, view, sequence or program unit. 
+
 15) What are the differences between drop, truncate and delete?
 A) Drop: It is used to drop the table or keys like primary, foreign from a table.
 Truncate: It removes all rows from the table. Commit and rollback statements cannot be performed. ‘WHERE’ clause cannot be used.
