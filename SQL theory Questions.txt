@@ -1,0 +1,231 @@
+1) What is Database?
+A) Database is a software present inside our computer which helps the user to store and organize his data.
+
+2) What is Data?
+A) Any valuable information which needs to be stored by the user for later use can be termed as Data.
+3) What is primary key?
+A) A Primary key is a special designation assigned to a column, which helps us to uniquely identify and map all records present inside out Database.
+4) What is Foreign Key?
+A) A Foreign key present in our table, refers to a primary key of the different table, which helps us to link the table.
+5) What is composite key?
+A) A composite key is type of candidate key which represents a set of columns whose values uniquely identified every row in a table.
+Example: If STUDENT_ID and STUDENT_NAME in a table are combined to uniquely identify a row which called as composite key.
+6) What is database transaction?
+A) Database transaction takes database from one consistent state to another, at the end of the transactions; this system must be in the prior state if the transaction fails else the status of the system should reflect the successful completion of transaction.
+7) What are properties of transaction?
+A) Properties of transaction can be summarized as ACID properties:
+Atomicity: A transaction consists of many steps, when all the steps in a transaction get completed; it will get reflected in database or if any step fails all the transactions are rolled back.
+Consistency: The database will move from one consistent state to another, if the transaction succeeds and remain in the original state, if the transaction fails.
+Isolation: Every transaction should operate as if it is the only transaction in the system.
+Durability: Once a transaction has completed successfully the updated rows/records must be available for all other transactions on a permanent basis.
+8) Can we store pictures in the database and if so, how it can be done?
+A) Yes, we can store pictures in the database by Long Raw Data type. This data-type is used to    store binary data for 2 gigabytes of length. But the table can have only on Long Raw data type.
+9) What is the data type of DUAL table?
+A) The DUAL table is a one-column table present in oracle database.  The table has a single VARCHAR2 (1) column called DUMMY which has a value of ‘X’.
+10) What is an oracle schema?
+A) A user account and its associated data including tables, views, indexes, clusters, sequences, procedures, functions, triggers, packages and database links is known as Oracle schema. Systems, SCOTT etc are default schemas. We can create a new Schema/User. But we can't drop default database schemas.
+11) What are the different Oracle Database objects?
+A) Tables – set of elements organized in vertical and horizontal
+Views – Virtual table derived from one or more tables
+Indexes – Performance tuning method for processing the records
+Synonyms – Alias name for tables
+Sequences – Multiple users generate unique numbers
+Table spaces – Logical storage unit in Oracle.
+12) What is a sub query and what are the different types of sub queries?
+A) Sub Query is also called as Nested Query or Inner Query which is used to get data from multiple tables. A sub query is added in the where clause of the main query.
+There are two different types of sub queries:
+Correlated sub query: A Correlated sub query cannot be as independent query but can reference column in a table listed in the form list of the outer query.
+Non-Correlated sub query: This can be evaluated as if it were an independent query. Results of the sub query are submitted to the main query or parent query.
+13) What does rollback do?
+A) Rollback retracts any of the changes resulting from the SQL statements in the transaction.
+14) What is a synonym?
+A) Synonym is an alias for a table, view, sequence or program unit. 
+15) What are the differences between drop, truncate and delete?
+A) Drop: It is used to drop the table or keys like primary, foreign from a table.
+Truncate: It removes all rows from the table. Commit and rollback statements cannot be performed. ‘WHERE’ clause cannot be used.
+Delete: It is used to remove rows from the table and WHERE clause can be used for conditional set of parameters. Commit and rollback can be performed after delete statement.
+16) What is a trigger?
+A) A database trigger is a code or programs that automatically execute with response to some event (before insert, after insert, on update, on delete of a row) on a table or view in a database.
+17) What are all the different types of indexes?
+A) There are three types of indexes:
+UNIQUE INDEX: This indexing does not allow the field to have duplicate values if the column is unique indexed. Unique index can be applied automatically when primary key is defined.
+CREATE UNIQUE INDEX index_name ON table_name;
+Clustered Index: This index sort and store the data rows in the table on view based on their key values. Each table can have only one clustered index.
+CREATE CLUSTERED INDEX index_name ON table_name;
+Non-Clustered Index: Non Clustered Index does not alter the way it was stored but creates a completely separate object within the table. As a result insert & update command will be faster.
+18) What is Grant and Revoke in SQL?
+A) GRANT: It gives a privilege to user.
+REVOKE: It takes back privileges granted from user.
+19) What are different Oracle database objects?
+A) TABLES, VIEWS, INDEXES, SYNONYMS, SEQUENCES, TABLESPACES etc
+20) Explain about Check?
+ A) Check is used to give a condition in the column, so that the condition must satisfy for each row in the table.
+A check constraint can NOT be defined on a SQL View.
+The check constraint defined on a table must refer to only columns in that table. It cannot refer to columns in other tables.
+A check constraint can NOT include a Sub-query.
+A check constraint can be declared in either a CREATE TABLE statement or in an ALTER TABLE statement.
+21) What are the differences between primary key and foreign key?
+Primary Key	Foreign Key
+Primary key uniquely identify a
+ record in the table.	Foreign key is a field in the table
+ thatis primary key in another
+ table.
+Primary Key can't accept null
+values.	Foreign key is a field in the table 
+that is primary key in another
+ table.
+Primary Key can't accept null
+values.	Foreign key can accept multiple
+ null values
+By default, Primary key is
+clustered index and data in the database table is physically
+organized in the sequence of
+clustered index.	Foreign key do not automatically
+create an index, clustered or non-clustered. You can manually
+create an index on foreign key.
+We can have only one Primary 
+Key in a table.	We can have more than one 
+foreign key in a table.
+
+22) What are the advantages and disadvantages of Primary Key?
+Advantages of primary key:
+It is a unique key on which all the other candidate keys are functionally dependent.
+A primary key field speeds up queries, searches and sort requests.
+When you add new records, it will not allow you to enter NULL values; it ensures that there are only valid records in the table. 
+When you add new records to a table that has a primary key, Access checks for duplicate data and doesn't let you enter duplicates for the primary key field.
+By default, Access displays your data in the order of the primary key..
+Disadvantages:
+There can be more than one key on which all the other attributes are dependent on.
+23) What are the advantages and disadvantages of Foreign Key?
+Advantage:
+1)   It allows referencing another table using the primary key for the other table.
+2)   Foreign key ensures data integrity.
+Disadvantages:
+In primary key index will be created, so during updation of table index need to be adjusted accordingly. This process makes the updation slower.
+24) What is the difference between procedure and function?
+Function must return a value and Procedure need not.
+Function can be used in SQL with some restrictions; Procedure cannot be called directly from SQL.
+25) What is data warehouse?
+A data warehouse is a relational database that is designed for query and analysis rather than for transaction processing. It is a central repository of data from multiple sources of information. Those data are consolidated, transformed and made available for the mining and online processing.
+26) What are two ways that you can indicate a comment in a SQL command?
+ A) You can indicate a comment in a SQL command by using /* and */ or by using --.
+27) Which type of table relationship associates more than one record in a given table with more than one record in another table?
+A many–to–many relationship associates more than one record in a table with more than one record in another table.
+28) What is the main difference between oracle, sql and sql server?	
+A) Oracle is based on RDBMS (Relational Database Management System).
+SQL is Structured Query Language is a standard command set used to communicate with the relational database management system.
+SQL Server is another tool for RDBMS provided by Microsoft.
+29) Explain materialized views and how they are used.
+A) Materialized views are objects that are reduced sets of information that have been summarized, grouped, or aggregated from base tables. They are typically used in data warehouse or decision support systems.
+30) What is a Table-space? 
+A) A database is divided into Logical Storage Unit called table-space. A table-space is used to grouped related logical structures together.
+31) What is Cartesian product?
+ A) If two or more tables are joining without join condition will result into Cartesian products.
+32) What operators deal with NULL?
+NVL converts NULL to another specified value.
+IS NULL and IS NOT NULL can be used to check specifically to see whether the value of a variable is NULL or not.
+33) What is a cursor?
+A) A cursor is a temporary work area created in the system memory when a SQL statement is executed. A cursor contains information on a select statement and the rows of data accessed by it.
+34) Show the cursor attributes of PL/SQL.
+A) %ISOPEN: Checks if the cursor is open or not
+%ROWCOUNT: The number of rows that are updated, deleted or fetched.
+%FOUND: Checks if the cursor has fetched any row. It is true if rows are fetched
+%NOT FOUND: Checks if the cursor has fetched any row. It is true if rows are not fetched.
+35) What is the purpose of the condition operators BETWEEN and IN?
+A) The BETWEEN operator displays rows based on a range of values. The IN condition operator checks for values contained in a specific set of values.
+36) How do you search for a value in a database table when you don’t have the exact value to search for?
+A) In such cases, the LIKE condition operator is used to select rows that match a character pattern. This is also called ‘wildcard’ search. 
+37) What are the specific uses of SQL functions?
+A) SQL functions have the following uses −
+Performing calculations on data
+Modifying individual data items
+Manipulating the output
+Formatting dates and numbers
+Converting data types 
+38) What is the difference between cross joins and natural joins?
+A) The cross join produces the cross product or Cartesian product of two tables. The natural join is based on all the columns having same name and data types in both the tables.
+39) What happens if you omit the WHERE clause in a delete statement?
+A) All the rows in the table are deleted.
+40) What is the difference between DELETE and TRUNCATE statement in SQL?
+DELETE	TRUNCATE
+DELETE is a DML command.	TRUNCATE is a DDL command.
+    We can use WHERE clause in 
+DELETE  command.	We cannot use WHERE clause with TRUNCATE
+DELETE statement is used to delete a row from a table.	TRUNCATE statement is used to remove all the rows from a table.
+DELETE is slower than TRUNCATE statement.	TRUNCATE statement is faster than 
+DELETE statement.
+You can rollback data after using
+DELETE statement.	It is not possible to rollback after using TRUNCATE statement.
+
+41) What port does SQL server run on?
+A) 1433 is the standard port for SQL server.
+42) What is "normalization"? "Denormalization"? Why do you sometimes want to denormalize?
+A) Normalizing data means eliminating redundant information from a table and organizing the data so that future changes to the table are easier.
+Denormalization means allowing redundancy in a table. The main benefit of denormalization is improved performance with simplified data retrieval and manipulation. This is done by reduction in the number of joins needed for data processing.
+43) What is the difference between UNION and UNION ALL?
+A) UNION and UNION ALL used to combine (set operation) two or more query results.  UNION will eliminate duplicate rows and UNION ALL will display all rows.
+44) When and how oracle database creates a schema?
+A) Oracle database automatically creates a schema when you create a user.
+45) What is the main component of an oracle server?
+A) RDBMS.
+46) What is the difference between relation and relationship?
+A) A relation is another name for a table, whereas a relationship is a way to correlates, or join, two or more tables.
+47) When does a transaction finish?
+A) When it is committed or when it is rolled back.
+48) What is RDBMS? How is it different from DBMS?
+ A) RDBMS stands for Relational Database Management System. The key difference here, compared to DBMS, is that RDBMS stores data in the form of a collection of tables, and relations can be defined between the common fields of these tables. Most modern database management systems like MySQL, Microsoft SQL Server, Oracle, IBM DB2, and Amazon Redshift are based on RDBMS.
+49) What is SQL?
+A) SQL stands for Structured Query Language. It is the standard language for relational database management systems. It is especially useful in handling organized data comprised of entities (variables) and relations between different entities of the data.
+50) What are the different subsets of SQL?
+A) Data Definition Language (DDL) – It allows you to perform various operations on the database such as CREATE, ALTER, and DELETE objects.
+Data Manipulation Language(DML) – It allows you to access and manipulate data. It helps you to insert, update, delete and retrieve data from the database.
+Data Control Language(DCL) – It allows you to control access to the database. Example – Grant, Revoke access permissions.
+51) List the different types of relationships in SQL.
+A) There are different types of relations in the database:
+One-to-One – This is a connection between two tables in which each record in one table corresponds to the maximum of one record in the other.
+One-to-Many and Many-to-One – This is the most frequent connection, in which a record in one table is linked to several records in another.
+Many-to-Many – This is used when defining a relationship that requires several instances on each sides.
+52) What is the difference between the database and the table?
+A) There is a major difference between a database and a table. The differences are as follows:
+Tables are a way to represent the division of data in a database while the database is a collection of tables and data.
+Tables are used to group the data in relation to each other and create a dataset. This dataset will be used in the database. The data stored in the table in any form is a part of the database, but the reverse is not true.
+A database is a collection of organized data and features used to access them, whereas the table is a collection of rows and columns used to store the data.
+53) What is a View?
+A) A view in SQL is a virtual table based on the result-set of an SQL statement. A view contains rows and columns, just like a real table. The fields in a view are fields from one or more real tables in the database.
+54) What is the difference between CHAR and VARCHAR?
+A) CHAR and VARCHAR have differed in storage and retrieval.
+CHAR column length is fixed, while VARCHAR length is variable.
+The maximum no. of character CHAR data types can hold is 255 characters, while VARCHAR can hold up to 4000 characters.
+CHAR is 50% faster than VARCHAR.
+CHAR uses static memory allocation, while VARCHAR uses dynamic memory allocation
+55) What is a clause?
+A) A condition imposed on a SQL query to filter the data to obtain the desired result. Some examples are WHERE, LIMIT, HAVING, LIKE, AND, OR, ORDER BY, etc.
+56) What is the difference between NOW() and CURRENT_DATE()?
+A) NOW() command is used to show current year, month, date with hours, minutes, and seconds while CURRENT_DATE() shows the current year with month and date only.
+57) What do you mean by % and _ in the LIKE statement?
+A) % corresponds to 0 or more characters, _ is exactly one character in the LIKE statement.
+58) How does DISTINCT work in MySQL?
+A) DISTINCT is used to avoid the problem of duplicity while fetching the results of a particular query. DISTINCT is used to make sure the results do not contain repeated values. DISTINCT can be used with the SELECT clause. Here is the syntax for it:
+59) What is NULL value? How is it different from zero or a blank space?
+ A) A NULL value indicates the absence of data for a certain cell of a table. Instead, zero is a valid numeric value, and an empty string is a legal string of zero length.
+60) What is the SELECT statement?
+A) A SELECT command gets zero or more rows from one or more database tables or views. The most frequent data manipulation language (DML) command is SELECT in most applications. SELECT queries define a result set, but not how to calculate it, because SQL is a declarative programming language.
+61) What are the different types of SQL operators?
+A) Operators are the special keywords or special characters reserved for performing particular operations. They are also used in SQL queries. We can primarily use these operators within the WHERE clause of SQL commands. It's a part of the command to filters data based on the specified condition. The SQL operators can be categorized into the following types:
+-> Arithmetic operators: These operators are used to perform mathematical operations on numerical data. The categories of this operators are addition (+), subtraction (-), multiplication (*), division (/), remainder/modulus (%), etc.
+-> Logical operators: These operators evaluate the expressions and return their results in True or False. This operator includes ALL, AND, ANY, ISNULL, EXISTS, BETWEEN, IN, LIKE, NOT, OR, UNIQUE.
+-> Comparison operators: These operators are used to perform comparisons of two values and check whether they are the same or not. It includes equal to (=), not equal to (!= or <>), less than (<), greater than (>), less than or equal to (<=), greater than or equal to (>=), not less than (!<), not greater than (!>), etc.
+-> Bitwise operators: It is used to do bit manipulations between two expressions of integer type. It first performs conversion of integers into binary bits and then applied operators such as AND (& symbol), OR (|, ^), NOT (~), etc.
+-> Compound operators: These operators perform operations on a variable before setting the variable's result to the operation's result. It includes Add equals (+=), subtract equals (-=), multiply equals (*=), divide equals (/=), modulo equals (%=), etc.
+-> String operators: These operators are primarily used to perform concatenation and pattern matching of strings. It includes + (String concatenation), += (String concatenation assignment), % (Wildcard), [] (Character(s) matches), [^] (Character(s) not to match), _ (Wildcard match one character), etc.
+62) What are Aggregate functions?
+A) An aggregate function performs operations on a collection of values to return a single scalar value. Aggregate functions are often used with the GROUP BY and HAVING clauses of the SELECT statement. Following are the widely used SQL aggregate functions:
+-> AVG() - Calculates the mean of a collection of values.
+-> COUNT() - Counts the total number of records in a specific table or view.
+-> MIN() - Calculates the minimum of a collection of values.
+-> MAX() - Calculates the maximum of a collection of values.
+-> SUM() - Calculates the sum of a collection of values.
+-> FIRST() - Fetches the first element in a collection of values.
+-> LAST() - Fetches the last element in a collection of values.
+Note: All aggregate functions described above ignore NULL values except for the COUNT function.
+
