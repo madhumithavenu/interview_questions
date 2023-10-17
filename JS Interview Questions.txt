@@ -1139,8 +1139,8 @@ Output:  Welcome to Express
 
 5) Write a code to get post a query in Express.js.
 A) var bodyParser = require('body-parser')  
-     app.use( bodyParser.json() );       // to support JSON-encoded   
-     app.use(bodyParser.urlencoded({     // to support URL-encoded   
+     app.use( bodyParser.json() );         // to support JSON-encoded   
+     app.use(bodyParser.urlencoded({      // to support URL-encoded   
         extended: true  
      }));  
 
