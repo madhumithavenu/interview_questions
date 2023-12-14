@@ -1,2 +1,8 @@
 1) What is Single Page Application ?
 Single page applications work within a single browser session and allow users to jump between parts of the system without requiring the entire page to reload.
+
+2) Difference between npm & npx ?
+• Node package Manager is a tool: used to install, maintain, uninstall javascript modules (packages)
+• NPX: (Node package Execution) If we want directly run a package for once.
+• NPM is for management -vs- NPX is one time execution.
+
