@@ -6,3 +6,9 @@ Single page applications work within a single browser session and allow users to
 • NPX: (Node package Execution) If we want directly run a package for once.
 • NPM is for management -vs- NPX is one time execution.
 
+3) What is babel & Web-pack?
+• Bable is a transpiler & also a compiler.
+• It will take ES6 input & converts it to ES5 for our browsers to understand.
+• It also converts JSX (JavaScript Extended) language to JS.
+• Web-pack is basically bundling tool used by react:
+• It will bundle all the CSS & html files & will add to Index.html file. (Using <link> tags)
