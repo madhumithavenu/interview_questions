@@ -67,4 +67,7 @@ React is a JavaScript library that makes building user interfaces easy. It was d
 15) Does React use HTML?
 No, It uses JSX, which is similar to HTML.
 
+16) Define the term Redux in React.
+Redux is a library used for front end development. It is a state container for JavaScript applications which should be used for the applications state management. You can test and run an application developed with Redux in different environments.
+
 
