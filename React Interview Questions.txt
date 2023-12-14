@@ -1,0 +1,2 @@
+1) What is Single Page Application ?
+Single page applications work within a single browser session and allow users to jump between parts of the system without requiring the entire page to reload.
