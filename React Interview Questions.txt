@@ -61,5 +61,10 @@ The virtual DOM (VDOM) is a programming concept where an ideal, or “virtual”
 event.preventDefault(); method when invoked avoids it from happening.
 ● We do this because, we do not want to lose our current state variable values.
 
+14) What is ReactJS?
+React is a JavaScript library that makes building user interfaces easy. It was developed by Facebook.
+
+15) Does React use HTML?
+No, It uses JSX, which is similar to HTML.
 
 
