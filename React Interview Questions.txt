@@ -56,5 +56,10 @@ The virtual DOM (VDOM) is a programming concept where an ideal, or “virtual”
 ● Props are used to pass data from one component to another.
 ● The state is a local data storage that is local to the component only and cannot be passed to other components.
 
+13) Why is event.preventDefault() used?
+● Ideally when a form is submitted it will be taken to the next page (consecutive page).
+event.preventDefault(); method when invoked avoids it from happening.
+● We do this because, we do not want to lose our current state variable values.
+
 
 
