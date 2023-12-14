@@ -25,3 +25,7 @@ Class Components
 * Slower performance as they have state and lifecycle, react needs to do comparatively more work to render these components.
 * Class components require the boilerplate code, such as a constructor method and the use of “this” to access props and state.
 
+6) What is a state in React?
+The state is a built-in React object that is used to contain data or information about the component. A component's state can change over time; whenever it changes, the component re-renders.
+
+
