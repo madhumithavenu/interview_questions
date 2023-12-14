@@ -117,6 +117,10 @@ Important lifecycle steps of React js are:
 28) Explain the use of ‘key’ in react list ?
 Keys allow you to provide each list element with a stable identity. The keys should be unique.
 
+29) What are children prop?
+Children props are used to pass component to other components as properties. You can access it by using
+{props.children}
+
 
 
 
