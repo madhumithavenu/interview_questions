@@ -99,4 +99,8 @@ Two types of react Components are:
 • Function component
 • Class component
 
+24) How can you update state in React JS?
+A state can be updated on the component directly or indirectly.
+
+
 
