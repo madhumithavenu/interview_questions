@@ -127,6 +127,9 @@ Empty tags are used in React for declaring fragments.
 31) Explain strict mode.
 Strict Mode allows you to run checks and warnings for react components. It runs only on development build. It helps you to highlight the issues without rendering any visible UI.
 
+32) Can we update props in react?
+We can’t update props in react js because props are read-only. Moreover, we can not modify props received from parent to child.
+
 
 
 
