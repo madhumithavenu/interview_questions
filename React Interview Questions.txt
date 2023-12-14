@@ -114,6 +114,9 @@ Important lifecycle steps of React js are:
 27) What is ‘create-react-app’?
 ‘create-react-app’ is a command-line tool which allows you to create one basic react application.
 
+28) Explain the use of ‘key’ in react list ?
+Keys allow you to provide each list element with a stable identity. The keys should be unique.
+
 
 
 
