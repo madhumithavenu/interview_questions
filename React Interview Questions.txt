@@ -70,4 +70,6 @@ No, It uses JSX, which is similar to HTML.
 16) Define the term Redux in React.
 Redux is a library used for front end development. It is a state container for JavaScript applications which should be used for the applications state management. You can test and run an application developed with Redux in different environments.
 
+17) What is the ‘Store’ feature in Redux?
+Redux has a feature called ‘Store’ which allows you to save the application’s entire State at one place. Therefore all it’s component’s State are stored in the Store so that you will get regular updates directly from the Store.
 
