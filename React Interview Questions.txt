@@ -130,6 +130,14 @@ Strict Mode allows you to run checks and warnings for react components. It runs 
 32) Can we update props in react?
 We can’t update props in react js because props are read-only. Moreover, we can not modify props received from parent to child.
 
+33) Name any five predefined prototypes used in React.
+Most important protoype used in React js are:
+• number
+• string
+• array
+• object
+• element
+
 
 
 
