@@ -73,3 +73,10 @@ Redux is a library used for front end development. It is a state container for J
 17) What is the ‘Store’ feature in Redux?
 Redux has a feature called ‘Store’ which allows you to save the application’s entire State at one place. Therefore all it’s component’s State are stored in the Store so that you will get regular updates directly from the Store.
 
+18) Name the important features of React.
+Here, are important features of React.
+• Allows you to use 3rd party libraries
+• Time-Saving
+• Faster Development
+• Simplicity and Composable
+
