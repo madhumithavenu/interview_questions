@@ -12,3 +12,16 @@ Single page applications work within a single browser session and allow users to
 • It also converts JSX (JavaScript Extended) language to JS.
 • Web-pack is basically bundling tool used by react:
 • It will bundle all the CSS & html files & will add to Index.html file. (Using <link> tags)
+
+4) Explain Class based components vs functional components?
+Functional Components
+* Functional components are written as a JavaScript function.
+* Functional components do not have a state or lifecycle methods.
+* Faster performance as they do not have state and lifecycle, react needs to do less work to render these components.
+* Functional components code  tend to be shorter and more concise.
+Class Components
+* Class components are written as a JavaScript class.
+* Class components have a state and can implement lifecycle methods like componentDidMount and componentDidUpdate.
+* Slower performance as they have state and lifecycle, react needs to do comparatively more work to render these components.
+* Class components require the boilerplate code, such as a constructor method and the use of “this” to access props and state.
+
