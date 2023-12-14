@@ -52,5 +52,9 @@ A target inside a synthetic event object is the element on which the event has o
 11) What is Virtual DOM? 
 The virtual DOM (VDOM) is a programming concept where an ideal, or “virtual”, representation of a UI is kept in memory and synced with the “real” DOM by a library such as React DOM. This process is called reconciliation.
 
+12) What is the difference between state-vs-props? 
+● Props are used to pass data from one component to another.
+● The state is a local data storage that is local to the component only and cannot be passed to other components.
+
 
 
