@@ -94,5 +94,9 @@ Props mean properties, which is a way of passing data from parent to child. We c
 22) What is the use of a super keyword in React?
 The super keyword helps you to access and call functions on an object’s parent.
 
+23) Name two types of React component.
+Two types of react Components are:
+• Function component
+• Class component
 
 
