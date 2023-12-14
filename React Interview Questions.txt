@@ -25,7 +25,15 @@ Class Components
 * Slower performance as they have state and lifecycle, react needs to do comparatively more work to render these components.
 * Class components require the boilerplate code, such as a constructor method and the use of “this” to access props and state.
 
+5) What is Hooks? What are different types of Hooks?
+  Hooks are functions that let you “hook into” React state and lifecycle features from function components. Hooks don't work inside classes — they let you use React without classes.
+Types of Hooks are:
+•‘useState’: It is the most commonly used React Hook. It allows functional components to have state variables. It takes an initial state value as the argument and returns an array with two elements — the current state value and a function to update that state.
+•‘useEffect’: It enables performing side effects, such as data fetching, subscriptions, or DOM manipulations after the component has been rendered.
+•‘useRef’: Provides a way to create mutable references to values or DOM elements that persist across renders. Often used for accessing or manipulating DOM elements.
+
 6) What is a state in React?
 State is an Object, and we use the state to store data, that will be used by our component.A component's state can change over time; whenever it changes, the component re-renders.
+
 
 
