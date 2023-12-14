@@ -91,5 +91,8 @@ A callback function should be called when setState has finished, and the compone
 21) What are Props in React JS?
 Props mean properties, which is a way of passing data from parent to child. We can say that props are just a  communication channel between components. It is always moving from parent to child component.
 
+22) What is the use of a super keyword in React?
+The super keyword helps you to access and call functions on an object’s parent.
+
 
 
