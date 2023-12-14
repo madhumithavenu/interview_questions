@@ -79,4 +79,10 @@ Here, are important features of React.
 • Time-Saving
 • Faster Development
 • Simplicity and Composable
+• Fully supported by Facebook.
+• Code Stability with One-directional data binding
+
+19) Explain React Router.
+React Router is a routing library which allows you to add new screen flows to your application, and it also keeps URL in sync with what’s being shown on the page.
+
 
