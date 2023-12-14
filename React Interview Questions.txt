@@ -121,6 +121,10 @@ Keys allow you to provide each list element with a stable identity. The keys sho
 Children props are used to pass component to other components as properties. You can access it by using
 {props.children}
 
+30) What is the use of empty tags <> </>?
+Empty tags are used in React for declaring fragments.
+
+
 
 
 
