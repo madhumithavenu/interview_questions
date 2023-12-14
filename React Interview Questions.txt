@@ -35,5 +35,10 @@ Types of Hooks are:
 6) What is a state in React?
 State is an Object, and we use the state to store data, that will be used by our component.A component's state can change over time; whenever it changes, the component re-renders.
 
+7) What does setState() method do? 
+• setState() method will modify value of the state.
+• Then it will Schedule a call to our render method.
+
+
 
 
