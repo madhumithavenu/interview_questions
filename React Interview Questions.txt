@@ -46,5 +46,8 @@ Event Handler are functions which will be called (invoked) by the browsers when 
 Synthetic events are representative of real events a.k.a wrapper around real events. Because we have to deal with different implementation of event functions in different browsers, a synthetic event acts as a specification for a
 single event access all browsers.
 
+9) What is a target? 
+A target inside a synthetic event object is the element on which the event has occurred. As we cannot use DOM functions like document.getElementById() etc inside react, we use event object to fetch the element present inside ‘target variable’.
+
 
 
