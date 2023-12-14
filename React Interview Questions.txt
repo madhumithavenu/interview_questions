@@ -124,6 +124,9 @@ Children props are used to pass component to other components as properties. You
 30) What is the use of empty tags <> </>?
 Empty tags are used in React for declaring fragments.
 
+31) Explain strict mode.
+Strict Mode allows you to run checks and warnings for react components. It runs only on development build. It helps you to highlight the issues without rendering any visible UI.
+
 
 
 
