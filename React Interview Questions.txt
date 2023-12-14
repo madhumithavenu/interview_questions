@@ -105,5 +105,12 @@ A state can be updated on the component directly or indirectly.
 25) Explain the use of the arrow function in React?
 The arrow function helps you to predict the behavior of bugs when passed as a callback. Therefore, it prevents bug caused by this all together.
 
+26) What are the lifecycle steps of React?
+Important lifecycle steps of React js are:
+• Initialization
+• State/Property updates
+• Destruction are the lifecycle of React
+
+
 
 
