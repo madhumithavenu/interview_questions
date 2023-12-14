@@ -88,5 +88,8 @@ React Router is a routing library which allows you to add new screen flows to yo
 20) What is meant by callback function? What is its purpose?
 A callback function should be called when setState has finished, and the component is re-rendered. As the setState is asynchronous, which is why it takes in a second callback function.
 
+21) What are Props in React JS?
+Props mean properties, which is a way of passing data from parent to child. We can say that props are just a  communication channel between components. It is always moving from parent to child component.
+
 
 
