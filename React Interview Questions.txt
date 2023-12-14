@@ -39,6 +39,10 @@ State is an Object, and we use the state to store data, that will be used by our
 • setState() method will modify value of the state.
 • Then it will Schedule a call to our render method.
 
+8) What is an Event Handler? 
+Event Handler are functions which will be called (invoked) by the browsers when an event occurs.
+
+
 
 
 
