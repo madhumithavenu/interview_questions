@@ -102,5 +102,8 @@ Two types of react Components are:
 24) How can you update state in React JS?
 A state can be updated on the component directly or indirectly.
 
+25) Explain the use of the arrow function in React?
+The arrow function helps you to predict the behavior of bugs when passed as a callback. Therefore, it prevents bug caused by this all together.
+
 
 
