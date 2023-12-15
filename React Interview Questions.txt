@@ -166,6 +166,13 @@ Redux is composed of the following components:
 41) What is Lifting State Up in React?
 When several components need to share the same changing data then it is recommended to lift the shared state up to their closest common ancestor. That means if two child components share the same data from its parent, then move the state to parent instead of maintaining local state in both of the child components.
 
+42) Why React uses className over class attribute?
+The attribute class is a keyword in JavaScript, and JSX is an extension of JavaScript. That's the principal reason why React uses className instead of class. Pass a string as the className prop.
+render() 
+{  
+return <spanclass Name = {'menunavigationmenu'} > {'Menu'} </span>
+}
+
 
 
 
