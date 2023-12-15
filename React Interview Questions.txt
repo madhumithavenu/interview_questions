@@ -201,6 +201,9 @@ For example, the items array of objects is mapped into an array of components:
 46) Why is it necessary to start component names with a capital letter?
 In React, it is necessary to start component names with a capital letter. If we start the component name with lower case, it will throw an error as an unrecognized tag. It is because, in JSX, lower case tag names are considered as HTML tags.
 
+47) Mention one difference between Props and State.
+State is mutable while Props are immutable. This means that the state is internal and managed by the component while props are external and managed by anything that renders the component.
+
 
 
 
