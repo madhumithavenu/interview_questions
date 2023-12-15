@@ -210,6 +210,9 @@ Keys are used for providing identity to list elements.
 49) How will you update props in React?
 It is not possible as we can’t update props in ReactJS as they are read-only.
 
+50) Can JavaScript urls be used in React 16.9?
+Yes, but it will give a warning in the console.
+
 
 
 
