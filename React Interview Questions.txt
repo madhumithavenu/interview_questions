@@ -207,6 +207,9 @@ State is mutable while Props are immutable. This means that the state is interna
 48) What does ‘key’ do in React list?
 Keys are used for providing identity to list elements.
 
+49) How will you update props in React?
+It is not possible as we can’t update props in ReactJS as they are read-only.
+
 
 
 
