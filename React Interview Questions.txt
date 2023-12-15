@@ -198,6 +198,8 @@ For example, the items array of objects is mapped into an array of components:
   ))}
 </body>
 
+46) Why is it necessary to start component names with a capital letter?
+In React, it is necessary to start component names with a capital letter. If we start the component name with lower case, it will throw an error as an unrecognized tag. It is because, in JSX, lower case tag names are considered as HTML tags.
 
 
 
