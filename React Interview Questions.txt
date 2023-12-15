@@ -156,6 +156,13 @@ Major features of React are listed below:
 • It uses server-side rendering.
 • It follows uni-directional data flow or data binding.
 
+40) List down the components of Redux.
+Redux is composed of the following components:
+• Action – It’s an object that describes what happened.
+• Reducer –  It is a place to determine how the state will change.
+• Store – State/ Object tree of the entire application is saved in the Store.
+• View – Simply displays the data provided by the Store.
+
 
 
 
