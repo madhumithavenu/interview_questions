@@ -204,6 +204,9 @@ In React, it is necessary to start component names with a capital letter. If we 
 47) Mention one difference between Props and State.
 State is mutable while Props are immutable. This means that the state is internal and managed by the component while props are external and managed by anything that renders the component.
 
+48) What does ‘key’ do in React list?
+Keys are used for providing identity to list elements.
+
 
 
 
