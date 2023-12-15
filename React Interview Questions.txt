@@ -141,6 +141,9 @@ Most important protoype used in React js are:
 34) What is JSX?
 JSX is a syntax extension of JavaScript. It is used with React to describe what the user interface should look like. By using JSX, we can write HTML structures in the same file that contains JavaScript code.
 
+35) Explain how lists work in React.
+We create lists in React as we do in regular JavaScript. Lists display data in an ordered format. The traversal of lists is done using the map() function.
+
 
 
 
