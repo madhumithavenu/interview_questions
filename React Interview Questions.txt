@@ -348,3 +348,4 @@ For example, the below code covers both the above cases
 	// Don't call this.setState() here!
 	this.state = { counter: 0 };
 	this.handleClick = this.handleClick.bind(this); }
+
