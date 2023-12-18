@@ -254,30 +254,97 @@ React Router is available as an npm package, and can be added to your applicatio
 63) Can you attach a JSX element to other JSX components?
 Yes, you can add JSX elements to other JSX components.
 
-64) What are pure components in ReactJS?
-A React component is considered to be pure if it produces the same output when given the same set of state and props.
-
-65) How can you fetch data with React Hooks?
+64) How can you fetch data with React Hooks?
 We can use useEffect that fetches the data through axios from the API.
 
-66) What is one-way data flow in React?
+65) What is one-way data flow in React?
 React uses unidirectional data flow which means you can transfer data from parent to child and not the other way around.
 
-67) What is virtual DOM?
-DOM is the abbreviated version of the Document Object Model. The DOM shows the logical tree structure for an HTML document. There is a node at the end of each tree branch, with every tree node containing one or more objects.
-
-68) Why do we use keys in Lists?
+66) Why do we use keys in Lists?
 The main reason why we use keys in lists are as follows
 It is an identifier to find which items have changed, updated, or deleted from lists.
 Find out which items need to be re-rendered
 
-69) Explain React forms?
+67) Explain React forms?
 React forms allow users to interact with web applications. They help users to enter the information when required. They contain buttons, text fields, checkboxes, etc.
 
-70) What methods are invoked during error handling?
+68) What methods are invoked during error handling?
 componentDidCatch()
+69) What is the purpose of callback function as an argument of setState()?
+The callback function is invoked when setState finished and the component gets rendered. Since setState() is asynchronous the callback function is used for any post action.
 
+70) How to pass a parameter to an event handler or callback?
+You can use an arrow function to wrap around an event handler and pass parameters:
+<button onClick={() => this.handleClick(id)} />
+This is an equivalent to calling .bind:
+<button onClick={this.handleClick.bind(this, id)} />
 
+71) What are inline conditional expressions?
+You can use either if statements or ternary expressions which are available from JS to conditionally render expressions. Apart from these approaches, you can also embed any expressions in JSX by wrapping them in curly braces and then followed by JS logical operator &&.
+<h1>Hello!</h1>
+d{
+	messages.length > 0 && !isLogin?
+		 <h2>
+			You have {messages.length} unread messages.
+		</h2>
+:
+	<h2>
+	You don't have unread messages.
+	</h2>
+}
 
+72) What are controlled components?
+A component that controls the input elements within the forms on subsequent user input is called Controlled Component, i.e, every state mutation will have an associated handler function.
+For example, to write all the names in uppercase letters, we use handleChange as below,
+handleChange(event) {
+	this.setState({value: event.target.value.toUpperCase()})
+}
 
+73) What are Higher-Order Components?
+A higher-order component (HOC) is a function that takes a component and returns a new component. Basically, it's a pattern that is derived from React's compositional nature.We call them pure components because they can accept any dynamically provided child component but they won't modify or copy any behavior from their input components.
+const 
+EnhancedComponent = higherOrderComponent (Wrapped Compone  nt)
 
+74) What is context?
+Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+
+75) What is reconciliation?
+When a component's props or state change, React decides whether an actual DOM update is necessary by comparing the newly returned element with the previously rendered one. When they are not equal, React will update the DOM. This process is called reconciliation.
+
+76) What are stateless components?
+If the behaviour of a component is independent of its state then it can be a stateless component. You can use either a function or a class for creating stateless components. But unless you need to use a lifecycle hook in your components, you should go for function components.
+
+77) What are stateful components?
+If the behaviour of a component is dependent on the state of the component then it can be termed as stateful component. These stateful components are always class components and have a state that gets initialized in the constructor.
+
+78) How to fetch data with React Hooks?
+The effect hook called useEffect is used to fetch the data with axios from the API and to set the data in the local state of the component with the state hook’s update function.
+
+79) What is a switching component?
+A switching component is a component that renders one of many components. We need to use object to map prop values to components.
+
+80) Is it possible to use async/await in plain React?
+If you want to use async/await in React, you will need Babel and transform-async-to-generator plugin. React Native ships with Babel and a set of transforms.
+
+81) What are render props?
+Render Props is a simple technique for sharing code between components using a prop whose value is a function. The below component uses render prop which returns a React element.
+
+82) What is flux?
+Flux is an application design paradigm used as a replacement for the more traditional MVC pattern. It is not a framework or a library but a new kind of architecture that complements React and the concept of Unidirectional Data Flow. Facebook uses this pattern internally when working with React.
+
+83) What is the difference between React context and React Redux?
+You can use Context in your application directly and is going to be great for passing down data to deeply nested components which what it was designed for. Whereas Redux is much more powerful and provides a large number of features that the Context API doesn't provide. Also, React Redux uses context internally but it doesn't expose this fact in the public API.
+
+84) How to re-render the view when the browser is resized?
+It is possible to listen to the resize event in componentDidMount() and then update the width and height dimensions. It requires the removal of the event listener in the componentWillUnmount() method.
+
+85) What is the main purpose of constructor?
+The constructor is mainly used for two purposes,
+• To initialize local state by assigning object to this.state
+• For binding event handler methods to the instance 
+For example, the below code covers both the above cases
+     constructor(props) {
+	super(props);
+	// Don't call this.setState() here!
+	this.state = { counter: 0 };
+	this.handleClick = this.handleClick.bind(this); }
