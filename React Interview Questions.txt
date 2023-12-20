@@ -370,5 +370,8 @@ The componentWillUnmount() method is a lifecycle method in React class component
 92) Explain Flux Concept in React.
 It is a new kind of architecture used for client-side web applications. Supports the concept of Unidirectional Data Flow.
 
+93) What is yield catchphrase in JavaScript?
+It is used to delay and resume a generator work.
+
 
 
