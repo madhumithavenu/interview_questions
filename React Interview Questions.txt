@@ -351,3 +351,7 @@ For example, the below code covers both the above cases
 
 86) What are the basic rules of hooks?
 Hooks have some rules: They must be used only at the top level of a function component, hooks mustbe called in the same order every time the component renders, and they cannot be called conditionally.
+
+87) What are reducers in Redux?
+Reducers in Redux are pure functions that specify how the application's state changes in response to actions. They take the current state and an action as input and return a new state based on that action.
+
