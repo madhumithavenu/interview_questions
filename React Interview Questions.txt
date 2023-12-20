@@ -391,5 +391,9 @@ React uses unidirectional data flow which means you can transfer data from paren
 99) Explain Concurrent Rendering.
 Concurrent rendering is a feature of React that enables components to render, update, and respond to user input simultaneously.
 
+100) Is it necessary for keys to be globally unique?
+While you can use the same keys for two different arrays, they don't need to be globally unique.
+
+
 
 
