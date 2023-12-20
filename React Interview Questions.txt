@@ -373,5 +373,8 @@ It is a new kind of architecture used for client-side web applications. Supports
 93) What is yield catchphrase in JavaScript?
 It is used to delay and resume a generator work.
 
+94) What are error boundaries?
+They help catch errors in child components, log the error and show fallback UI.
+
 
 
