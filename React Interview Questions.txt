@@ -388,5 +388,8 @@ When creating a function inside the render method, it negates the performance of
 98) What is one-way data flow in React?
 React uses unidirectional data flow which means you can transfer data from parent to child and not the other way around.
 
+99) Explain Concurrent Rendering.
+Concurrent rendering is a feature of React that enables components to render, update, and respond to user input simultaneously.
+
 
 
