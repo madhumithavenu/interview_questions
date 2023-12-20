@@ -385,5 +385,8 @@ Yes, we can add JSX elements to other JSX components.
 97) With pure components, what is the issue of using render props?
 When creating a function inside the render method, it negates the performance of the pure component.
 
+98) What is one-way data flow in React?
+React uses unidirectional data flow which means you can transfer data from parent to child and not the other way around.
+
 
 
