@@ -376,5 +376,7 @@ It is used to delay and resume a generator work.
 94) What are error boundaries?
 They help catch errors in child components, log the error and show fallback UI.
 
+95) What are refs?
+They are an attribute of DOM elements. It is a function provided by React to access these elements. You might want to use them in case when you want to change the value of a child component without use of props.
 
 
