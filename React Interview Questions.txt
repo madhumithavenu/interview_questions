@@ -382,5 +382,8 @@ They are an attribute of DOM elements. It is a function provided by React to acc
 96) Can you attach a JSX element to other JSX components?
 Yes, we can add JSX elements to other JSX components.
 
+97) With pure components, what is the issue of using render props?
+When creating a function inside the render method, it negates the performance of the pure component.
+
 
 
