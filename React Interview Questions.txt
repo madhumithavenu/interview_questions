@@ -367,5 +367,8 @@ The useReducer hook is a built-in hook in React that allows you to manage state 
 91) What is the purpose of the componentWillUnmount() method in React class components?
 The componentWillUnmount() method is a lifecycle method in React class components that is called just before a component is unmounted and removed from the DOM. It allows for performing cleanup tasks such as removing event listeners or cancelling subscriptions.
 
+92) Explain Flux Concept in React.
+It is a new kind of architecture used for client-side web applications. Supports the concept of Unidirectional Data Flow.
+
 
 
