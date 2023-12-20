@@ -379,4 +379,8 @@ They help catch errors in child components, log the error and show fallback UI.
 95) What are refs?
 They are an attribute of DOM elements. It is a function provided by React to access these elements. You might want to use them in case when you want to change the value of a child component without use of props.
 
+96) Can you attach a JSX element to other JSX components?
+Yes, we can add JSX elements to other JSX components.
+
+
 
