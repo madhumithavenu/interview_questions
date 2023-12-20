@@ -349,3 +349,5 @@ For example, the below code covers both the above cases
 	this.state = { counter: 0 };
 	this.handleClick = this.handleClick.bind(this); }
 
+86) What are the basic rules of hooks?
+Hooks have some rules: They must be used only at the top level of a function component, hooks mustbe called in the same order every time the component renders, and they cannot be called conditionally.
