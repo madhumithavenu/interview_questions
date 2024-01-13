@@ -83,7 +83,8 @@ Here, are important features of React.
 • Code Stability with One-directional data binding
 
 19) Explain React Router.
-React Router is a routing library which allows you to add new screen flows to your application, and it also keeps URL in sync with what’s being shown on the page.
+When we want to run single page application we get html,css and very large JS file, in home page when we click on about or contact link it send the request to backend we receives json format and not new html,css and JS file , we can simulate by moving to other page. This is why we use react-router.
+
 
 20) What is meant by callback function? What is its purpose?
 A callback function should be called when setState has finished, and the component is re-rendered. As the setState is asynchronous, which is why it takes in a second callback function.
